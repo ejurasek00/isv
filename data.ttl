@@ -1,0 +1,802 @@
+@prefix isv:    <https://github.com/ejurasek00/isv/#>.
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#>.
+@prefix foaf:   <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms:<http://purl.org/dc/terms/>.
+@prefix dbr:    <http://dbpedia.org/resource/>.
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#>.
+
+
+isv:Bait   
+    a isv:SlangTerm;
+    foaf:maker dbr:4chan;
+    dcterms:created "2014"^^xsd:gYear;
+    skos:definition "Internet talk for lies or insults that are intended to annoy people"@en;
+    skos:example "Great bait, mate"@en;
+    dcterms:medium dbr:Reddit, dbr:Twitter.
+
+isv:Troll
+    a isv:SlangTerm;
+    dcterms:created "1995"^^xsd:gYear;
+	skos:definition "One who posts a deliberately provocative message to a newsgroup or message board with the intention of causing maximum disruption and argument"@en;	
+    skos:example "The internet troll left nasty comments to get a rise out of people"@en;
+    dcterms:medium dbr:Reddit.
+
+isv:b4	
+    a isv:SlangTerm; 
+    foaf:maker dbr:SMS;
+    dcterms:created "1995"^^xsd:gYear;
+    skos:definition "Before"@en;	
+    skos:example "U bin there b4, bro?"@en;
+    dcterms:medium dbr:SMS.
+
+isv:2day	
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "1995"^^xsd:gYear;
+    skos:definition "Today"@en	; 
+    skos:example "I need that info 2day, seriously."@en;
+    dcterms:medium dbr:SMS.
+
+isv:brb	
+    a isv:SlangTerm;
+    foaf:maker dbr:Instant_messaging;
+    dcterms:created "1996"^^xsd:gYear;
+	skos:definition "Be right back"@en;
+    skos:example
+"""Vinny: brb
+Ryan: ooooooookee
+-2 Minutes later-
+Vinny: back, as you were saying?
+Ryan: YAY!
+"""@en;
+    dcterms:medium dbr:AOL_Instant_Messenger.
+
+isv:OMG	
+    a isv:SlangTerm;
+    foaf:maker dbr:Internet_forums;
+    dcterms:created "1990"^^xsd:gYear;
+    skos:definition "Oh my God"@en;
+    skos:example "OMG, I left the kitchen on fire!"@en;
+    dcterms:medium dbr:Online_chat.
+
+isv:cmng	
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "1998"^^xsd:gYear;
+    skos:definition "Coming"@en	;
+    skos:example "cmng later?"@en;
+    dcterms:medium dbr:SMS.
+
+isv:idc	
+    a isv:SlangTerm;
+    foaf:maker dbr:Instant_messaging;
+    dcterms:created "2000"^^xsd:gYear;
+    skos:definition "Idc means I don't care. It is alike idk but they have two very different meanings. Actually, somebody could say idk and idc which is common also."@en;
+    skos:example "idc for it"@en;
+    dcterms:medium dbr:Text_messaging.
+
+isv:LOL	
+    a isv:SlangTerm;
+    foaf:maker dbr:Usenet;
+    dcterms:created "1989"^^xsd:gYear;
+    skos:definition "Stands for Laugh Out Loud. Or League of Legends."@en;	
+    skos:example
+"""Person A: "I just realized my shirt is on backward."
+ Person B: "lol"
+"""@en;
+dcterms:medium dbr:Online_chat.
+
+isv:Only_in_Ohio
+	a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2022"^^xsd:gYear;
+    skos:definition "A tiktok trend were people post weird things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en;
+    skos:example "Only in Ohio would there be a cat like that"@en.
+
+isv:Floptropica 
+    a isv:SlangTerm;	
+    skos:definition "A fictional island nation and internet meme state inhabited by 'Flops' (fans of various pop icons, often utilizing 'cupcakKe' remixes and specific aesthetic edits). It serves as a digital safe haven and satirical utopia for marginalized communities and fandoms, often portrayed in opposition to 'DaBoys' or 'Preppy' digital aesthetics."@en;
+    skos:example "I can’t wait to go to Floptropica and meet queen Jiafei!"@en;
+    dcterms:medium dbr:TikTok, dbr:Instagram, dbr:YouTube.
+
+isv:Wakanda
+    a isv:SlangTerm;
+    skos:definition "A fictional western African country from marvels comic books and movies"@en;
+    skos:example "Black panther is based on the kingdom of a Wakandan king"@en.
+
+isv:Covfefe
+	a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2017"^^xsd:gYear;
+    skos:definition "How to make America great again"@en;
+    skos:example "Despite the constant negative press covfefe - Donald Trump"@en;
+    dcterms:medium dbr:Twitter.
+
+isv:Rizz	
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2021"^^xsd:gYear;
+    skos:definition "The act of having rizz is to have lots of charisma."@en;
+    skos:example "That boy Cornelius Fingerdoodle has some rizz."@en.
+
+isv:Bussin
+    a isv:SlangTerm;
+    foaf:maker dbr:African-American_Vernacular_English;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "what you would say if something was really good."@en;
+    skos:example "tay- i didnt know yo mama could cook this good! jj- yea her food be bussin"@en.
+
+isv:Cheugy
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2021"^^xsd:gYear;
+	skos:definition "A catch all word to describe anything that is basic, uncool or untrendy. According to The New York Times, cheugy (pronounced chew-gee) can be used, broadly, to describe someone who is out of date or trying too hard."@en;
+    skos:example "I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, a jacket, sunglasses, and a floppy hat. She's so cheugy"@en.
+
+isv:Tea
+    a isv:SlangTerm;
+    foaf:maker dbr:African-American_Vernacular_English;
+    dcterms:created "2015"^^xsd:gYear;   
+    skos:definition "The best kind of gossip, typically shared between friends. It’s a bonding tool for people of all ages. tea is usually about someone you know, but can also extend to celebrities random internet scandals, etc."@en;
+    skos:example "I heard some tea about Saturday night!"@en;
+    dcterms:medium dbr:Twitter.
+
+isv:Blaccent
+    a isv:SlangTerm;
+    foaf:maker dbr:African-American_English;
+    dcterms:created "1990"^^xsd:gYear;
+    skos:definition "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en;
+    skos:example "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en;
+    dcterms:medium dbr:Internet_discourse.
+
+isv:Finsta
+    a isv:SlangTerm;
+    foaf:maker dbr:Instagram;
+    dcterms:created "2015"^^xsd:gYear;
+    skos:definition "A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust."@en;
+    skos:example "I need a new username for my finsta."@en;
+    dcterms:medium dbr:Instagram.
+
+isv:Slaycation
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2016"^^xsd:gYear;
+    skos:definition "Super awesome, fancy vacation."@en;
+    skos:example "The stay at Madeira last year was totally a slaycation!"@en;
+    dcterms:medium dbr:Instagram, dbr:TikTok.
+    
+isv:Skibidi	
+    a isv:SlangTerm;
+    foaf:maker dbr:YouTube;
+    dcterms:created "2023"^^xsd:gYear;
+    skos:definition "Practically a filler word with a positive or negative connotation, depending on the context."@en;	
+    skos:example "Skibidi dop dop dop  yes yes!"@en.
+
+isv:AMA	
+    a isv:SlangTerm;
+    foaf:maker dbr:Reddit;
+    dcterms:created "2009"^^xsd:gYear;
+    skos:definition "It is an acronym for Ask Me Anything"@en;
+    skos:example "Redditor: I work at the Pentagon and I survived 9/11. AMA"@en;
+    dcterms:medium dbr:Reddit.
+
+isv:HP
+    a isv:SlangTerm;
+    skos:definition "House Party"@en;	
+    skos:example "We're having a hp tnt, do you wanna join us?"@en.
+
+
+isv:gg
+    a isv:SlangTerm;
+    foaf:maker dbr:Online_gaming;
+    dcterms:created "1998"^^xsd:gYear;
+    skos:definition "Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship."@en;
+    skos:example "Red Team: GG, blue team"@en;
+    dcterms:medium dbr:Multiplayer_video_games.
+
+
+isv:glhf	
+    a isv:SlangTerm;
+    foaf:maker dbr:Online_gaming;
+    dcterms:created "2000"^^xsd:gYear;
+    skos:definition "An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will."@en;
+    skos:example "player: glhf everyone!"@en;
+    dcterms:medium dbr:Multiplayer_video_games.
+
+
+isv:DPS
+    a isv:SlangTerm;
+    foaf:maker dbr:Online_gaming;
+    dcterms:created "2004"^^xsd:gYear;
+    skos:definition "Acronym meaning Damage Per Second. Often used in role playing games such as World of Warcraft, Defense of the Ancients, and Diablo. Used to measure how much damage per second a player is inflicting."@en;
+    skos:example "Hero 1 hits once per second and deals 100 damage. His DPS is 100"@en;
+    dcterms:medium dbr:Multiplayer_video_games.
+
+isv:opp
+    a isv:SlangTerm;
+    skos:definition "Anyone in competition or against you. Shorter word for an opponent."@en;
+    skos:example "All i see is opps in here"@en.
+
+isv:Karen
+    a isv:SlangTerm;
+    skos:definition "Middle aged woman, typically blonde, makes solutions to others' problems an inconvenience to her although she isn't even remotely affected."@en;
+    skos:example "Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it."@en.
+
+
+isv:NPC
+    a isv:SlangTerm;
+    skos:definition "A play on video games non-player character mixed with a play on The Simulation Hypothesis."@en;
+    skos:example "Bro you are such an npc"@en.
+
+isv:poggers
+    a isv:SlangTerm;
+    skos:definition "A twitch emote typically used to express enthusiasm, enthrawlment or other sophisticated emotions of happiness and dopamine."@en;
+    skos:example "it’s pretty poggers."@en.
+
+isv:u
+    a isv:SlangTerm;
+    skos:definition "You"@en;
+    skos:example "I love u."@en.
+
+isv:ngl
+    a isv:SlangTerm;
+    skos:definition """Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of 'just saying' or 'no offence' in the sense that it makes your statement more valid/less offensive"""@en;
+    skos:example "ngl, I cried during the season finale"@en.
+
+isv:af
+    a isv:SlangTerm;
+    skos:definition "Means 'as f—k' and is used to clarify things. You can also use it as the word 'very' or 'really'. Mostly used online or in text messages."@en;
+    skos:example "Wow! That's cool af."@en.
+
+isv:fw
+    a isv:SlangTerm;
+    skos:definition "F—k with"@en;
+    skos:example "I don't fw that person anymore."@en.
+
+isv:Chill
+    a isv:SlangTerm;
+    skos:definition "Relax, hang out"@en;
+    skos:example "Wow that dude is pretty chill"@en.
+
+isv:ts
+    a isv:SlangTerm;
+    skos:definition "This s—t"@en;
+    skos:example """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en.
+
+isv:ur
+    a isv:SlangTerm;
+    skos:definition "You are and the illiterate derivative forms from the word you"@en;
+    skos:example "ur an illiterate redneck"@en.
+
+isv:rn
+    a isv:SlangTerm;
+    skos:definition "Right now"@en;
+    skos:example "Engineer: we are gonna have the generator fixed RN"@en.
+
+isv:fr
+    a isv:SlangTerm;
+    skos:definition "For real"@en;
+    skos:example "I am serious fr."@en.
+
+isv:tf
+    a isv:SlangTerm;
+    skos:definition "The f—k"@en;
+    skos:example "tf just happened?"@en.
+
+isv:Cooked
+    a isv:SlangTerm;
+    skos:definition """In slang, "cooked" means someone is exhausted, overwhelmed, in serious trouble, or under the influence of substances (high), essentially being "burnt out" or in a hopeless situation, with usage varying from physical fatigue ("I'm cooked after that workout") to being mentally drained or facing unavoidable consequences ("We're cooked if we miss this deadline")."""@en;
+    skos:example "If I miss the deadline for this project, I will be fundamentally cooked."@en.
+
+isv:pfp
+    a isv:SlangTerm;
+    skos:definition "Profile Picture"@en;
+    skos:example "Oh woah there, nice pfp"@en.
+
+isv:Zaddy
+    a isv:SlangTerm;
+    skos:definition """The slang term for a really "handsome" guy who is very appealing and looks really fashionable."""@en;
+    skos:example "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en.
+
+isv:Goated
+    a isv:SlangTerm;
+    skos:definition "an event or characteristic of someone  when something awesome or unbelievable is occurring or when someone does something shocking (good) or amazing"@en;
+    skos:example "Monkae you are so fun, you're literally goated."@en.
+
+isv:Pookie
+    a isv:SlangTerm;
+    skos:definition "A term used for someone you go with or are married to."@en;
+    skos:example "I can't wait to see my pookie patootie tonight."@en.
+
+isv:Twin
+    a isv:SlangTerm;
+    skos:definition "A very good friend with similar interests or characteristics."@en;
+    skos:example "What up twin, you down for tonight?"@en.
+
+isv:Honse
+    a isv:SlangTerm;
+    skos:definition "Big chonky fat horse"@en;
+    skos:example """ "hey mum, do you see that honse!?" """@en.
+
+isv:Car
+    a isv:SlangTerm;
+    skos:definition "Mishap when typing cat. They slide and accelerate the same, however."@en;
+    skos:example "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en.
+
+isv:Type_beat
+    a isv:SlangTerm;
+    skos:definition "Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)"@en;
+    skos:example "Hey Aaron, you're on a James type Beat"@en.
+
+isv:Scrumpt
+    a isv:SlangTerm;
+    skos:definition "another word for scream or screamed"@en;
+    skos:example "my mom scrumpt for help."@en.
+
+isv:Offed
+    a isv:SlangTerm;
+    skos:definition "to offed someone is to have killed him."@en;
+    skos:example "Yo, Dre offed Craig last week."@en.
+
+isv:tbr
+    a isv:SlangTerm;
+    skos:definition "to be real"@en;
+    skos:example "TBR- You're very annoying!"@en.
+
+isv:atp
+    a isv:SlangTerm;
+    skos:definition "At this point"@en;
+    skos:example "I might as well find something better atp."@en.
+
+isv:GTA
+    a isv:SlangTerm;
+    skos:definition "Grand Theft Auto video games series. We Got ______ Before GTA 6 defines a generation of waiting."@en;
+    skos:example "Crazy, we got Squid Game before GTA 6."@en.
+
+isv:gd
+    a isv:SlangTerm;
+    skos:definition "gd shortened way of saying good or god damn"@en;
+    skos:example "jonny:hey gorl how r u? michelle:kinda gd and ya? jonny:im gd"@en.
+
+isv:ikr
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "2004"^^xsd:gYear;
+    skos:definition """another term for: "I know, right?" """@en;
+    skos:example "omg ikr!"@en.
+
+isv:Vibe
+    a isv:SlangTerm;
+    foaf:maker dbr:Instagram;
+    dcterms:created "2010"^^xsd:gYear;
+    skos:definition "To chill , be at peace, & let life do it's thing."@en;
+    skos:example "I just vibe on the beat"@en.
+
+isv:smh
+    a isv:SlangTerm;
+    foaf:maker dbr:AOL;
+    dcterms:created "2022"^^xsd:gYear;
+    skos:definition "Shaking my head"@en;
+    skos:example "You don't know what smh means? smh"@en.
+
+isv:yt
+    a isv:SlangTerm;
+    foaf:maker dbr:YouTube;
+    dcterms:created "2005"^^xsd:gYear;
+    skos:definition "YouTube"@en;
+    skos:example "Im watching yt right now."@en.
+
+isv:Poser
+    a isv:SlangTerm;
+    foaf:maker dbr:Punk_rock;
+    dcterms:created "1980"^^xsd:gYear;
+    skos:definition "To pose: To pretend, to be somebody you're not, to be part of a culture or genre just to fit in."@en;
+    skos:example "Oh my God, you conform to everything you're being told to do when you don't think that's what you do! What a poser!"@en.
+
+isv:Gatekeeper
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2022"^^xsd:gYear;
+    skos:definition "Someone who has the mindset that 'if you're not a fan/part of this (famous figure, a trend), you absolutely cannot join. Someone who always make things more complicated, always adds a controversy or an issue to a certain trend."@en;
+    skos:example "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en.
+
+isv:Based
+    a isv:SlangTerm;
+    foaf:maker dbr:4chan;
+    dcterms:created "2010"^^xsd:gYear;
+    skos:definition "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think. Especially common in online political slang.The opposite of cringe, some times the opposite of biased."@en;
+    skos:example "the 8 ball jacket slap is still the most based thing on the internet"@en.
+
+isv:mb
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "1992"^^xsd:gYear;
+    skos:definition "My bad"@en;
+    skos:example "Oh ok mb"@en.
+
+isv:Rule_34
+    a isv:SlangTerm;
+    foaf:maker dbr:4chan;
+    dcterms:created "2003"^^xsd:gYear;
+    skos:definition "If it exists, there is p**n of it. If there isn't, there will be."@en;
+    skos:example "Why don’t you Google rule 34?"@en.
+
+isv:Ragebait
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2016"^^xsd:gYear;
+    skos:definition "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements in posts, comments, messages, or videos to trigger emotional, often hostile reactions from others."@en;
+    skos:example "Don’t feed the ragebait in the comments; they just want you to get angry."@en.
+
+isv:Sixty_Seven
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2025"^^xsd:gYear;
+    skos:prefLabel "6-7"@en;
+    skos:definition "A pose to describe uncertainty like so-so, maybe, something like that, etc."@en;
+    skos:example "I didn’t understand it either i told my friend to meet me at 6 or 7 and he yelled as he was biking away SIX SEVEN and i was confused"@en.
+
+isv:Sixty_Nine
+    a isv:SlangTerm;
+    foaf:maker dbr:France;
+    dcterms:created "1790"^^xsd:gYear;
+    skos:prefLabel "69"@en;
+    skos:definition "The number that falls between 68 and 70. Often used in internet humor to denote a recursive or symmetrical relationship. Other meaning has absolutely no relation with anything s3xu4l in any way."@en;
+    skos:example "69% of people find something dirty in every sentence."@en.
+
+isv:Four_Twenty
+    a isv:SlangTerm;
+    foaf:maker <http://dbpedia.org/resource/San_Rafael,_California>;
+    dcterms:created "1971"^^xsd:gYear;
+    skos:prefLabel "420"@en;
+    skos:definition "420, 4:20 or 4/20 (pronounced four-twenty) is cannabis culture slang for cannabis consumption, especially smoking around the time 4:20 p.m. (16:20). It also refers to cannabis-oriented celebrations that take place annually on April 20 (4/20 in U.S. date form)."@en;
+    skos:example "Let's go out on 420 at 420 for some 420ing!!!"@en.
+
+isv:Rule_621
+    a isv:SlangTerm;
+    foaf:maker dbr:Furry_fandom;
+     dcterms:created "2009"^^xsd:gYear;
+    skos:definition "A convention guideline: 6 hours sleep, 2 meals, 1 shower daily."@en;
+    skos:example """ 1: "Oh man, I'm so tired..." 2: "Well, did you stick to the Rule 621?" """@en.
+
+isv:Twenty_One
+    a isv:SlangTerm;
+    foaf:maker <http://dbpedia.org/resource/Vine_(service)>;
+    dcterms:created "2014"^^xsd:gYear;
+    skos:prefLabel "21"@en;
+    skos:definition """A number from the vine “what 9 + 10 equals”."""@en;
+    skos:example """ "You stupid!" "No I not!" "What's 9+10?" "21" "You stupid!" """@en.
+
+isv:Nine_One_One
+    a isv:SlangTerm;
+    skos:prefLabel "911"@en;
+    foaf:maker dbr:United_States;
+    dcterms:created "1968"^^xsd:gYear;
+    skos:definition "Good Lord. Lets finalize this. 911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America."@en;
+    skos:example "911, what's your emergency?"@en.
+
+isv:Cap
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2017"^^xsd:gYear;
+    skos:definition "The word lying but built different"@en;
+    skos:example "Yo that’s cap i didn’t do it!"@en.
+
+isv:rly
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "2004"^^xsd:gYear;
+    skos:definition "(adjective) really, extremely, very"@en;
+    skos:example "I am rly bored."@en.
+
+isv:Slash_S
+    a isv:SlangTerm;
+    foaf:maker dbr:Reddit;
+    dcterms:created "2015"^^xsd:gYear;
+    skos:prefLabel "/s"@en;
+    skos:definition "Sarcasm."@en;
+    skos:example "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en.
+
+isv:Gymmaxing
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "A state when someone goes to gym way to often."@en;
+    skos:example "Hey, William, why  are gymmaxing? For a condition or do you want to date someone?"@en.
+
+isv:DYEL
+    a isv:SlangTerm;
+    foaf:maker dbr:Bodybuilding;
+    dcterms:created "2010"^^xsd:gYear;
+    skos:definition "DYEL stands for Do You Even Lift. It's for someone that at first sight doesn't look like the type of person that goes to the gym or lifts weights. It's mostly applied for people that workout but still see no result."@en;
+    skos:example "That guy looks huge, but dyel? He's totally DYEL!"@en.
+
+isv:op
+    a isv:SlangTerm;
+    foaf:maker dbr:Gamer;
+    dcterms:created "1990"^^xsd:gYear;
+    skos:definition "Op stands for overpowered."@en;
+    skos:example "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en.
+
+isv:Frogposter
+    a isv:SlangTerm;
+    foaf:maker dbr:4chan;
+    dcterms:created "2015"^^xsd:gYear;
+    skos:definition "The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit."@en;
+    skos:example "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en.
+
+isv:AI_slop
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2025"^^xsd:gYear;
+    skos:definition "Low-quality randomly generated AI content (images, accounts, text, etc) that has been flooding social media sites among other pages"@en;
+    skos:example "I am fed up wit the AI slop on Facebook and Instagram. It’s draining my nerves!"@en.
+
+isv:R_Slash
+    a isv:SlangTerm;
+    foaf:maker dbr:Reddit;
+    dcterms:created "2005"^^xsd:gYear;
+    skos:prefLabel "r/"@en;
+    skos:definition "The beginning sign of a subreddit name. Annoying when used outside of Reddit."@en;
+    skos:example "I saw a video where a guy made a laptop in a pizza corton box on r/DiWHY"@en.
+
+isv:omegalul
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2016"^^xsd:gYear;
+    skos:definition "A word that you say on text or online when something is so funny you cant just say lol."@en;
+    skos:example """something funny happens: "That's a #omegalul right there" """@en.
+
+isv:monkaS
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2017"^^xsd:gYear;
+    skos:definition "A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation."@en;
+    skos:example "OMG what a play, that was some MonkaS stuff right there"@en.
+
+isv:Sadge
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2019"^^xsd:gYear;
+    skos:definition "A Twitch emote that means sadness or depression"@en;
+    skos:example "I've been on a losing streak all day, sadge…"@en.
+
+isv:Sus
+    a isv:SlangTerm;
+    foaf:maker dbr:Among_Us;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition """A shorter version of the word "suspect". Usually used to define someone or something that looks suspicious or untrustworthy"""@en;
+    skos:example "that's kinda sus bro"@en.
+
+isv:Amogus
+    a isv:SlangTerm;
+    foaf:maker dbr:Among_Us;
+    dcterms:created "2021"^^xsd:gYear;
+    skos:definition """a disease spread by the video game "Among Us" it causes sufferers to see Among Us characters everywhere they go, the pain becomes unbearable, it follows them everywhere, you can't hide, you can't fight, you are powerless."""@en;
+    skos:example "That weirdly shaped red stain on the floor looks like an amogus, very sus"@en.
+
+isv:Impostor
+    a isv:SlangTerm;
+    foaf:maker dbr:Among_Us;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "Someone who pretends to be someone else, usually in a serious setting, where the impostor is doing some sort of damage"@en;
+    skos:example "That surgeon who did Jane's tonsilectomy? Turns out, he was an impostor. He had a real job as an orderly in the hospital"@en.
+
+isv:Copium
+    a isv:SlangTerm;
+    foaf:maker dbr:4chan;
+    dcterms:created "2019"^^xsd:gYear;
+    skos:definition "Lying to yourself in order to cope with something"@en;
+    skos:example "I felt better after I saw the failing grade on my chemistry final than when I didn't know what it would be. Must've been a rush of copium"@en.
+
+isv:pls
+    a isv:SlangTerm;
+    foaf:maker dbr:SMS;
+    dcterms:created "2004"^^xsd:gYear;
+    skos:definition "Please"@en;
+    skos:example "Donald Trump is a good president? Oh pls."@en.
+
+isv:selfie
+    a isv:SlangTerm;
+    foaf:maker dbr:Karl_Kruszelnicki;
+    dcterms:created "2002"^^xsd:gYear;
+    skos:definition "When you take a photo of yourself. Also a popular song by The Chainsmokers."@en;
+    skos:example "But first, let me take a selfie"@en.
+
+isv:Gigachad
+    a isv:SlangTerm;
+    foaf:maker dbr:Bodybuilding;
+    dcterms:created "2017"^^xsd:gYear;
+    skos:definition "The man himself. The alpha male that dominates all weaklings."@en;
+    skos:example "Man, that guy Allen is such a gigachad. He has the money, the fame and everything."@en.
+
+isv:sigma
+    a isv:SlangTerm;
+    foaf:maker dbr:Vox_Day;
+    dcterms:created "2010"^^xsd:gYear;
+    skos:definition "Sigma is an Internet slang term, especially among young men, referring to a man whose self-assured, dogged individualism is considered a model of status, success, and attractiveness. It can also mean “extremely good,” and is also widely used as a nonsense term and meme online."@en;
+    skos:example "That sigma mindset is about leading, not following."@en.
+
+isv:UwU
+    a isv:SlangTerm;
+    foaf:maker dbr:Anime_and_manga_fandom;
+    dcterms:created "2005"^^xsd:gYear;
+    skos:definition "UwU or uwu is another way of typing the smiley face :3, TwT or twt. it means happy, like an anime character's face when they're overjoyed."@en;
+    skos:example "Thanks for the compliment, you're too kind UwU"@en.
+
+isv:OwO
+    a isv:SlangTerm;
+    foaf:maker dbr:Furry_fandom; 
+    dcterms:created "2003"^^xsd:gYear;
+    skos:definition "A face furries use, Or a way to make a face you can use for your art example the O’s are like eyes and the w is to make it cute like -w-, Looks like a cat."@en;
+    skos:example "OwO what's this?"@en.
+
+isv:Colon_Three
+    a isv:SlangTerm;
+    skos:prefLabel ":3"@en;
+    foaf:maker dbr:Anime_and_manga_fandom;
+    dcterms:created "1990"^^xsd:gYear;   
+    skos:definition """A texting face typically used in conjunction with something cute. Known as the "Cat face" or simply, "The Cute Face"."""@en;
+    skos:example "Your kitten is soo cute! :3"@en.
+
+isv:bnuy
+    a isv:SlangTerm;
+    foaf:maker dbr:Tumblr; 
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition """ "Bnuy" is a playful, cute alternative way of saying "bunny" (a rabbit) pronounced "buh-noo-i" """@en;
+    skos:example "I saw a bnuy outside in my garden yesterday and it was so cute!"@en.
+
+isv:birb
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2012"^^xsd:gYear;
+    skos:definition "a cute, tiny, fluffy bird"@en;
+    skos:example "Henlo Birb, you want some seed?"@en.
+
+isv:yeet
+    a isv:SlangTerm;
+    foaf:maker <http://dbpedia.org/resource/Vine_(service)>;
+    dcterms:created "2014"^^xsd:gYear;
+    skos:definition "A word one may scream while propelling an object through the air at alarming speeds, heights, and etc."@en;
+    skos:example "Just yeet it in the trash, silly!"@en.
+
+isv:Jet2Holiday
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2024"^^xsd:gYear;
+    skos:definition """The "Jet2holiday meme" is a viral TikTok trend using an audio clip from a Jet2holidays advertising campaign featuring Jess Glynne's song "Hold My Hand" and voice actress Zoë Lister saying, "Nothing beats a Jet2 holiday," used for everything from travel fails to celebrating perfect trips, showcasing funny travel mishaps or ideal vacation moments in contrast to the ad's ideal."""@en;
+    skos:example "Nothing beats a Jet2holiday! and right now you can save £50 per person. that's £200 off for a family of 4"@en.
+
+isv:Grubhub
+    a isv:SlangTerm;
+    foaf:maker dbr:Grubhub;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "Symbol of lazyness. A food delivery service with an obnoxious advertisement catering to a long dead audience. Grubhub perks give you deals on the food you love, the kind of deals that make you boogie."@en;
+    skos:example """Me: I'm hungry but lazy Friend: Order food from the place across the street on GrubHub"""@en.
+
+isv:Bing_chilling
+    a isv:SlangTerm;
+    foaf:maker dbr:John_Cena;
+    dcterms:created "2021"^^xsd:gYear;
+    skos:definition """Chinese word for "ice cream". Written as: 冰淇淋 (Bīngqílín) This phrase was popularized among internet users, when John Cena, a professional wrestler,and actor spoke Chinese to promote his upcoming movie among Chinese people."""@en;
+    skos:example """Zǎo ān, zhōngguó. Xiànzài wǒ yǒu bīngqílín (bing chilling). Wǒ fēicháng xǐhuān bīngqílín, dànshì “sùdù yǔ jīqíng 9” bǐ bīngqílín hǎo"""@en.
+
+isv:Clanker
+    a isv:SlangTerm;
+    foaf:maker dbr:Star_Wars;
+    dcterms:created "2008"^^xsd:gYear;
+    skos:definition "A slur for robotic individuals. Also used to insult AI Agents."@en;
+    skos:example "That clanker right there is so annoying."@en.
+
+isv:W_L
+    a isv:SlangTerm;
+    skos:prefLabel "W/L"@en;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2017"^^xsd:gYear;
+    skos:definition """Used in sports or games to tally scores, or to ask "Win or Lose? """@en;
+    skos:example """ "Just secured the bag, that's a huge W!" or "They dropped the ball, definitely an L for them" """@en.
+
+isv:FL
+    a isv:SlangTerm;
+    foaf:maker dbr:Gaming;
+    dcterms:created "1995"^^xsd:gYear;
+    skos:definition "Flaming (in games); toxic behavior; being mean in chat"@en;
+    skos:example "That player got so mad they started FL-ing everyone in the lobby"@en.
+
+isv:Mid
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition """Short for middle, Mid is generally a synonymous term with mediocre, in some instances replacing the word “meh.”"""@en;
+    skos:example "We waited on that album for 6 months but it was mid!"@en.
+
+isv:Peak
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2018"^^xsd:gYear;
+    skos:definition "A word describing something that’s too good. You’d use this word to describe how good something was. At the peak of the moment."@en;
+    skos:example "The Pickle Rick episode of Rick and Morty is peak comedy!"@en.
+
+isv:Flop
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2019"^^xsd:gYear;
+    skos:definition "Something that fails miserably"@en;
+    skos:example "The new restaurant was a total flop, closing after a month"@en.
+
+isv:Mog
+    a isv:SlangTerm;
+    foaf:maker dbr:Bodybuilding;
+    dcterms:created "2016"^^xsd:gYear;
+    skos:definition "Verb; To assert ones dominance."@en;
+    skos:example "I totally mog you dude. Your jawline’s pathetic."@en.
+
+isv:Soft_launch
+    a isv:SlangTerm;
+    foaf:maker dbr:Instagram;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "A photo preview of a talking stage before it becomes an official relationship on social media"@en;
+    skos:example """Kayla: Oh are you guys official now? Hannah: No, we're doing a soft launch of our relationship incase it doesn't work out Kayla: Good idea!"""@en.
+
+isv:Stand
+    a isv:SlangTerm;
+    foaf:maker dbr:Anime_and_manga_fandom;
+    dcterms:created "2012"^^xsd:gYear;
+    skos:definition "A person completely and utterly obsessed with Jojo's Bizarre Adventure (or other anime) to the point of thirsty over the characters and creator."@en;
+    skos:example "That guy is a total Jojo's Bizarre Adventure STAND, he has a Jotaro pin-up."@en.
+
+isv:Simp
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2019"^^xsd:gYear;
+    skos:definition """simp is a word used to call out usually a male for "simping" on a woman. The word simp means that the man is willing to do anything for the woman in exchange for their love and affection. This word is commonly miss-used so please use this word with the upmost of precaution."""@en;
+    skos:example "i’m so lonely, i really want someone to simp"@en.
+
+isv:Delulu
+    a isv:SlangTerm;
+    foaf:maker dbr:K-pop;
+    dcterms:created "2014"^^xsd:gYear;
+    skos:definition "Delulu is Short for delusional"@en;
+    skos:example "I can't believe fandom X thinks their ship is canon, they're so delulu LOL"@en.
+
+isv:Ratio
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "When someone reply to someone and get more likes on the reply than the original post or comment"@en;
+    skos:example "Damn... you just got ratiod…"@en.
+
+isv:Main_Character_Energy
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2020"^^xsd:gYear;
+    skos:definition "A person that unintentionally lives, breathes, and is like the protagonist in a story or series."@en;
+    skos:example "wow, that's some main character energy, you are the main character in an anime"@en.
+
+isv:Fanum_Tax
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitch;
+    dcterms:created "2022"^^xsd:gYear;
+    skos:definition "'Fanum Tax' is a tax system created by a streamer called 'Fanum' who collects food tax whenever someone brings food to a house. He is also considered to be the fattest in a group"@en;
+    skos:example "Lets eat out cause the Fanum Tax is crazy"@en.
+
+isv:Gyatt
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2022"^^xsd:gYear;
+    skos:definition """A synonym for the word god. It is an interjection for when saying the phrase "gyatt damn" with it meaning "god damn"."""@en;
+    skos:example """She walked in wearing that dress, and I thought, 'Gyatt, she looks good!' """@en.
+
+isv:Mewing
+    a isv:SlangTerm;
+    foaf:maker dbr:TikTok;
+    dcterms:created "2018"^^xsd:gYear;
+    skos:definition """Mewing is a facial posture trend where you rest your tongue on the roof of your mouth, aiming to define the jawline, named after orthodontist John Mew, though it lacks scientific proof and is popular online for cosmetic "looksmaxxing"."""@en;
+    skos:example "Chad has some nice jaw now. He's been mewing for 6 months now"@en.
+
+isv:Brainrot
+    a isv:SlangTerm;
+    foaf:maker dbr:Twitter;
+    dcterms:created "2007"^^xsd:gYear;
+    skos:definition "In Internet culture, the term brain rot (also written as brainrot) describes digital media deemed to be of low quality or value. The term also more broadly refers to the harmful effects associated with excessive or disordered use of digital media, especially short-form entertainment and doomscrolling. Popularized by Generation Z and Generation Alpha social media users, the term has since entered mainstream usage."@en;
+    skos:example """Guy 1: GRRWOOF BARKBARKABRKBAKF ARFARFARF Guy 2: whoa, it seems like he's brainrotting."""@en.
