@@ -1,17 +1,17 @@
-@prefix isv:    <https://github.com/ejurasek00/isv/#>.
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix owl:     <http://www.w3.org/2002/07/owl#>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#>.
+@prefix isv:     <https://github.com/ejurasek00/isv/#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 
 <https://github.com/ejurasek00/isv> 
-    a owl:Ontology;
-    dcterms:title "Internet Slang Vocabulary"@en;
-    dcterms:description "A vocabulary describing internet slang terms, their origins, and usage context."@en;
-    dcterms:creator "Eduard Jurášek"@cs.
+    a owl:Ontology ;
+    dcterms:title "Internet Slang Vocabulary"@en ;
+    dcterms:description "A vocabulary describing internet slang terms, their origins, and usage context."@en ;
+    dcterms:creator "Eduard Jurášek"@cs .
 
 isv:SlangTerm 
-    a rdfs:Class;
-    rdfs:subClassOf skos:Concept;
-    rdfs:label "Internet Slang Term"@en.
+    a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Internet Slang Term"@en .
