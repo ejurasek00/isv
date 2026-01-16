@@ -14,6 +14,11 @@ is planned not only as a “word” – “meaning” principle, but include:
 Over 120 words are covered in .ttl
 
 The Definition and the Example in Sentence were used from https://www.urbandictionary.com/. Some parts were edited or censored.
+
+The project was inspired by a masters thesis of a friend of mine. Thank you so much, Jakub!
+
+Riecky, J. (2025). Internet vernacular - a study of neologisms in online discourse of cybercultures [Masters Thehis, Univerzita sv. Cyrila a Metoda v Trnave FF UCM KAA]. Centrálny register záverečných a kvalifikačných prác OPAC CRZP. https://opac.crzp.sk/?fn=detailBiblioFormChildM8GSN&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha 
+
 For finding the creation dates and goups of origin, GPT-5 in a Deep Research mode was used for some parts I struggled to find manually.
 
 This project aims to make a Urban Dictionary - like database represented as a graph, but with additional perks mentioned above.
