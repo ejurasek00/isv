@@ -44,6 +44,7 @@ The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux.
 
 I named this ontology as ISV - Internet Slang Vocabulary.
 
+@prefix isv:    <https://github.com/ejurasek00/isv/#> . (Custom) – Used to define the specific class isv:SlangTerm and project metadata. Subclass of skos:Concept
 
 ---
 Having any questions or suggestions on how to make this project better, do not hesitate
