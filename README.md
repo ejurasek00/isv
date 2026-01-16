@@ -53,7 +53,7 @@ to contact me via E-mail jure01@vse.cz
 # Queries
 
 Find Concepts that were made during Covid-19 Pandemic
-
+`
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -66,11 +66,11 @@ WHERE {
 FILTER (?created > "2018"^^xsd:gYear)
 FILTER (?created < "2023"^^xsd:gYear)
 }
-
+`
 ---
 Order Makers descending by the amount of Concepts
 
-
+`
 PREFIX isv: <https://github.com/ejurasek00/isv/#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -83,3 +83,4 @@ WHERE {
 }
 GROUP BY ?maker
 ORDER BY DESC(?amount)
+`
