@@ -1,5 +1,7 @@
 # Eduard Jurášek - Internet slang vocabulary (topic 5)
 
+[https://github.com/ejurasek00/isv](https://github.com/ejurasek00/isv)
+
 The proposed seminar project aims to implement graph database of the contemporary
 Internet slang vocabulary represented in RDF. By internet slang, I refer words, phrases or
 acronyms frequently used online and/or in casual speech as well.
