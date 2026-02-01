@@ -25,6 +25,7 @@ Some terms and definitions used in the ontology are obtained from external sourc
 ---
 # Words
 Around 120 words are covered in .ttl
+
 Bait, Troll, b4, 2day, brb, OMG, cmng, idc, LOL, Only in Ohio, Floptropica, Wakanda, Covfefe, Rizz, Bussin, Cheugy, Tea, Blaccent, Finsta, Slaycation, Skibidi, AMA, HP, gg, glhf, DPS, opp, Karen, NPC, poggers, u, ngl, af, fw, ts, ur, rn, fr, tf, Cooked, pfp, Zaddy, Goated, Pookie, Twin, Honse, Car, Type beat, Scrumpt, Offed, tbr, atp, GTA, gd, ikr, Vibe, smh, yt, Poser, Gatekeeper, Based, mb, Rule 34, Ragebait, 6-7, 69, 420, Rule 621, 21, 911, cap, rly, /s, Gymmaxing, DYEL, op, Frogposter, AI slop, r/, omegalul, monkaS, Sadge, Sus, Amogus, Impostor, Copium, pls, Selfie, Gigachad, Sigma, UwU, OwO, :3, bnuy, Birb, Yeet, Jet2Holiday, Grubhub, Bing chilling, Clanker, W/L, FL, Mid, Peak, Flop, Mog, Soft launch, Stand, Simp, Delulu, Ratio, Main Character Energy, Fanum Tax, Gyatt, Mewing, Brainrot
 
 The Definition and the Example in Sentence were used from https://www.urbandictionary.com/ , https://knowyourmeme.com/ , https://en.wiktionary.org/, https://www.dictionary.com/culture/slang/ and others. Some parts were edited or censored.
