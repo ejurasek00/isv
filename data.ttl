@@ -1,57 +1,61 @@
-@prefix isv:    <https://github.com/ejurasek00/isv/#>.
-@prefix skos:   <http://www.w3.org/2004/02/skos/core#>.
-@prefix foaf:   <http://xmlns.com/foaf/0.1/>.
-@prefix dcterms:<http://purl.org/dc/terms/>.
-@prefix dbr:    <http://dbpedia.org/resource/>.
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#>.
-
+@prefix isv:     <https://github.com/ejurasek00/isv/#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dbr:     <http://dbpedia.org/resource/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix kym:     <https://knowyourmeme.com/memes/sites/>.
+@prefix wtnr:    <https://en.wiktionary.org/wiki/>.
+@prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>.
+@prefix ud:      <https://www.urbandictionary.com/define.php?term=>.
+@prefix dic:     <https://www.dictionary.com/culture/slang/>.
 
 isv:Bait   
     a isv:SlangTerm;
-    foaf:maker dbr:4chan;
-    dcterms:created "2014"^^xsd:gYear;
-    skos:definition "Internet talk for lies or insults that are intended to annoy people"@en;
-    skos:example "Great bait, mate"@en;
-    dcterms:medium dbr:Reddit, dbr:Twitter.
+    foaf:maker [dcterms:Service dbr:Usenet; dcterms:source kym:bait-this-is-bait];
+    dcterms:created [rdf:value "1995"^^xsd:gYear; dcterms:source kym:bait-this-is-bait];
+    skos:definition [rdf:value "Internet talk for lies or insults that are intended to annoy people"@en; dcterms:source ud:bait];
+    skos:example [rdf:value "Great bait, mate"@en; dcterms:source ud:bait];
+    dcterms:medium 
+    [a dbr:4chan; dcterms:source kym:bait-this-is-bait],
+    [a dbr:DeviantArt; dcterms:source kym:bait-this-is-bait].
 
 isv:Troll
     a isv:SlangTerm;
-    dcterms:created "1995"^^xsd:gYear;
-	skos:definition "One who posts a deliberately provocative message to a newsgroup or message board with the intention of causing maximum disruption and argument"@en;	
-    skos:example "The internet troll left nasty comments to get a rise out of people"@en;
-    dcterms:medium dbr:Reddit.
+    foaf:maker [dcterms:Service dbr:Usenet; dcterms:source kym:trolling-troll];
+    dcterms:created [rdf:value "1995"^^xsd:gYear; dcterms:source kym:trolling-troll];
+    skos:definition [rdf:value "One who posts a deliberately provocative message to a newsgroup or message board with the intention of causing maximum disruption and argument"@en; dcterms:source ud:troll];
+    skos:example [rdf:value "guy 1: yo did you see that crazy 13andincrediblycut/andy harglesis guy spamming on weight lifting vids again? hes everywhere! guy 2: yeah but hes a sad loser ... a troll ... thats what andy harglesis is"@en; dcterms:source ud:troll];
+    dcterms:medium
+    [a dbr:4chan; dcterms:source kym:trolling-troll],
+    [a dbr:DeviantArt; dcterms:source kym:trolling-troll].
 
-isv:b4	
+isv:b4
     a isv:SlangTerm; 
     foaf:maker dbr:SMS;
     dcterms:created "1995"^^xsd:gYear;
-    skos:definition "Before"@en;	
+    skos:definition "Before"@en;
     skos:example "U bin there b4, bro?"@en;
     dcterms:medium dbr:SMS.
 
-isv:2day	
+isv:2day
     a isv:SlangTerm;
     foaf:maker dbr:SMS;
     dcterms:created "1995"^^xsd:gYear;
-    skos:definition "Today"@en	; 
+    skos:definition "Today"@en; 
     skos:example "I need that info 2day, seriously."@en;
     dcterms:medium dbr:SMS.
 
-isv:brb	
+isv:brb
     a isv:SlangTerm;
     foaf:maker dbr:Instant_messaging;
     dcterms:created "1996"^^xsd:gYear;
-	skos:definition "Be right back"@en;
-    skos:example
-"""Vinny: brb
-Ryan: ooooooookee
--2 Minutes later-
-Vinny: back, as you were saying?
-Ryan: YAY!
-"""@en;
+    skos:definition "Be right back"@en;
+    skos:example """Vinny: brb\nRyan: ooooooookee\n-2 Minutes later-\nVinny: back, as you were saying?\nRyan: YAY!"""@en;
     dcterms:medium dbr:AOL_Instant_Messenger.
 
-isv:OMG	
+isv:OMG
     a isv:SlangTerm;
     foaf:maker dbr:Internet_forums;
     dcterms:created "1990"^^xsd:gYear;
@@ -59,15 +63,15 @@ isv:OMG
     skos:example "OMG, I left the kitchen on fire!"@en;
     dcterms:medium dbr:Online_chat.
 
-isv:cmng	
+isv:cmng
     a isv:SlangTerm;
     foaf:maker dbr:SMS;
     dcterms:created "1998"^^xsd:gYear;
-    skos:definition "Coming"@en	;
+    skos:definition "Coming"@en;
     skos:example "cmng later?"@en;
     dcterms:medium dbr:SMS.
 
-isv:idc	
+isv:idc
     a isv:SlangTerm;
     foaf:maker dbr:Instant_messaging;
     dcterms:created "2000"^^xsd:gYear;
@@ -75,87 +79,102 @@ isv:idc
     skos:example "idc for it"@en;
     dcterms:medium dbr:Text_messaging.
 
-isv:LOL	
+isv:LOL
     a isv:SlangTerm;
     foaf:maker dbr:Usenet;
     dcterms:created "1989"^^xsd:gYear;
-    skos:definition "Stands for Laugh Out Loud. Or League of Legends."@en;	
-    skos:example
-"""Person A: "I just realized my shirt is on backward."
- Person B: "lol"
-"""@en;
-dcterms:medium dbr:Online_chat.
+    skos:definition "Stands for Laugh Out Loud. Or League of Legends."@en;
+    skos:example """Person A: "I just realized my shirt is on backward."\n Person B: "lol" """@en;
+    dcterms:medium dbr:Online_chat.
 
 isv:Only_in_Ohio
-	a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2022"^^xsd:gYear;
-    skos:definition "A tiktok trend were people post weird things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en;
-    skos:example "Only in Ohio would there be a cat like that"@en.
+    a isv:SlangTerm;
+    foaf:maker [dcterms:Service dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
+    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
+    skos:definition [rdf:value "A tiktok trend were people post weird things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
+    skos:example [rdf:value "Only in Ohio would there be a cat like that"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
+    dcterms:medium [a dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio].
 
 isv:Floptropica 
-    a isv:SlangTerm;	
-    skos:definition "A fictional island nation and internet meme state inhabited by 'Flops' (fans of various pop icons, often utilizing 'cupcakKe' remixes and specific aesthetic edits). It serves as a digital safe haven and satirical utopia for marginalized communities and fandoms, often portrayed in opposition to 'DaBoys' or 'Preppy' digital aesthetics."@en;
-    skos:example "I can’t wait to go to Floptropica and meet queen Jiafei!"@en;
-    dcterms:medium dbr:TikTok, dbr:Instagram, dbr:YouTube.
+    a isv:SlangTerm;
+    foaf:maker [dcterms:Service dbr:TikTok; dcterms:source kym:floptok-floptropica];
+    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:floptok-floptropica];	
+    skos:definition [rdf:value "A fictional island made by TikTok users based on the internet meme Floptok. The Island's appearance is based off Guafo Island. The President of Floptropica is Deborah Ali Williams, whilst the Queen is Jiafei, having come to power after the Badussy War."@en; dcterms:source <https://en.wikipedia.org/wiki/List_of_fictional_islands#F>];
+    skos:example [rdf:value "I can’t wait to go to Floptropica and meet queen Jiafei!"@en; dcterms:source ud:floptropica];
+    dcterms:medium 
+    [a dbr:TikTok; dcterms:source kym:floptok-floptropica],
+    [a dbr:Instagram; dcterms:source <https://floptropica.com/>].
 
 isv:Wakanda
     a isv:SlangTerm;
-    skos:definition "A fictional western African country from marvels comic books and movies"@en;
-    skos:example "Black panther is based on the kingdom of a Wakandan king"@en.
+    foaf:maker [foaf:Person dbr:Stan_Lee; dcterms:source wtnr:Wakanda], [foaf:Person dbr:Jack_Kirby; dcterms:source wtnr:Wakanda];
+    dcterms:created [rdf:value "1966"^^xsd:gYear; dcterms:source wtnr:Wakanda];
+    skos:definition [rdf:value "A fictional western African country from marvels comic books and movies"@en; dcterms:source ud:wakanda];
+    skos:example [rdf:value "Black panther is based on the kingdom of a Wakandan king"@en; dcterms:source ud:wakanda];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:wakanda-isnt-real],
+    [a dbr:Twitter; dcterms:source kym:wakanda-isnt-real].
 
 isv:Covfefe
-	a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2017"^^xsd:gYear;
-    skos:definition "How to make America great again"@en;
-    skos:example "Despite the constant negative press covfefe - Donald Trump"@en;
-    dcterms:medium dbr:Twitter.
-
-isv:Rizz	
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2021"^^xsd:gYear;
-    skos:definition "The act of having rizz is to have lots of charisma."@en;
-    skos:example "That boy Cornelius Fingerdoodle has some rizz."@en.
+    foaf:maker [foaf:Person dbr:Donald_Trump; dcterms:source wtnr:Covfefe];
+    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source wtnr:Covfefe];
+    skos:definition [rdf:value "Misspelling of the word coverage mistakenly tweeted by President Donald Trump in late May 2017. The tweet was left up for more than six hours before being deleted, leading to a slew of puns, jokes, and confusion, resulting in #covfefe becoming the #1 trending hashtag in the world and prompting coverage from multiple news outlets"@en; dcterms:source kym:covfefe];
+    skos:example [rdf:value "Despite the constant negative press covfefe - Donald Trump"@en; dcterms:source wtnr:Covfefe];
+    dcterms:medium [a dbr:Twitter ; dcterms:source wtnr:Covfefe].
+
+isv:Rizz
+    a isv:SlangTerm;
+    foaf:maker [dcterms:Service dbr:Twitch; dcterms:source kym:rizz-unspoken-rizz];
+    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source kym:rizz-unspoken-rizz];
+    skos:definition [rdf:value "The act of having rizz is to have lots of charisma."@en; dcterms:source ud:rizz];
+    skos:example [rdf:value "That boy Cornelius Fingerdoodle has some rizz."@en; dcterms:source ud:rizz];
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Bussin
     a isv:SlangTerm;
-    foaf:maker dbr:African-American_Vernacular_English;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "what you would say if something was really good."@en;
-    skos:example "tay- i didnt know yo mama could cook this good! jj- yea her food be bussin"@en.
+    foaf:maker [dcterms:Service dbr:Urban_Dictionary; dcterms:source kym:bussin];
+    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:bussin];
+    skos:definition [rdf:value "what you would say if something was really good."@en; dcterms:source ud:bussin];
+    skos:example [rdf:value "tay- i didnt know yo mama could cook this good! jj- yea her food be bussin"@en; dcterms:source ud:bussin];
+    dcterms:medium [a dbr:TikTok; dcterms:source kym:bussin].
 
 isv:Cheugy
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2021"^^xsd:gYear;
-	skos:definition "A catch all word to describe anything that is basic, uncool or untrendy. According to The New York Times, cheugy (pronounced chew-gee) can be used, broadly, to describe someone who is out of date or trying too hard."@en;
-    skos:example "I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, a jacket, sunglasses, and a floppy hat. She's so cheugy"@en.
+    foaf:maker [dcterms:Service dbr:Urban_Dictionary; dcterms:source kym:cheugy];
+    dcterms:created [rdf:value "2018"^^xsd:gYear; dcterms:source kym:cheugy];
+    skos:definition [rdf:value "A catch all word to describe anything that is basic, uncool or untrendy. According to The New York Times, cheugy (pronounced chew-gee) can be used, broadly, to describe someone who is out of date or trying too hard."@en; dcterms:source ud:Cheugy];
+    skos:example [rdf:value "I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, a jacket, sunglasses, and a floppy hat. She's so cheugy"@en; dcterms:source ud:Cheugy];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source kym:cheugy],
+    [a dbr:TikTok; dcterms:source kym:cheugy],
+    [a dbr:Twitter; dcterms:source kym:cheugy].
 
 isv:Tea
     a isv:SlangTerm;
-    foaf:maker dbr:African-American_Vernacular_English;
-    dcterms:created "2015"^^xsd:gYear;   
-    skos:definition "The best kind of gossip, typically shared between friends. It’s a bonding tool for people of all ages. tea is usually about someone you know, but can also extend to celebrities random internet scandals, etc."@en;
-    skos:example "I heard some tea about Saturday night!"@en;
-    dcterms:medium dbr:Twitter.
+    foaf:maker [rdf:value "William G. Hawkesood"; dcterms:source kym:tea];
+    dcterms:created [rdf:value "1991"^^xsd:gYear; dcterms:source kym:tea];
+    skos:definition [rdf:value "The best kind of gossip, typically shared between friends. It’s a bonding tool for people of all ages. tea is usually about someone you know, but can also extend to celebrities random internet scandals, etc."@en; dcterms:source ud:tea];
+    skos:example [rdf:value "I heard some tea about Saturday night!"@en; dcterms:source ud:tea];
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source <https://neonmusic.co.uk/decoding-spill-the-tea-the-evolution-usage-and-impact-of-a-popular-slang>],
+    [a dbr:YouTube; dcterms:source <https://neonmusic.co.uk/decoding-spill-the-tea-the-evolution-usage-and-impact-of-a-popular-slang>].
 
 isv:Blaccent
     a isv:SlangTerm;
-    foaf:maker dbr:African-American_English;
-    dcterms:created "1990"^^xsd:gYear;
-    skos:definition "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en;
-    skos:example "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en;
-    dcterms:medium dbr:Internet_discourse.
+    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source dic:blaccent];
+    skos:definition [rdf:value "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en; dcterms:source ud:blaccent];
+    skos:example [rdf:value "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en; dcterms:source ud:blaccent].
 
 isv:Finsta
     a isv:SlangTerm;
-    foaf:maker dbr:Instagram;
-    dcterms:created "2015"^^xsd:gYear;
-    skos:definition "A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust."@en;
-    skos:example "I need a new username for my finsta."@en;
-    dcterms:medium dbr:Instagram.
+    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source dic:finsta];
+    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source dic:finsta];
+    skos:definition [rdf:value "A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust."@en; dcterms:source ud:finsta];
+    skos:example [rdf:value "I need a new username for my finsta."@en; dcterms:source ud:finsta];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source dic:finsta],
+    [a dbr:Twitter; dcterms:source dic:finsta].
 
 isv:Slaycation
     a isv:SlangTerm;
@@ -164,15 +183,16 @@ isv:Slaycation
     skos:definition "Super awesome, fancy vacation."@en;
     skos:example "The stay at Madeira last year was totally a slaycation!"@en;
     dcterms:medium dbr:Instagram, dbr:TikTok.
-    
-isv:Skibidi	
-    a isv:SlangTerm;
-    foaf:maker dbr:YouTube;
-    dcterms:created "2023"^^xsd:gYear;
-    skos:definition "Practically a filler word with a positive or negative connotation, depending on the context."@en;	
-    skos:example "Skibidi dop dop dop  yes yes!"@en.
 
-isv:AMA	
+isv:Skibidi
+    a isv:SlangTerm;
+    foaf:maker [dcterms:service dbr:YouTube; dcterms:source wtnr:skibidi];
+    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source wtnr:skibidi];
+    skos:definition [rdf:value "From skibidi, a nonlexical vocable used in scat singing. The jocular nonsense word is derived from the YouTube web series Skibidi Toilet (2023–present), which took the vocable from the song “Dom Dom Yes Yes” (2022) by Bulgarian singer Biser King."@en; dcterms:source wtnr:skibidi];
+    skos:example [rdf:value "Skibidi dop dop dop yes yes!"@en; dcterms:source ud:skibidi];
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
+
+isv:AMA
     a isv:SlangTerm;
     foaf:maker dbr:Reddit;
     dcterms:created "2009"^^xsd:gYear;
@@ -182,9 +202,8 @@ isv:AMA
 
 isv:HP
     a isv:SlangTerm;
-    skos:definition "House Party"@en;	
+    skos:definition "House Party"@en;
     skos:example "We're having a hp tnt, do you wanna join us?"@en.
-
 
 isv:gg
     a isv:SlangTerm;
@@ -192,17 +211,17 @@ isv:gg
     dcterms:created "1998"^^xsd:gYear;
     skos:definition "Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship."@en;
     skos:example "Red Team: GG, blue team"@en;
-    dcterms:medium dbr:Multiplayer_video_games.
+    dcterms:medium
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
-
-isv:glhf	
+isv:glhf
     a isv:SlangTerm;
     foaf:maker dbr:Online_gaming;
     dcterms:created "2000"^^xsd:gYear;
     skos:definition "An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will."@en;
     skos:example "player: glhf everyone!"@en;
     dcterms:medium dbr:Multiplayer_video_games.
-
 
 isv:DPS
     a isv:SlangTerm;
@@ -222,36 +241,56 @@ isv:Karen
     skos:definition "Middle aged woman, typically blonde, makes solutions to others' problems an inconvenience to her although she isn't even remotely affected."@en;
     skos:example "Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it."@en.
 
-
 isv:NPC
     a isv:SlangTerm;
     skos:definition "A play on video games non-player character mixed with a play on The Simulation Hypothesis."@en;
-    skos:example "Bro you are such an npc"@en.
+    skos:example "Bro you are such an npc"@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:poggers
     a isv:SlangTerm;
     skos:definition "A twitch emote typically used to express enthusiasm, enthrawlment or other sophisticated emotions of happiness and dopamine."@en;
-    skos:example "it’s pretty poggers."@en.
+    skos:example "it’s pretty poggers."@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:u
     a isv:SlangTerm;
     skos:definition "You"@en;
-    skos:example "I love u."@en.
+    skos:example "I love u."@en;
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source riecky:],
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:ngl
     a isv:SlangTerm;
     skos:definition """Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of 'just saying' or 'no offence' in the sense that it makes your statement more valid/less offensive"""@en;
-    skos:example "ngl, I cried during the season finale"@en.
+    skos:example "ngl, I cried during the season finale"@en;
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:Facebook; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source riecky:].
 
 isv:af
     a isv:SlangTerm;
     skos:definition "Means 'as f—k' and is used to clarify things. You can also use it as the word 'very' or 'really'. Mostly used online or in text messages."@en;
-    skos:example "Wow! That's cool af."@en.
+    skos:example "Wow! That's cool af."@en;
+    dcterms:medium
+        [a dbr:Instagram; dcterms:source riecky:],
+        [a dbr:Facebook; dcterms:source riecky:],
+        [a dbr:Twitter; dcterms:source riecky:],
+        [a dbr:YouTube; dcterms:source riecky:],
+        [a dbr:Twitch; dcterms:source riecky:].
 
 isv:fw
     a isv:SlangTerm;
     skos:definition "F—k with"@en;
-    skos:example "I don't fw that person anymore."@en.
+    skos:example "I don't fw that person anymore."@en;
+    dcterms:medium [a dbr:Twitter; dcterms:source riecky:].
 
 isv:Chill
     a isv:SlangTerm;
@@ -261,77 +300,122 @@ isv:Chill
 isv:ts
     a isv:SlangTerm;
     skos:definition "This s—t"@en;
-    skos:example """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en.
+    skos:example """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en;
+    dcterms:medium [a dbr:Twitter; dcterms:source riecky:].
 
 isv:ur
     a isv:SlangTerm;
     skos:definition "You are and the illiterate derivative forms from the word you"@en;
-    skos:example "ur an illiterate redneck"@en.
+    skos:example "ur an illiterate redneck"@en;
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Facebook; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:rn
     a isv:SlangTerm;
     skos:definition "Right now"@en;
-    skos:example "Engineer: we are gonna have the generator fixed RN"@en.
+    skos:example "Engineer: we are gonna have the generator fixed RN"@en;
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source riecky:],
+    [a dbr:Twitch; dcterms:source riecky:].
 
 isv:fr
     a isv:SlangTerm;
     skos:definition "For real"@en;
-    skos:example "I am serious fr."@en.
+    skos:example "I am serious fr."@en;
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:Facebook; dcterms:source riecky:],
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:tf
     a isv:SlangTerm;
     skos:definition "The f—k"@en;
-    skos:example "tf just happened?"@en.
+    skos:example "tf just happened?"@en;
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:Facebook; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source riecky:].
 
 isv:Cooked
     a isv:SlangTerm;
     skos:definition """In slang, "cooked" means someone is exhausted, overwhelmed, in serious trouble, or under the influence of substances (high), essentially being "burnt out" or in a hopeless situation, with usage varying from physical fatigue ("I'm cooked after that workout") to being mentally drained or facing unavoidable consequences ("We're cooked if we miss this deadline")."""@en;
-    skos:example "If I miss the deadline for this project, I will be fundamentally cooked."@en.
+    skos:example "If I miss the deadline for this project, I will be fundamentally cooked."@en;
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:pfp
     a isv:SlangTerm;
     skos:definition "Profile Picture"@en;
-    skos:example "Oh woah there, nice pfp"@en.
+    skos:example "Oh woah there, nice pfp"@en;
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source riecky:].
 
 isv:Zaddy
     a isv:SlangTerm;
     skos:definition """The slang term for a really "handsome" guy who is very appealing and looks really fashionable."""@en;
-    skos:example "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en.
+    skos:example "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Goated
     a isv:SlangTerm;
     skos:definition "an event or characteristic of someone  when something awesome or unbelievable is occurring or when someone does something shocking (good) or amazing"@en;
-    skos:example "Monkae you are so fun, you're literally goated."@en.
+    skos:example "Monkae you are so fun, you're literally goated."@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Pookie
     a isv:SlangTerm;
-    skos:definition "A term used for someone you go with or are married to."@en;
-    skos:example "I can't wait to see my pookie patootie tonight."@en.
+    foaf:maker [dcterms:Service dbr:Germany; dcterms:source <https://www.queensjournal.ca/what-does-pookie-even-mean/>];
+    dcterms:created [rdf:value "1900"^^xsd:gYear; dcterms:source kym:pookie];
+    skos:definition [rdf:value "A term used for someone you go/date with or are married to. Basically a sweathearth"@en; dcterms:source ud:pookie];
+    skos:example [rdf:value "See you later, Pookie!"@en; dcterms:source ud:pookie];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:Twin
     a isv:SlangTerm;
     skos:definition "A very good friend with similar interests or characteristics."@en;
-    skos:example "What up twin, you down for tonight?"@en.
+    skos:example "What up twin, you down for tonight?"@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Honse
     a isv:SlangTerm;
     skos:definition "Big chonky fat horse"@en;
-    skos:example """ "hey mum, do you see that honse!?" """@en.
+    skos:example """ "hey mum, do you see that honse!?" """@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Car
     a isv:SlangTerm;
     skos:definition "Mishap when typing cat. They slide and accelerate the same, however."@en;
-    skos:example "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en.
+    skos:example "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Type_beat
     a isv:SlangTerm;
     skos:definition "Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)"@en;
-    skos:example "Hey Aaron, you're on a James type Beat"@en.
+    skos:example "Hey Aaron, you're on a James type Beat"@en;
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Scrumpt
     a isv:SlangTerm;
     skos:definition "another word for scream or screamed"@en;
-    skos:example "my mom scrumpt for help."@en.
+    skos:example "my mom scrumpt for help."@en;
+    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Offed
     a isv:SlangTerm;
@@ -341,7 +425,8 @@ isv:Offed
 isv:tbr
     a isv:SlangTerm;
     skos:definition "to be real"@en;
-    skos:example "TBR- You're very annoying!"@en.
+    skos:example "TBR- You're very annoying!"@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:atp
     a isv:SlangTerm;
@@ -351,7 +436,10 @@ isv:atp
 isv:GTA
     a isv:SlangTerm;
     skos:definition "Grand Theft Auto video games series. We Got ______ Before GTA 6 defines a generation of waiting."@en;
-    skos:example "Crazy, we got Squid Game before GTA 6."@en.
+    skos:example "Crazy, we got Squid Game before GTA 6."@en;
+    dcterms:medium
+    [a dbr:Facebook; dcterms:source riecky:],
+    [a <https://dbpedia.org/page/Steam_(service)>; dcterms:source riecky:].
 
 isv:gd
     a isv:SlangTerm;
@@ -363,7 +451,8 @@ isv:ikr
     foaf:maker dbr:SMS;
     dcterms:created "2004"^^xsd:gYear;
     skos:definition """another term for: "I know, right?" """@en;
-    skos:example "omg ikr!"@en.
+    skos:example "omg ikr!"@en;
+    dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:Vibe
     a isv:SlangTerm;
@@ -377,77 +466,88 @@ isv:smh
     foaf:maker dbr:AOL;
     dcterms:created "2022"^^xsd:gYear;
     skos:definition "Shaking my head"@en;
-    skos:example "You don't know what smh means? smh"@en.
+    skos:example "You don't know what smh means? smh"@en;
+    dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:yt
     a isv:SlangTerm;
     foaf:maker dbr:YouTube;
     dcterms:created "2005"^^xsd:gYear;
     skos:definition "YouTube"@en;
-    skos:example "Im watching yt right now."@en.
+    skos:example "Im watching yt right now."@en;
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:Discord; dcterms:source riecky:].
 
 isv:Poser
     a isv:SlangTerm;
     foaf:maker dbr:Punk_rock;
     dcterms:created "1980"^^xsd:gYear;
     skos:definition "To pose: To pretend, to be somebody you're not, to be part of a culture or genre just to fit in."@en;
-    skos:example "Oh my God, you conform to everything you're being told to do when you don't think that's what you do! What a poser!"@en.
+    skos:example "Oh my God, you conform to everything you're being told to do when you don't think that's what you do! What a poser!"@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Gatekeeper
     a isv:SlangTerm;
     foaf:maker dbr:TikTok;
     dcterms:created "2022"^^xsd:gYear;
     skos:definition "Someone who has the mindset that 'if you're not a fan/part of this (famous figure, a trend), you absolutely cannot join. Someone who always make things more complicated, always adds a controversy or an issue to a certain trend."@en;
-    skos:example "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en.
+    skos:example "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Based
     a isv:SlangTerm;
     foaf:maker dbr:4chan;
     dcterms:created "2010"^^xsd:gYear;
     skos:definition "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think. Especially common in online political slang.The opposite of cringe, some times the opposite of biased."@en;
-    skos:example "the 8 ball jacket slap is still the most based thing on the internet"@en.
+    skos:example "the 8 ball jacket slap is still the most based thing on the internet"@en;
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source riecky:].
 
 isv:mb
     a isv:SlangTerm;
     foaf:maker dbr:SMS;
     dcterms:created "1992"^^xsd:gYear;
     skos:definition "My bad"@en;
-    skos:example "Oh ok mb"@en.
+    skos:example "Oh ok mb"@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Rule_34
     a isv:SlangTerm;
-    foaf:maker dbr:4chan;
-    dcterms:created "2003"^^xsd:gYear;
-    skos:definition "If it exists, there is p**n of it. If there isn't, there will be."@en;
-    skos:example "Why don’t you Google rule 34?"@en.
+    foaf:maker [dcterms:Service dbr:4chan; dcterms:source wtnr:Rule_34];
+    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source wtnr:Rule_34];
+    skos:definition [rdf:value "If it exists, there is p**n of it. If there isn't, there will be."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>];
+    skos:example [rdf:value "Why don't you Google rule 34?"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>].
 
 isv:Ragebait
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2016"^^xsd:gYear;
-    skos:definition "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements in posts, comments, messages, or videos to trigger emotional, often hostile reactions from others."@en;
-    skos:example "Don’t feed the ragebait in the comments; they just want you to get angry."@en.
-
-isv:Sixty_Seven
+    foaf:maker [dcterms:Service dbr:YTMND; dcterms:source kym:rage-bait-ragebait];
+    dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source kym:rage-bait-ragebait];
+    skos:definition [rdf:value "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements in posts, comments, messages, or videos to trigger emotional, often hostile reactions from others."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=ragebait>];
+    skos:example [rdf:value "Don’t feed the ragebait in the comments; they just want you to get angry."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=ragebait>];
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
+   
+isv:Six_Seven
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2025"^^xsd:gYear;
+    foaf:maker [dcterms:Service dbr:TikTok; dcterms:source <https://en.wikipedia.org/wiki/6-7_meme>];
+    dcterms:created [rdf:value"2025"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/6-7_meme>];
     skos:prefLabel "6-7"@en;
-    skos:definition "A pose to describe uncertainty like so-so, maybe, something like that, etc."@en;
-    skos:example "I didn’t understand it either i told my friend to meet me at 6 or 7 and he yelled as he was biking away SIX SEVEN and i was confused"@en.
+    skos:definition [rdf:value "Teens and adults alike have tried to explain it. Some say it means “so-so,” especially since kids often pair the phrase with an up-and-down hand motion. Others argue it refers to a person who is tall, some think it stands for a basketball term, and so on."@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>];
+    skos:example [rdf:value "I didn’t understand it either i told my friend to meet me at 6 or 7 and he yelled as he was biking away SIX SEVEN and i was confused"@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>].
 
 isv:Sixty_Nine
     a isv:SlangTerm;
-    foaf:maker dbr:France;
-    dcterms:created "1790"^^xsd:gYear;
+    foaf:maker [dcterms:location dbr:France; dcterms:source kym:69-sixty-nine];
+    dcterms:created [rdf:value "1790"^^xsd:gYear; dcterms:source kym:69-sixty-nine];
     skos:prefLabel "69"@en;
     skos:definition "The number that falls between 68 and 70. Often used in internet humor to denote a recursive or symmetrical relationship. Other meaning has absolutely no relation with anything s3xu4l in any way."@en;
-    skos:example "69% of people find something dirty in every sentence."@en.
+    skos:example [rdf:value "69% of people find something dirty in every sentence."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=69>].
 
 isv:Four_Twenty
     a isv:SlangTerm;
-    foaf:maker <http://dbpedia.org/resource/San_Rafael,_California>;
-    dcterms:created "1971"^^xsd:gYear;
+    foaf:maker [dcterms:location <http://dbpedia.org/resource/San_Rafael,_California>; dcterms:source kym:420];
+    dcterms:created [rdf:value "1971"^^xsd:gYear; dcterms:source kym:420];
     skos:prefLabel "420"@en;
     skos:definition "420, 4:20 or 4/20 (pronounced four-twenty) is cannabis culture slang for cannabis consumption, especially smoking around the time 4:20 p.m. (16:20). It also refers to cannabis-oriented celebrations that take place annually on April 20 (4/20 in U.S. date form)."@en;
     skos:example "Let's go out on 420 at 420 for some 420ing!!!"@en.
@@ -455,7 +555,7 @@ isv:Four_Twenty
 isv:Rule_621
     a isv:SlangTerm;
     foaf:maker dbr:Furry_fandom;
-     dcterms:created "2009"^^xsd:gYear;
+    dcterms:created "2009"^^xsd:gYear;
     skos:definition "A convention guideline: 6 hours sleep, 2 meals, 1 shower daily."@en;
     skos:example """ 1: "Oh man, I'm so tired..." 2: "Well, did you stick to the Rule 621?" """@en.
 
@@ -487,7 +587,8 @@ isv:rly
     foaf:maker dbr:SMS;
     dcterms:created "2004"^^xsd:gYear;
     skos:definition "(adjective) really, extremely, very"@en;
-    skos:example "I am rly bored."@en.
+    skos:example "I am rly bored."@en;
+    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Slash_S
     a isv:SlangTerm;
@@ -495,35 +596,42 @@ isv:Slash_S
     dcterms:created "2015"^^xsd:gYear;
     skos:prefLabel "/s"@en;
     skos:definition "Sarcasm."@en;
-    skos:example "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en.
+    skos:example "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en;
+    dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:Gymmaxing
     a isv:SlangTerm;
     foaf:maker dbr:TikTok;
     dcterms:created "2020"^^xsd:gYear;
     skos:definition "A state when someone goes to gym way to often."@en;
-    skos:example "Hey, William, why  are gymmaxing? For a condition or do you want to date someone?"@en.
+    skos:example "Hey, William, why are gymmaxing? For a condition or do you want to date someone?"@en;
+    dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:DYEL
-    a isv:SlangTerm;
+    a isv:SlangTerm; 
     foaf:maker dbr:Bodybuilding;
     dcterms:created "2010"^^xsd:gYear;
     skos:definition "DYEL stands for Do You Even Lift. It's for someone that at first sight doesn't look like the type of person that goes to the gym or lifts weights. It's mostly applied for people that workout but still see no result."@en;
-    skos:example "That guy looks huge, but dyel? He's totally DYEL!"@en.
+    skos:example "That guy looks huge, but dyel? He's totally DYEL!"@en;
+    dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:op
     a isv:SlangTerm;
     foaf:maker dbr:Gamer;
     dcterms:created "1990"^^xsd:gYear;
     skos:definition "Op stands for overpowered."@en;
-    skos:example "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en.
+    skos:example "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en;
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source riecky:].
 
 isv:Frogposter
     a isv:SlangTerm;
     foaf:maker dbr:4chan;
     dcterms:created "2015"^^xsd:gYear;
     skos:definition "The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit."@en;
-    skos:example "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en.
+    skos:example "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en;
+    dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:AI_slop
     a isv:SlangTerm;
@@ -538,35 +646,40 @@ isv:R_Slash
     dcterms:created "2005"^^xsd:gYear;
     skos:prefLabel "r/"@en;
     skos:definition "The beginning sign of a subreddit name. Annoying when used outside of Reddit."@en;
-    skos:example "I saw a video where a guy made a laptop in a pizza corton box on r/DiWHY"@en.
+    skos:example "I saw a video where a guy made a laptop in a pizza corton box on r/DiWHY"@en;
+    dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:omegalul
     a isv:SlangTerm;
     foaf:maker dbr:Twitch;
     dcterms:created "2016"^^xsd:gYear;
     skos:definition "A word that you say on text or online when something is so funny you cant just say lol."@en;
-    skos:example """something funny happens: "That's a #omegalul right there" """@en.
+    skos:example """something funny happens: "That's a #omegalul right there" """@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:monkaS
     a isv:SlangTerm;
     foaf:maker dbr:Twitch;
     dcterms:created "2017"^^xsd:gYear;
     skos:definition "A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation."@en;
-    skos:example "OMG what a play, that was some MonkaS stuff right there"@en.
+    skos:example "OMG what a play, that was some MonkaS stuff right there"@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:Sadge
     a isv:SlangTerm;
     foaf:maker dbr:Twitch;
     dcterms:created "2019"^^xsd:gYear;
     skos:definition "A Twitch emote that means sadness or depression"@en;
-    skos:example "I've been on a losing streak all day, sadge…"@en.
+    skos:example "I've been on a losing streak all day, sadge…"@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:Sus
     a isv:SlangTerm;
     foaf:maker dbr:Among_Us;
     dcterms:created "2020"^^xsd:gYear;
     skos:definition """A shorter version of the word "suspect". Usually used to define someone or something that looks suspicious or untrustworthy"""@en;
-    skos:example "that's kinda sus bro"@en.
+    skos:example "that's kinda sus bro"@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:Amogus
     a isv:SlangTerm;
@@ -587,7 +700,8 @@ isv:Copium
     foaf:maker dbr:4chan;
     dcterms:created "2019"^^xsd:gYear;
     skos:definition "Lying to yourself in order to cope with something"@en;
-    skos:example "I felt better after I saw the failing grade on my chemistry final than when I didn't know what it would be. Must've been a rush of copium"@en.
+    skos:example "I felt better after I saw the failing grade on my chemistry final than when I didn't know what it would be. Must've been a rush of copium"@en;
+    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
 
 isv:pls
     a isv:SlangTerm;
@@ -596,7 +710,7 @@ isv:pls
     skos:definition "Please"@en;
     skos:example "Donald Trump is a good president? Oh pls."@en.
 
-isv:selfie
+isv:Selfie
     a isv:SlangTerm;
     foaf:maker dbr:Karl_Kruszelnicki;
     dcterms:created "2002"^^xsd:gYear;
@@ -610,7 +724,7 @@ isv:Gigachad
     skos:definition "The man himself. The alpha male that dominates all weaklings."@en;
     skos:example "Man, that guy Allen is such a gigachad. He has the money, the fame and everything."@en.
 
-isv:sigma
+isv:Sigma
     a isv:SlangTerm;
     foaf:maker dbr:Vox_Day;
     dcterms:created "2010"^^xsd:gYear;
@@ -639,21 +753,21 @@ isv:Colon_Three
     skos:definition """A texting face typically used in conjunction with something cute. Known as the "Cat face" or simply, "The Cute Face"."""@en;
     skos:example "Your kitten is soo cute! :3"@en.
 
-isv:bnuy
+isv:Bnuy
     a isv:SlangTerm;
     foaf:maker dbr:Tumblr; 
     dcterms:created "2020"^^xsd:gYear;
     skos:definition """ "Bnuy" is a playful, cute alternative way of saying "bunny" (a rabbit) pronounced "buh-noo-i" """@en;
     skos:example "I saw a bnuy outside in my garden yesterday and it was so cute!"@en.
 
-isv:birb
+isv:Birb
     a isv:SlangTerm;
     foaf:maker dbr:Twitter;
     dcterms:created "2012"^^xsd:gYear;
     skos:definition "a cute, tiny, fluffy bird"@en;
     skos:example "Henlo Birb, you want some seed?"@en.
 
-isv:yeet
+isv:Yeet
     a isv:SlangTerm;
     foaf:maker <http://dbpedia.org/resource/Vine_(service)>;
     dcterms:created "2014"^^xsd:gYear;
@@ -796,7 +910,12 @@ isv:Mewing
 
 isv:Brainrot
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2007"^^xsd:gYear;
-    skos:definition "In Internet culture, the term brain rot (also written as brainrot) describes digital media deemed to be of low quality or value. The term also more broadly refers to the harmful effects associated with excessive or disordered use of digital media, especially short-form entertainment and doomscrolling. Popularized by Generation Z and Generation Alpha social media users, the term has since entered mainstream usage."@en;
-    skos:example """Guy 1: GRRWOOF BARKBARKABRKBAKF ARFARFARF Guy 2: whoa, it seems like he's brainrotting."""@en.
+    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source kym:brain-rot-brainrot];
+    dcterms:created [rdf:value "2007"^^xsd:gYear; dcterms:source kym:brain-rot-brainrot];
+    skos:definition [rdf:value "Brainrot is a word that some might use when referring to constantly thinking about a topic, person, place, or thing. It's a spoof word that's relatively close to the definition of a hyperfixation. Both words stand for the same meaning, however, brainrot isn't meant to be taken as literally. There aren't any brains rotting, here!"@en; dcterms:source ud:brainrot];
+    skos:example [rdf:value """Guy 1: GRRWOOF BARKBARKABRKBAKF ARFARFARF Guy 2: whoa, it seems like he's brainrotting."""@en; dcterms:source ud:brainrot];
+    dcterms:medium
+    [a dbr:iFunny; dcterms:source kym:brain-rot-brainrot],
+    [a dbr:Instagram; dcterms:source kym:brain-rot-brainrot],
+    [a dbr:Twitter; dcterms:source kym:brain-rot-brainrot],
+    [a dbr:TikTok; dcterms:source kym:brain-rot-brainrot].
