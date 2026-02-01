@@ -542,7 +542,7 @@ isv:Sixty_Nine
     dcterms:created [rdf:value "1790"^^xsd:gYear; dcterms:source kym:69-sixty-nine];
     skos:prefLabel "69"@en;
     skos:definition "The number that falls between 68 and 70. Often used in internet humor to denote a recursive or symmetrical relationship. Other meaning has absolutely no relation with anything s3xu4l in any way."@en;
-    skos:example [rdf:value "69% of people find something dirty in every sentence."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=69>].
+    skos:example [rdf:value "69% of people find something dirty in every sentence."@en; dcterms:source ud:69].
 
 isv:Four_Twenty
     a isv:SlangTerm;
@@ -833,17 +833,28 @@ isv:Peak
 
 isv:Flop
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2019"^^xsd:gYear;
-    skos:definition "Something that fails miserably"@en;
-    skos:example "The new restaurant was a total flop, closing after a month"@en.
+    foaf:maker [a dbr:Unknown; dcterms:source kym:flop-era];
+    dcterms:created[rdf:value"2008"^^xsd:gYear; dcterms:source kym:flop-era];
+    skos:definition [rdf:value "Something that fails miserably"@en; dcterms:source ud:flop];
+    skos:example [rdf:value "The latest album flopped and so the studio canceled her contract."@en; dcterms:source wtnr:flop];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:flop-era],
+    [a dbr:TikTok; dcterms:source kym:flop-era].
 
 isv:Mog
     a isv:SlangTerm;
-    foaf:maker dbr:Bodybuilding;
-    dcterms:created "2016"^^xsd:gYear;
-    skos:definition "Verb; To assert ones dominance."@en;
-    skos:example "I totally mog you dude. Your jawline’s pathetic."@en.
+    foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:mog];
+    dcterms:created [rdf:value "2016"^^xsd:gYear; dcterms:source kym:mog];
+    skos:definition [rdf:value "To be significantly more attractive than (someone or something); to dominate in appearance."@en; dcterms:source wtnr:mog];
+    skos:example [rdf:value "His face mogs mine to hell and back."@en; dcterms:source wtnr:mog];
+    dcterms:medium
+    [a dbr:4chan; dcterms:source kym:mog],
+    [a dbr:Twitter; dcterms:source kym:mog],
+    [a dbr:Instagram; dcterms:source kym:mog],
+    [a dbr:iFunny; dcterms:source kym:mog],
+    [a dbr:YouTube; dcterms:source kym:mog],
+    [a dbr:TikTok; dcterms:source kym:mog],
+    [a dbr:9GAG; dcterms:source kym:mog].
 
 isv:Soft_launch
     a isv:SlangTerm;
@@ -861,52 +872,79 @@ isv:Stand
 
 isv:Simp
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2019"^^xsd:gYear;
-    skos:definition """simp is a word used to call out usually a male for "simping" on a woman. The word simp means that the man is willing to do anything for the woman in exchange for their love and affection. This word is commonly miss-used so please use this word with the upmost of precaution."""@en;
-    skos:example "i’m so lonely, i really want someone to simp"@en.
+    foaf:maker [dcterms:source dbr:Urban_Dictionary; dcterms:source kym:simp];
+    dcterms:created [rdf:value "2005"^^xsd:gYear; dcterms:source kym:simp];
+    skos:definition [rdf:value """simp is a word used to call out usually a male for "simping" on a woman. The word simp means that the man is willing to do anything for the woman in exchange for their love and affection. This word is commonly miss-used so please use this word with the upmost of precaution."""@en; dcterms:source ud:simp];
+    skos:example [rdf:value "i’m so lonely, i really want someone to simp"@en; dcterms:source ud:simp];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:simp],
+    [a dbr:Reddit; dcterms:source kym:simp],
+    [a dbr:Twitter; dcterms:source kym:simp],
+    [a dbr:Instagram; dcterms:source kym:simp].
 
 isv:Delulu
     a isv:SlangTerm;
-    foaf:maker dbr:K-pop;
-    dcterms:created "2014"^^xsd:gYear;
-    skos:definition "Delulu is Short for delusional"@en;
-    skos:example "I can't believe fandom X thinks their ship is canon, they're so delulu LOL"@en.
+    foaf:maker [rdf:value "OneHallyu"; dcterms:source kym:delulu];
+    dcterms:created [rdf:value "2014"^^xsd:gYear; dcterms:source kym:delulu];
+    skos:definition [rdf:value "Delulu is Short for delusional"@en; dcterms:source ud:delulu];
+    skos:example [rdf:value "I can't believe fandom X thinks their ship is canon, they're so delulu LOL"@en; dcterms:source ud:delulu];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:delulu],
+    [a dbr:TikTok; dcterms:source kym:delulu].
+    [a <https://hallyuplus.net>; dcterms:source kym:delulu].
 
 isv:Ratio
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "When someone reply to someone and get more likes on the reply than the original post or comment"@en;
-    skos:example "Damn... you just got ratiod…"@en.
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:ratio];
+    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:ratio];
+    skos:definition[rdf:value "When someone reply to someone and get more likes on the reply than the original post or comment"@en; dcterrms:source ud:ratio];
+    skos:example [rdf:value "Damn... you just got ratiod…"@en; dcterrms:source ud:ratio];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:ratio],
+    [a dbr:TikTok; dcterms:source <https://linktr.ee/blog/what-does-ratio-mean-on-tiktok>].
+
 
 isv:Main_Character_Energy
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "A person that unintentionally lives, breathes, and is like the protagonist in a story or series."@en;
-    skos:example "wow, that's some main character energy, you are the main character in an anime"@en.
-
+    foaf:maker [dcterms:service dbr:TikTok; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>];
+    dcterms:created[rdf:value "2020"^^xsd:gYear; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>];
+    skos:definition[rdf:value "A person that unintentionally lives, breathes, and is like the protagonist in a story or series."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Main%20Character%20Energy>];
+    skos:example[rdf:value "wow, that's some main character energy, you are the main character in an anime"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Main%20Character%20Energy>];
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>].
+    
 isv:Fanum_Tax
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2022"^^xsd:gYear;
-    skos:definition "'Fanum Tax' is a tax system created by a streamer called 'Fanum' who collects food tax whenever someone brings food to a house. He is also considered to be the fattest in a group"@en;
-    skos:example "Lets eat out cause the Fanum Tax is crazy"@en.
+    foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:fanum-tax];
+    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:fanum-tax];
+    skos:definition [rdf:value "'Fanum Tax' is a tax system created by a streamer called 'Fanum' who collects food tax whenever someone brings food to a house. He is also considered to be the fattest in a group"@en; dcterms:source ud:fanum-tax];
+    skos:example [rdf:value "Lets eat out cause the Fanum Tax is crazy"@en; dcterms:source ud:fanum-tax];
+    dcterms:medium
+    [a dbr:Twitch; dcterms:source kym:fanum-tax],
+    [a dbr:YouTube; dcterms:source kym:fanum-tax].
 
 isv:Gyatt
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2022"^^xsd:gYear;
-    skos:definition """A synonym for the word god. It is an interjection for when saying the phrase "gyatt damn" with it meaning "god damn"."""@en;
-    skos:example """She walked in wearing that dress, and I thought, 'Gyatt, she looks good!' """@en.
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:gyatt];
+    dcterms:created[rdf:value "2023"^^xsd:gYear; dcterms:source kym:gyatt];
+    skos:definition [rdf:value """A synonym for the word god. It is an interjection for when saying the phrase "gyatt damn" with it meaning "god damn"."""@en; dcterms:source ud:gyatt];
+    skos:example[rdf:value """She walked in wearing that dress, and I thought, 'Gyatt, she looks good!' """@en; dcterms:source ud:gyatt];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source kym:gyatt],
+    [a dbr:Twitter; dcterms:source kym:gyatt],
+    [a dbr:TikTok; dcterms:source kym:gyatt],
+    [a dbr:YouTube; dcterms:source kym:gyatt],
+    [a dbr:Twitch; dcterms:source kym:gyatt].
 
 isv:Mewing
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2018"^^xsd:gYear;
-    skos:definition """Mewing is a facial posture trend where you rest your tongue on the roof of your mouth, aiming to define the jawline, named after orthodontist John Mew, though it lacks scientific proof and is popular online for cosmetic "looksmaxxing"."""@en;
-    skos:example "Chad has some nice jaw now. He's been mewing for 6 months now"@en.
+    foaf:maker [dcterms:service dbr:YouTube; dcterms:source kym:mewing];
+    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:mewing];
+    skos:definition [rdf:value "A technique attributed to a British orthodontist named Mike Mew that involves putting pressure on the roof of your mouth with your tongue to try and change the shape of your face by moving your maxilla up and forwards with the lateral pressure of your tongue. "@en; dcterms:source ud:mewing];
+    skos:example [rdf:value "Chad has some nice jaw now. He's been mewing for 6 months now"@en; dcterms:source ud:mewing];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:mewing],
+    [a dbr:Instagram; dcterms:source kym:mewing].
 
 isv:Brainrot
     a isv:SlangTerm;
