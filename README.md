@@ -20,7 +20,7 @@ The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux.
 
 # Legal Notice
 
-Some terms and definitions used in the ontology are obtained from external sources for *scientific and educational purposes* within the meaning of Sections 31 and 34 of Copyright Act No. 121/2000 Coll. (Czech Republic). When further distributing or commercially using this ontology, please note that these specific text segments (primarily from Urban Dictionary, Know Your Meme, and similar commercial websites) may be subject to the copyright of the original sources.
+Some terms and definitions used in the ontology are obtained from external sources for **scientific and educational purposes** within the meaning of Sections 31 and 34 of Copyright Act No. 121/2000 Coll. (Czech Republic). When further distributing or commercially using this ontology, please note that these specific text segments (primarily from Urban Dictionary, Know Your Meme, and similar commercial websites) may be subject to the copyright of the original sources.
 
 ---
 # Words
