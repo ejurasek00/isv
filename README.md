@@ -16,7 +16,7 @@ is planned not only as a “word” – “meaning” principle, but include:
 This project aims to make a Urban Dictionary - like database represented as a graph, but with additional perks mentioned above.
 A real-world usage is to make a web UI layer and plot the results in an appealing form directly in a web browser (not yet implemented).
 
-The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux.
+The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux 25.10 and 26.04 (Beta preview)
 
 # Legal Notice
 
