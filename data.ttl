@@ -683,10 +683,15 @@ isv:Sus
 
 isv:Amogus
     a isv:SlangTerm;
-    foaf:maker dbr:Among_Us;
-    dcterms:created "2021"^^xsd:gYear;
+    foaf:maker [dcterms:service dbr:Reddit; dcterms:source kym:amogus];
+    dcterms:created [rdf:value "2021"^^xsd:gYear; dcterms:source kym:amogus];
     skos:definition """a disease spread by the video game "Among Us" it causes sufferers to see Among Us characters everywhere they go, the pain becomes unbearable, it follows them everywhere, you can't hide, you can't fight, you are powerless."""@en;
-    skos:example "That weirdly shaped red stain on the floor looks like an amogus, very sus"@en.
+    skos:example "That weirdly shaped red stain on the floor looks like an amogus, very sus"@en;
+    dcterms:medium
+    [a dbr:Reddit; dcterms:source kym:amogus],
+    [a dbr:iFunny; dcterms:source kym:amogus],
+    [a dbr:YouTube; dcterms:source kym:amogus],
+    [a dbr:Facebook; dcterms:source kym:amogus].
 
 isv:Impostor
     a isv:SlangTerm;
@@ -697,11 +702,16 @@ isv:Impostor
 
 isv:Copium
     a isv:SlangTerm;
-    foaf:maker dbr:4chan;
-    dcterms:created "2019"^^xsd:gYear;
-    skos:definition "Lying to yourself in order to cope with something"@en;
-    skos:example "I felt better after I saw the failing grade on my chemistry final than when I didn't know what it would be. Must've been a rush of copium"@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [foaf:person dbr:Keak_da_Sneak; dcterms:source kym:copium];
+    dcterms:created[rdf:value "2003"^^xsd:gYear; dcterms:source kym:copium];
+    skos:definition[rdf:value "Lying to yourself in order to cope with something"@en; dcterms:source ud:copium];
+    skos:example [rdf:value "I felt better after I saw the failing grade on my chemistry final than when I didn't know what it would be. Must've been a rush of copium"@en; dcterms:source ud:copium];
+    dcterms:medium
+    [a dbr:4chan; dcterms:source kym:copium],
+    [a dbr:9GAG; dcterms:source kym:copium],
+    [a dbr:Reddit; dcterms:source kym:copium],
+    [a dbr:YouTube; dcterms:source kym:copium],
+    [a dbr:Twitter; dcterms:source kym:copium].
 
 isv:pls
     a isv:SlangTerm;
@@ -712,95 +722,158 @@ isv:pls
 
 isv:Selfie
     a isv:SlangTerm;
-    foaf:maker dbr:Karl_Kruszelnicki;
-    dcterms:created "2002"^^xsd:gYear;
-    skos:definition "When you take a photo of yourself. Also a popular song by The Chainsmokers."@en;
-    skos:example "But first, let me take a selfie"@en.
+    foaf:maker [foaf:person dbr:Karl_Kruszelnicki; dcterms:source <https://en.wikipedia.org/wiki/Selfie>];
+    dcterms:created [rdf:value "2002"^^xsd:gYear; dcterms:source wtnr:selfie];
+    skos:definition [rdf:value "A photograph that you take of yourself , usually with a mobile phone. Selfies are often published using social media."@en; dcterms:source <https://dictionary.cambridge.org/dictionary/english/selfie>];
+    skos:note[rdf:value "Also a popular song by The Chainsmokers"; dcterms:source <https://en.wikipedia.org/wiki/Selfie_(song)>];
+    skos:example [rdf:value "But first, let me take a selfie"@en; dcterms:source ud:selfie];
+    dcterms:medium
+    [a dbr:Flickr; dcterms:source kym:selfie],
+    [a dbr:Myspace; dcterms:source kym:selfie],
+    [a dbr:Instagram; dcterms:source kym:selfie],
+    [a dbr:Twitter; dcterms:source kym:selfie],
+    [a dbr:Tumblr; dcterms:source kym:selfie],
+    [a dbr:DeviantArt; dcterms:source kym:selfie].
 
 isv:Gigachad
     a isv:SlangTerm;
-    foaf:maker dbr:Bodybuilding;
-    dcterms:created "2017"^^xsd:gYear;
-    skos:definition "The man himself. The alpha male that dominates all weaklings."@en;
-    skos:example "Man, that guy Allen is such a gigachad. He has the money, the fame and everything."@en.
+    foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:gigachad];
+    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:gigachad];
+    skos:definition[rdf:value "The man himself. The alpha male that dominates all weaklings."@en; dcterms:source ud:gigachad];
+    skos:example [rdf:value "Man, that guy Allen is such a gigachad. He has the money, the fame and everything."@en; dcterms:source ud:gigachad];
+    dcterms:medium
+    [a dbr:4chan; dcterms:source kym:gigachad],
+    [a dbr:Reddit; dcterms:source kym:gigachad],
+    [a dbr:Instagram; dcterms:source kym:gigachad],
+    [a dbr:Twitter; dcterms:source kym:gigachad],
+    [a dbr:Imgur; dcterms:source kym:gigachad].
 
 isv:Sigma
     a isv:SlangTerm;
-    foaf:maker dbr:Vox_Day;
-    dcterms:created "2010"^^xsd:gYear;
-    skos:definition "Sigma is an Internet slang term, especially among young men, referring to a man whose self-assured, dogged individualism is considered a model of status, success, and attractiveness. It can also mean “extremely good,” and is also widely used as a nonsense term and meme online."@en;
-    skos:example "That sigma mindset is about leading, not following."@en.
+    foaf:maker [foaf:Proson dbr:Vox_Day; dcterms:source kym:sigma];
+    dcterms:created[rdf:value "2010"^^xsd:gYear; dcterms:source kym:sigma];
+    skos:definition [rdf:value "Sigma is an Internet slang term, especially among young men, referring to a man whose self-assured, dogged individualism is considered a model of status, success, and attractiveness. It can also mean “extremely good,” and is also widely used as a nonsense term and meme online."@en; dcterms:source <https://www.merriam-webster.com/slang/sigma>];
+    skos:example [rdf:value "He's such a sigma, always doing his own thing but still killing it in his career"@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/sigma-meaning>];
+    dcterms:medium
+    [a dbr:Reddit; dcterms:source kym:sigma],
+    [a dbr:Twitter; dcterms:source kym:sigma],
+    [a dbr:Instagram; dcterms:source kym:sigma].
 
 isv:UwU
     a isv:SlangTerm;
-    foaf:maker dbr:Anime_and_manga_fandom;
-    dcterms:created "2005"^^xsd:gYear;
-    skos:definition "UwU or uwu is another way of typing the smiley face :3, TwT or twt. it means happy, like an anime character's face when they're overjoyed."@en;
-    skos:example "Thanks for the compliment, you're too kind UwU"@en.
+    foaf:maker [rdf:value "Unknown"; dcterms:source kym:uwu];
+    dcterms:created [rdf:value "2004"^^xsd:gYear; dcterms:source kym:uwu];
+    skos:definition [rdf:value "UwU or uwu is another way of typing the smiley face :3, TwT or twt. it means happy, like an anime character's face when they're overjoyed."@en; dcterms:source ud:uwu];
+    skos:example[rdf:value "Thank you for the lovely gift! UwU"@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/uwu-meaning>];
+    dcterms:medium
+    [a dbr:Tumblr; dcterms:source kym:uwu],
+    [a dbr:DeviantArt; dcterms:source kym:uwu].
 
 isv:OwO
     a isv:SlangTerm;
-    foaf:maker dbr:Furry_fandom; 
-    dcterms:created "2003"^^xsd:gYear;
-    skos:definition "A face furries use, Or a way to make a face you can use for your art example the O’s are like eyes and the w is to make it cute like -w-, Looks like a cat."@en;
-    skos:example "OwO what's this?"@en.
+    foaf:maker [dcterms:service dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>],[foaf:group dbr:Furry_fandom; dcterms:source <https://en.wikifur.com/wiki/OwO>];
+    dcterms:created[rdf:value "2013"^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/OwO>];
+    skos:definition[rdf:value "A face furries use, Or a way to make a face you can use for your art example the O’s are like eyes and the w is to make it cute like -w-, Looks like a cat."@en; dcterms:source ud:OwO];
+    skos:example [rdf:example "OwO, what's this?"@en; dcterms:source ud:OwO];
+    dcterms:medium 
+    [a dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>],
+    [a <https://www.furaffinity.net/>; dcterms:source <https://en.wikifur.com/wiki/OwO>].
 
 isv:Colon_Three
     a isv:SlangTerm;
     skos:prefLabel ":3"@en;
-    foaf:maker dbr:Anime_and_manga_fandom;
-    dcterms:created "1990"^^xsd:gYear;   
-    skos:definition """A texting face typically used in conjunction with something cute. Known as the "Cat face" or simply, "The Cute Face"."""@en;
-    skos:example "Your kitten is soo cute! :3"@en.
+    foaf:maker [dcterms:service dbr:2channel; dcterms:source kym:3-cat-face];
+    dcterms:created [rdf:value "Unknown"; dcterms:source kym:3-cat-face]; 
+    skos:definition [rdf:value """A texting face typically used in conjunction with something cute. Known as the "Cat face" or simply, "The Cute Face"."""@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
+    skos:example [rdf:value "Your kitten is soo cute! :3"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
+    dcterms:medium
+    [a dbr:2channel; dcterms:source kym:3-cat-face],
+    [a dbr:Youtube; dcterms:source kym:3-cat-face],
+    [a dbr:Tumblr; dcterms:source kym:3-cat-face].
 
 isv:Bnuy
     a isv:SlangTerm;
-    foaf:maker dbr:Tumblr; 
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition """ "Bnuy" is a playful, cute alternative way of saying "bunny" (a rabbit) pronounced "buh-noo-i" """@en;
-    skos:example "I saw a bnuy outside in my garden yesterday and it was so cute!"@en.
+    foaf:maker [dcterms:service dbr:Reddit; dcterms:source kym:bnuuy];
+    dcterms:created[rdf:value "2020"^^xsd:gYear; dcterms:source kym:bnuuy];
+    skos:definition[rdf:value "Bnuy is a playful, cute alternative way of saying bunny (a rabbit) pronounced buh-noo-i "@en; dcterms:source ud:bnuy];
+    skos:example [rdf:value "I saw a bnuy outside in my garden yesterday and it was so cute!"@en; dcterms:source ud:bnuy];
+    dcterms:medium
+    [a dbr:Reddit; dcterms:source kym:bnuuy],
+    [a dbr:Twitter; dcterms:source kym:bnuuy].
 
 isv:Birb
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2012"^^xsd:gYear;
-    skos:definition "a cute, tiny, fluffy bird"@en;
-    skos:example "Henlo Birb, you want some seed?"@en.
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:birb];
+    skos:note [rdf:value "The earliest known use of the word birb in this context was on November 17th, 2012, when it was tweeted by the popular bird-themed Twitter BirdsRightsActivist.[1] The tweet received 87 retweets and 83 favorites in three years."; dcterms:source kym:birb];
+    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:birb];
+    skos:definition[rdf:value "a cute, tiny, fluffy bird"@en; dcterms:source ud:birb];
+    skos:example [rdf:value "Henlo Birb, you want some seed?"@en; dcterms:source ud:birb];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:birb],
+    [a dbr:Reddit; dcterms:source kym:birb],
+    [a dbr:Tumblr; dcterms:source kym:birb],
+    [a dbr:DeviantArt; dcterms:source kym:birb],
+    [a <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:birb].
 
 isv:Yeet
     a isv:SlangTerm;
-    foaf:maker <http://dbpedia.org/resource/Vine_(service)>;
-    dcterms:created "2014"^^xsd:gYear;
-    skos:definition "A word one may scream while propelling an object through the air at alarming speeds, heights, and etc."@en;
-    skos:example "Just yeet it in the trash, silly!"@en.
+    foaf:maker [dcterms:service <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:yeet],[dcterms:service dbr:YouTube; dcterms:source kym:yeet];
+    dcterms:created[rdf:value "2014"^^xsd:gYear; dcterms:source kym:yeet];
+    skos:definition [rdf:value "A word one may scream while propelling an object through the air at alarming speeds, heights, and etc."@en; dcterms:source ud:yeet];
+    skos:example[rdf:value "Just yeet it in the trash, silly!"@en; dcterms:source ud:yeet];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:yeet],
+    [a <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:yeet],
+    [a dbr:Facebook; dcterms:source kym:yeet],
+    [a dbr:Twitter; dcterms:source kym:yeet].
+
 
 isv:Jet2Holiday
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2024"^^xsd:gYear;
-    skos:definition """The "Jet2holiday meme" is a viral TikTok trend using an audio clip from a Jet2holidays advertising campaign featuring Jess Glynne's song "Hold My Hand" and voice actress Zoë Lister saying, "Nothing beats a Jet2 holiday," used for everything from travel fails to celebrating perfect trips, showcasing funny travel mishaps or ideal vacation moments in contrast to the ad's ideal."""@en;
-    skos:example "Nothing beats a Jet2holiday! and right now you can save £50 per person. that's £200 off for a family of 4"@en.
+    foaf:maker [dcterms:service dbr:TikTok; dcterms:source kym:nothing-beats-a-jet2-holiday];
+    dcterms:created[rdf:value "2024"^^xsd:gYear; dcterms:source kym:nothing-beats-a-jet2-holiday];
+    skos:definition[rdf:value """Nothing Beats a Jet2 Holiday, also known as Nothing Beats a Jet2holiday TV Ad or Darling Hold My Hand Jet2, refers to a catchphrase featured in a YouTube advertisement for Jet2, a British airline and package holiday provider. The ad, which uses Jess Glynne's song "Hold My Hand," was initially shared in early January 2024 but gained sarcastic meme usage on TikTok in March 2025 as users added the female narration saying, "Nothing beats a Jet2 holiday," and juxtaposed the upbeat soundbite with content related to chaotic or dangerous situations they found themselves in."""@en; dcterms:source kym:nothing-beats-a-jet2-holiday];
+    skos:example[rdf:value "Nothing beats a Jet2holiday! and right now you can save £50 per person. that's £200 off for a family of 4"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Nothing%20beats%20a%20Jet2holiday>];
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source kym:nothing-beats-a-jet2-holiday],
+    [a dbr:YouTube; dcterms:source kym:nothing-beats-a-jet2-holiday].
 
 isv:Grubhub
     a isv:SlangTerm;
-    foaf:maker dbr:Grubhub;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "Symbol of lazyness. A food delivery service with an obnoxious advertisement catering to a long dead audience. Grubhub perks give you deals on the food you love, the kind of deals that make you boogie."@en;
-    skos:example """Me: I'm hungry but lazy Friend: Order food from the place across the street on GrubHub"""@en.
+    foaf:maker [dcterms:service dbr:Grubhub; dcterms:source kym:grubhub-delivery-dance-ad];
+    dcterms:created[rdf:value "2020"^^xsd:gYear; dcterms:source kym:grubhub-delivery-dance-ad];
+    skos:definition[rdf:value "Symbol of lazyness. A food delivery service with an obnoxious advertisement catering to a long dead audieNothing Beats a Jet2 Holiday, also known as Nothing Beats a Jet2holiday TV Ad or Darling Hold My Hand Jet2, refers to a catchphrase featured in a YouTube advertisement for Jet2, a British airline and package holiday provider. The ad, which uses Jess Glynne's song 'Hold My Hand,'' was initially shared in early January 2024 but gained sarcastic meme usage on TikTok in March 2025 as users added the female narration saying, 'Nothing beats a Jet2 holiday,' and juxtaposed the upbeat soundbite with content related to chaotic or dangerous situations they found themselves innce. Grubhub perks give you deals on the food you love, the kind of deals that make you boogie."@en; dcterms:source ud:grubhub];
+    skos:example[rdf:value """Me: I'm hungry but lazy Friend: Order food from the place across the street on GrubHub"""@en; dcterms:source ud:grubhub];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:grubhub-delivery-dance-ad],
+    [a dbr:Reddit; dcterms:source kym:grubhub-delivery-dance-ad],
+    [a dbr:Twitter; dcterms:source kym:grubhub-delivery-dance-ad].
 
 isv:Bing_chilling
     a isv:SlangTerm;
-    foaf:maker dbr:John_Cena;
-    dcterms:created "2021"^^xsd:gYear;
-    skos:definition """Chinese word for "ice cream". Written as: 冰淇淋 (Bīngqílín) This phrase was popularized among internet users, when John Cena, a professional wrestler,and actor spoke Chinese to promote his upcoming movie among Chinese people."""@en;
-    skos:example """Zǎo ān, zhōngguó. Xiànzài wǒ yǒu bīngqílín (bing chilling). Wǒ fēicháng xǐhuān bīngqílín, dànshì “sùdù yǔ jīqíng 9” bǐ bīngqílín hǎo"""@en.
+    foaf:maker [foaf:Person dbr:John_Cena; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling];
+    dcterms:created [rdf:value "2021"^^xsd:gYear; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling];
+    skos:definition[rdf:value """Chinese word for "ice cream". Written as: 冰淇淋 (Bīngqílín) This phrase was popularized among internet users, when John Cena, a professional wrestler,and actor spoke Chinese to promote his upcoming movie among Chinese people."""@en; dcterms:source ud:bing%20chilling];
+    skos:example [rdf:value"""
+    Zǎo ān, zhōngguó. Xiànzài wǒ yǒu bīngqílín (bing chilling). Wǒ fēicháng xǐhuān bīngqílín, dànshì “sùdù yǔ jīqíng 9” bǐ bīngqílín hǎo
+    Good morning, China. Now I have ice cream. I like ice cream very much, but "Fast and Furious 9" is better than ice cream
+    """@en; dcterms:source ud:bing%20chilling];
+    dcterms:medium
+    [a dbr:Weibo; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling],
+    [a dbr:YouTube; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling],
+    [a dbr:TikTok; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling].
 
 isv:Clanker
     a isv:SlangTerm;
-    foaf:maker dbr:Star_Wars;
-    dcterms:created "2008"^^xsd:gYear;
+    foaf:maker [a dbr:Star_Wars; dcterms:source kym:clanker];
+    dcterms:created[rdf:value "2013"^^xsd:gYear; dcterms:source kym:clanker];
     skos:definition "A slur for robotic individuals. Also used to insult AI Agents."@en;
-    skos:example "That clanker right there is so annoying."@en.
+    skos:example "That clanker right there is so annoying."@en;
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source kym:clanker],
+    [a dbr:Reddit; dcterms:source kym:clanker],
+    [a dbr:Twitch; dcterms:source kym:clanker],
+    [a dbr:Mod_DB; dcterms:source kym:clanker].
 
 isv:W_L
     a isv:SlangTerm;
@@ -819,10 +892,14 @@ isv:FL
 
 isv:Mid
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition """Short for middle, Mid is generally a synonymous term with mediocre, in some instances replacing the word “meh.”"""@en;
-    skos:example "We waited on that album for 6 months but it was mid!"@en.
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:mid];
+    skos:note [rdf:value "Originally used in cannabis culture slang. While the exact first use online is unknown, an Urban Dictionary entry for this usage was added on January 15th, 2004, by user deejay."@en; dcterms:source kym:mid];
+    dcterms:created[rdf:value "2004"^^xsd:gYear; dcterms:source kym:mid];
+    skos:definition[rdf:value """Short for middle, Mid is generally a synonymous term with mediocre, in some instances replacing the word “meh.”"""@en; dcterms:source ud:mid];
+    skos:example [rdf:value "We waited on that album for 6 months but it was mid!"@en; dcterms:source ud:mid];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:mid],
+    [a dbr:TikTok; dcterms:source kym:mid].
 
 isv:Peak
     a isv:SlangTerm;
@@ -858,21 +935,28 @@ isv:Mog
 
 isv:Soft_launch
     a isv:SlangTerm;
-    foaf:maker dbr:Instagram;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "A photo preview of a talking stage before it becomes an official relationship on social media"@en;
-    skos:example """Kayla: Oh are you guys official now? Hannah: No, we're doing a soft launch of our relationship incase it doesn't work out Kayla: Good idea!"""@en.
+    foaf:maker [dcterms:service dbr:Instagram; dcterms:source kym:relationship-soft-launch];
+    dcterms:created[rdf:value "2016"^^xsd:gYear; dcterms:source kym:relationship-soft-launch];
+    skos:definition[rdf:value "A photo preview of a talking stage before it becomes an official relationship on social media"@en; dcterms:source ud:soft%20launch];
+    skos:example[rdf:value """Kayla: Oh are you guys official now? Hannah: No, we're doing a soft launch of our relationship incase it doesn't work out Kayla: Good idea!"""@en; dcterms:source ud:soft%20launch];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source kym:relationship-soft-launch],
+    [a dbr:TikTok; dcterms:source kym:relationship-soft-launch],
+    [a dbr:Twitter; dcterms:source kym:relationship-soft-launch],
+    [a dbr:Urban_Dictionary; dcterms:source kym:relationship-soft-launch].
 
 isv:Stand
     a isv:SlangTerm;
-    foaf:maker dbr:Anime_and_manga_fandom;
-    dcterms:created "2012"^^xsd:gYear;
-    skos:definition "A person completely and utterly obsessed with Jojo's Bizarre Adventure (or other anime) to the point of thirsty over the characters and creator."@en;
-    skos:example "That guy is a total Jojo's Bizarre Adventure STAND, he has a Jotaro pin-up."@en.
+    foaf:maker [foaf:Person: dbr:Hirohiko_Araki; dcterms:source kym:kymking-crimson-jojo-stand];
+    dcterms:created [rdf:value "1997"^^xsd:gYear; dcterms:source kym:kymking-crimson-jojo-stand];
+    skos:definition[rdf:value "A Stand (スタンド Sutando) is a visual manifestation of life energy (in other words, the manifestation of the soul of the user). A Stand is an entity psychically generated by its owner, referred to as a Stand User (スタンド使い Sutando Tsukai).[1] It generally presents itself as a figure hovering over or near the user and possesses abilities beyond those of an ordinary human, which, depending on the Stand User, can be wielded for good or evil. "@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
+    skos:example [rdf:value "Indeed Jotaro, what you have called an 'evil spirit' is but a powerful vision created by your own life energy! And since it stands next to you, it is called... a Stand!"@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
+    dcterms:medium
+    [a dbr:Tumblr; dcterms:source kym:kymking-crimson-jojo-stand].
 
 isv:Simp
     a isv:SlangTerm;
-    foaf:maker [dcterms:source dbr:Urban_Dictionary; dcterms:source kym:simp];
+    foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:simp];
     dcterms:created [rdf:value "2005"^^xsd:gYear; dcterms:source kym:simp];
     skos:definition [rdf:value """simp is a word used to call out usually a male for "simping" on a woman. The word simp means that the man is willing to do anything for the woman in exchange for their love and affection. This word is commonly miss-used so please use this word with the upmost of precaution."""@en; dcterms:source ud:simp];
     skos:example [rdf:value "i’m so lonely, i really want someone to simp"@en; dcterms:source ud:simp];
