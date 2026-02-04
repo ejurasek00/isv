@@ -634,11 +634,14 @@ isv:Gymmaxing
 
 isv:DYEL
     a isv:SlangTerm; 
-    foaf:maker dbr:Bodybuilding;
-    dcterms:created "2010"^^xsd:gYear;
-    skos:definition "DYEL stands for Do You Even Lift. It's for someone that at first sight doesn't look like the type of person that goes to the gym or lifts weights. It's mostly applied for people that workout but still see no result."@en;
-    skos:example "That guy looks huge, but dyel? He's totally DYEL!"@en;
-    dcterms:medium [a dbr:4chan; dcterms:source riecky:].
+    foaf:maker [dcterms:service <http://www.bodybuilding.com>; dcterms:source kym:do-you-even-lift];
+    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:do-you-even-lift];
+    skos:definition [rdf:value "DYEL stands for Do You Even Lift. It's for someone that at first sight doesn't look like the type of person that goes to the gym or lifts weights. It's mostly applied for people that workout but still see no result."@en; dcterms:source ud:DYEL];
+    skos:example [rdf:value "Even after 2 years at the gym, I still have DYEL"@en; dcterms:source ud:DYEL];
+    dcterms:medium [a dbr:4chan; dcterms:source riecky:],
+    [a dbr:Facebook; dcterms:source kym:do-you-even-lift],
+    [a dbr:YAYouTube; dcterms:source kym:do-you-even-lift],
+    [a dbr:Reddit; dcterms:source kym:do-you-even-lift].
 
 isv:op
     a isv:SlangTerm;
