@@ -381,9 +381,14 @@ isv:pfp
 
 isv:Zaddy
     a isv:SlangTerm;
-    skos:definition """The slang term for a really "handsome" guy who is very appealing and looks really fashionable."""@en;
-    skos:example "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en;
-    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
+    foaf:maker [dcterms:Service dbr:Urban_Dictionary; dcterms:source kym:zaddy];
+    dcterms:created [rdf:value "2008"^^xsd:gYear; dcterms:source kym:zaddy];
+    skos:definition [rdf:value "The slang term for a really 'handsome' guy who is very appealing and looks really fashionable."@en; dcterms:source ud:zaddy];
+    skos:example [rdf:value "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en; dcterms:source ud:zaddy];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source kym:zaddy],
+    [a dbr:Snapchat; dcterms:source kym:zaddy].
 
 isv:Goated
     a isv:SlangTerm;
@@ -679,27 +684,39 @@ isv:omegalul
 
 isv:monkaS
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2017"^^xsd:gYear;
-    skos:definition "A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation."@en;
-    skos:example "OMG what a play, that was some MonkaS stuff right there"@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:monkas];
+    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:monkas];
+    skos:definition [rdf:value "A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation."@en; dcterms:source ud:monkas];
+    skos:example [rdf:value "OMG what a play, that was some MonkaS stuff right there"@en; dcterms:source ud:monkas];
+    dcterms:medium 
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:4chan; dcterms:source kym:monkas],
+    [a dbr:Reddit; dcterms:source kym:monkas].
 
 isv:Sadge
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2019"^^xsd:gYear;
-    skos:definition "A Twitch emote that means sadness or depression"@en;
-    skos:example "I've been on a losing streak all day, sadge…"@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:sadge];
+    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:sadge];
+    skos:definition [rdf:value "A Twitch emote that means sadness or depression"@en; dcterms:source ud:sadge];
+    skos:example [rdf:value "I've been on a losing streak all day, sadge…"@en; dcterms:source ud:sadge];
+    dcterms:medium 
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source kym:sadge],
+    [a dbr:4chan; dcterms:source kym:sadge],
+    [a dbr:YouTube; dcterms:source kym:sadge].
 
 isv:Sus
     a isv:SlangTerm;
-    foaf:maker dbr:Among_Us;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition """A shorter version of the word "suspect". Usually used to define someone or something that looks suspicious or untrustworthy"""@en;
-    skos:example "that's kinda sus bro"@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [dcterms:service dbr:Among_Us; dcterms:source kym:sus];
+    dcterms:created [rdf:value "2019"^^xsd:gYear; dcterms:source kym:sus];
+    skos:definition [rdf:value """A shorter version of the word "suspect". Usually used to define someone or something that looks suspicious or untrustworthy"""@en; dcterms:source ud:sus];
+    skos:example [rdf:value "that's kinda sus bro"@en; dcterms:source ud:sus];
+    dcterms:medium 
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source kym:sus],
+    [a dbr:Instagram; dcterms:source kym:sus],
+    [a dbr:Twitter; dcterms:source kym:sus],
+    [a dbr:Facebook; dcterms:source kym:sus].
 
 isv:Amogus
     a isv:SlangTerm;
@@ -715,10 +732,15 @@ isv:Amogus
 
 isv:Impostor
     a isv:SlangTerm;
-    foaf:maker dbr:Among_Us;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "Someone who pretends to be someone else, usually in a serious setting, where the impostor is doing some sort of damage"@en;
-    skos:example "That surgeon who did Jane's tonsilectomy? Turns out, he was an impostor. He had a real job as an orderly in the hospital"@en.
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:there-is-1-impostor-among-us--2];
+    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:there-is-1-impostor-among-us--2];
+    skos:definition [rdf:value "Someone who pretends to be someone else, usually in a serious setting, where the impostor is doing some sort of damage"@en; dcterms:source ud:impostor];
+    skos:example [rdf:value "That surgeon who did Jane's tonsilectomy? Turns out, he was an impostor. He had a real job as an orderly in the hospital"@en; dcterms:source ud:the%20Impostor];
+    dcterms:medium
+    [a dbr:Twitter; dcterms:source kym:there-is-1-impostor-among-us--2],
+    [a dbr:Reddit; dcterms:source kym:there-is-1-impostor-among-us--2],
+    [a dbr:Facebook; dcterms:source kym:there-is-1-impostor-among-us--2].
+
 
 isv:Copium
     a isv:SlangTerm;
