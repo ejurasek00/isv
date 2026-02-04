@@ -410,8 +410,10 @@ isv:Zaddy
 
 isv:Goated
     a isv:SlangTerm;
-    skos:definition "an event or characteristic of someone  when something awesome or unbelievable is occurring or when someone does something shocking (good) or amazing"@en;
-    skos:example "Monkae you are so fun, you're literally goated."@en;
+    foaf:maker [foaf:person dbr:Muhammad_Ali; dcterms:source <https://en.wikipedia.org/wiki/GOAT_(sports_culture)>];
+    dcterms:created [rdf:value "1960s";  cterms:source <https://en.wikipedia.org/wiki/GOAT_(sports_culture)>];
+    skos:definition [rdf:value "GOAT stands for Greatest Of All Time. Referring to something or someone as the GOAT can indicate support or appreciation while not necessarily being literal"@en; dcterms:source wtnr:GOAT];
+    skos:example [rdf:value "Monkae you are so fun, you're literally goated."@en; dcterms:source ud:goated];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Pookie
