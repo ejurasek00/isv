@@ -710,11 +710,12 @@ isv:R_Slash
 
 isv:omegalul
     a isv:SlangTerm;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2016"^^xsd:gYear;
-    skos:definition "A word that you say on text or online when something is so funny you cant just say lol."@en;
-    skos:example """something funny happens: "That's a #omegalul right there" """@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:lul];
+    dcterms:created [rdf:value "2016"^^xsd:gYear; dcterms:source kym:lul];
+    skos:definition [rdf:value "A word that you say on text or online when something is so funny you cant just say lol."@en; dcterms:source ud:lul];
+    skos:example [rdf:value """something funny happens: "That's a #omegalul right there" """@en; dcterms:source ud:lul];
+    dcterms:medium
+    [a dbr:Twitch; dcterms:source riecky:].
 
 isv:monkaS
     a isv:SlangTerm;
