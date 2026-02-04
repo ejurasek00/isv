@@ -49,11 +49,14 @@ isv:2day
 
 isv:brb
     a isv:SlangTerm;
-    foaf:maker dbr:Instant_messaging;
-    dcterms:created "1996"^^xsd:gYear;
-    skos:definition "Be right back"@en;
-    skos:example """Vinny: brb\nRyan: ooooooookee\n-2 Minutes later-\nVinny: back, as you were saying?\nRyan: YAY!"""@en;
-    dcterms:medium dbr:AOL_Instant_Messenger.
+    foaf:maker [rdf:value "Unknown"; dcterms:source kym:brb];
+    dcterms:created [rdf:value "Unknown"; dcterms:source kym:brb];
+    skos:definition [rdf:value "BRB is an initialism for the expression “be right back,” which is typically used in instant messaging to notify others of a brief absence from the conversation in progress."@en; dcterms:source kym:brb];
+    skos:example [rdf:value """Vinny: brb\nRyan: ooooooookee\n-2 Minutes later-\nVinny: back, as you were saying?\nRyan: YAY!"""@en; dcterms:source ud:brb];
+    dcterms:medium
+    [a dbr:AOL_Instant_Messenger; dcterms:source kym:brb],
+    [a dbr:Facebook; dcterms:source kym:brb].
+
 
 isv:OMG
     a isv:SlangTerm;
