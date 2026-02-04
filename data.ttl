@@ -207,10 +207,10 @@ isv:HP
 
 isv:gg
     a isv:SlangTerm;
-    foaf:maker dbr:Online_gaming;
-    dcterms:created "1998"^^xsd:gYear;
-    skos:definition "Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship."@en;
-    skos:example "Red Team: GG, blue team"@en;
+    foaf:maker [rdf:value "Unknown"; dcterms:source kym:gg];
+    dcterms:created [rdf:value "Unknown"; dcterms:source kym:gg];
+    skos:definition [rdf:value "Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship."@en; dcterms:source ud:gg];
+    skos:example [rdf:value "Red Team: GG, blue team"@en; dcterms:source ud:gg];
     dcterms:medium
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:Discord; dcterms:source riecky:].
@@ -238,20 +238,36 @@ isv:opp
 
 isv:Karen
     a isv:SlangTerm;
-    skos:definition "Middle aged woman, typically blonde, makes solutions to others' problems an inconvenience to her although she isn't even remotely affected."@en;
-    skos:example "Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it."@en.
+    foaf:maker [rdf:value "Unknown"; dcterms:source kym:karen];
+    dcterms:created [rdf:value "2019"^^xsd:gYear; dcterms:source kym:karen];
+    skos:definition [rdf:value "Middle aged woman, typically blonde, makes solutions to others' problems an inconvenience to her although she isn't even remotely affected."@en; dcterms:source ud:karen];
+    skos:example [rdf:value "Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it."@en; dcterms:source ud:karenize];
+    dcterms:medium
+    [a dbr:Nintendo; dcterms:source kym:karen],
+    [a dbr:Tumblr; dcterms:source kym:karen],
+    [a dbr:Reddit; dcterms:source kym:karen],
+    [a dbr:Twitter; dcterms:source kym:karen].
 
 isv:NPC
     a isv:SlangTerm;
-    skos:definition "A play on video games non-player character mixed with a play on The Simulation Hypothesis."@en;
-    skos:example "Bro you are such an npc"@en;
-    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
+    foaf:maker [foaf:comunity <https://en.wikipedia.org/wiki/Dungeons_%26_Dragons>; dcterms:source kym:npc-non-playable-character];
+    dcterms:created [rdf:value "1996"^^xsd:gYear; dcterms:source kym:npc-non-playable-character];
+    skos:definition [rdf:value "A play on video games non-player character mixed with a play on The Simulation Hypothesis."@en; dcterms:source ud:NPC];
+    skos:example [rdf:value "Bro you are such an npc"@en; dcterms:source ud:Npc];
+    dcterms:medium 
+    [a dbr:YouTube; dcterms:source riecky:], 
+    [a dbr:Twitter; dcterms:source kym:npc-non-playable-character].
 
 isv:poggers
     a isv:SlangTerm;
-    skos:definition "A twitch emote typically used to express enthusiasm, enthrawlment or other sophisticated emotions of happiness and dopamine."@en;
-    skos:example "it’s pretty poggers."@en;
-    dcterms:medium [a dbr:Twitch; dcterms:source riecky:].
+    foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:poggers];
+    dcterms:created [rdf:value "2017"^^xsd:gYear; dcters:source kym:poggers];
+    skos:definition [rdf:value "A twitch emote typically used to express enthusiasm, enthrawlment or other sophisticated emotions of happiness and dopamine."@en; dcterms:source ud:poggers];
+    skos:example [rdf:value "it’s pretty poggers."@en; dcterms:source ud:poggers];
+    dcterms:medium
+    [a dbr:Twitch; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source kym:poggers],
+    [a dbr:Reddit; dcterms:source kym:poggers].
 
 isv:u
     a isv:SlangTerm;
@@ -524,8 +540,8 @@ isv:Ragebait
     a isv:SlangTerm;
     foaf:maker [dcterms:Service dbr:YTMND; dcterms:source kym:rage-bait-ragebait];
     dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source kym:rage-bait-ragebait];
-    skos:definition [rdf:value "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements in posts, comments, messages, or videos to trigger emotional, often hostile reactions from others."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=ragebait>];
-    skos:example [rdf:value "Don’t feed the ragebait in the comments; they just want you to get angry."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=ragebait>];
+    skos:definition [rdf:value "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements in posts, comments, messages, or videos to trigger emotional, often hostile reactions from others."@en; dcterms:source ud:ragebait];
+    skos:example [rdf:value "Don’t feed the ragebait in the comments; they just want you to get angry."@en; dcterms:source ud:ragebait];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
    
 isv:Six_Seven
@@ -577,10 +593,14 @@ isv:Nine_One_One
 
 isv:Cap
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2017"^^xsd:gYear;
-    skos:definition "The word lying but built different"@en;
-    skos:example "Yo that’s cap i didn’t do it!"@en.
+    foaf:maker [foaf:person dbr:Willie_D; dcterms:source kym:no-cap-cap-capping];
+    dcterms:created [rdf:value "1989"^^xsd:gYear; dcterms:source kym:no-cap-cap-capping];
+    skos:definition [rdf:value "The word lying but built different"@en; dcterms:source ud:cap];
+    skos:example[rdf:value "Yo that’s cap i didn’t do it!"@en; dcterms:source ud:cap];
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source kym:no-cap-cap-capping],
+    [a dbr:4chan; dcterms:source kym:no-cap-cap-capping],
+    [a dbr:Instagram; dcterms:source kym:no-cap-cap-capping].
 
 isv:rly
     a isv:SlangTerm;
