@@ -364,11 +364,16 @@ isv:tf
 
 isv:Cooked
     a isv:SlangTerm;
-    skos:definition """In slang, "cooked" means someone is exhausted, overwhelmed, in serious trouble, or under the influence of substances (high), essentially being "burnt out" or in a hopeless situation, with usage varying from physical fatigue ("I'm cooked after that workout") to being mentally drained or facing unavoidable consequences ("We're cooked if we miss this deadline")."""@en;
-    skos:example "If I miss the deadline for this project, I will be fundamentally cooked."@en;
+    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source kym:cooked-getting-cooked];
+    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source kym:cooked-getting-cooked];
+    skos:definition [rdf:value """Something that is cooked may be very good, very bad, or somewhere in between. The adjective may readily carry further nuances, depending on the context."""@en; dcterms:source ud:cooked];
+    skos:example [rdf:value "Oh man, that class was so cooked."@en; dcterms:source ud:cooked];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
-    [a dbr:Discord; dcterms:source riecky:].
+    [a dbr:Discord; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source kym:cooked-getting-cooked],
+    [a dbr:YouTube; dcterms:source kym:cooked-getting-cooked].
+
 
 isv:pfp
     a isv:SlangTerm;
@@ -518,13 +523,17 @@ isv:Gatekeeper
 
 isv:Based
     a isv:SlangTerm;
-    foaf:maker dbr:4chan;
-    dcterms:created "2010"^^xsd:gYear;
-    skos:definition "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think. Especially common in online political slang.The opposite of cringe, some times the opposite of biased."@en;
-    skos:example "the 8 ball jacket slap is still the most based thing on the internet"@en;
+    foaf:maker [foaf:person dbr:Lil_B; dcterms:source kym:based];
+    dcterms:created [rdf:value "2010"^^xsd:gYear; dcterms:source kym:based];
+    skos:definition [rdf:value "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think. Especially common in online political slang.The opposite of cringe, some times the opposite of biased."@en; dcterms:source ud:based];
+    skos:example [rdf:value "the 8 ball jacket slap is still the most based thing on the internet"@en; dcterms:source ud:based];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
-    [a dbr:4chan; dcterms:source riecky:].
+    [a dbr:4chan; dcterms:source riecky:],
+    [a dbr:Tumblr; dcterms:source kym:based],
+    [a dbr:Twitter; dcterms:source kym:based],
+    [a dbr:Instagram; dcterms:source kym:based].
+
 
 isv:mb
     a isv:SlangTerm;
@@ -582,11 +591,18 @@ isv:Rule_621
 
 isv:Twenty_One
     a isv:SlangTerm;
-    foaf:maker <http://dbpedia.org/resource/Vine_(service)>;
-    dcterms:created "2014"^^xsd:gYear;
+    foaf:maker[dcterms:Service <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:9-10-21];
+    dcterms:created [rdf:value "2013"^^xsd:gYear; dcterms:source kym:9-10-21];
     skos:prefLabel "21"@en;
-    skos:definition """A number from the vine “what 9 + 10 equals”."""@en;
-    skos:example """ "You stupid!" "No I not!" "What's 9+10?" "21" "You stupid!" """@en.
+    skos:definition [rdf:value """9+10=21 is an incorrect answer to a math problem, which was first spoken online in a Vine video. The video, also known as What's Nine Plus Ten, 21 Kid or the 21 Meme”."""@en; dcterms:source kym:9-10-21];
+    skos:example[rdf:value """ "You stupid!" "No I not!" "What's 9+10?" "21" "You stupid!" """@en; dcterms:source ud:21];
+    dcterms:medium
+    [a <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:9-10-21],
+    [a dbr:Instagram; dcterms:source kym:9-10-21],
+    [a dbr:Twitter; dcterms:source kym:9-10-21],
+    [a dbr:iFunny; dcterms:source kym:9-10-21],
+    [a dbr:YouTube; dcterms:source kym:9-10-21].
+
 
 isv:Nine_One_One
     a isv:SlangTerm;
@@ -663,10 +679,14 @@ isv:Frogposter
 
 isv:AI_slop
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2025"^^xsd:gYear;
-    skos:definition "Low-quality randomly generated AI content (images, accounts, text, etc) that has been flooding social media sites among other pages"@en;
-    skos:example "I am fed up wit the AI slop on Facebook and Instagram. It’s draining my nerves!"@en.
+    foaf:maker [dcterms:service dbr:Facebook; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop];
+    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop];
+    skos:definition [rdf:value "Low-quality randomly generated AI content (images, accounts, text, etc) that has been flooding social media sites among other pages"@en; dcterms:source ud:ai%20slop];
+    skos:example [rdf:value "Mark: Why don't you use Facebook anymore ? Herbert: My Facebook timeline is full of AI slop now, it's completely unusable."@en; dcterms:source ud:ai%20slop];
+    dcterms:medium
+    [a dbr:Facebook; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop],
+    [a dbr:TikTok; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop],
+    [a dbr:Twitter; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop].
 
 isv:R_Slash
     a isv:SlangTerm;
