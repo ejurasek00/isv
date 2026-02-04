@@ -464,11 +464,16 @@ isv:atp
 
 isv:GTA
     a isv:SlangTerm;
-    skos:definition "Grand Theft Auto video games series. We Got ______ Before GTA 6 defines a generation of waiting."@en;
-    skos:example "Crazy, we got Squid Game before GTA 6."@en;
+    foaf:maker [dcterms:Service dbr:Rockstar_Games; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
+    dcterms:created [rdf:value "1997"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
+    skos:definition [rdf:value "Grand Theft Auto video games series. We Got *fill in whatever here* Before. The GTA 6 defines a generation of waiting."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=We%20got%20X%20before%20GTA%20VI>];
+    skos:example [rdf:value "Crazy, we got Squid Game before GTA 6."@en; dcterms:source kym:we-got-x-before-gta-6];
     dcterms:medium
     [a dbr:Facebook; dcterms:source riecky:],
-    [a <https://dbpedia.org/page/Steam_(service)>; dcterms:source riecky:].
+    [a <https://dbpedia.org/page/Steam_(service)>; dcterms:source riecky:],
+    [a dbr:Twitter; dcterms:source kym:we-got-x-before-gta-6],
+    [a dbr:Reddit; dcterms:source kym:we-got-x-before-gta-6],
+    [a dbr:Facebook; dcterms:source kym:we-got-x-before-gta-6].
 
 isv:gd
     a isv:SlangTerm;
