@@ -9,7 +9,7 @@
 @prefix wtnr:    <https://en.wiktionary.org/wiki/>.
 @prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>.
 @prefix ud:      <https://www.urbandictionary.com/define.php?term=>.
-@prefix dic:     <https://www.dictionary.com/culture/slang/>.
+@prefix ds:     <https://www.dictionary.com/culture/slang/>.
 
 isv:Bait   
     a isv:SlangTerm;
@@ -57,14 +57,16 @@ isv:brb
     [a dbr:AOL_Instant_Messenger; dcterms:source kym:brb],
     [a dbr:Facebook; dcterms:source kym:brb].
 
-
 isv:OMG
     a isv:SlangTerm;
-    foaf:maker dbr:Internet_forums;
-    dcterms:created "1990"^^xsd:gYear;
-    skos:definition "Oh my God"@en;
-    skos:example "OMG, I left the kitchen on fire!"@en;
-    dcterms:medium dbr:Online_chat.
+    foaf:maker [foaf:person <https://dbpedia.org/page/John_Fisher,_1st_Baron_Fisher>; dcterms:source<https://www.dictionary.com/browse/omg>];
+    dcterms:created [rdf:value "1915"^^xsd:gYear; dcterms:source <https://www.dictionary.com/browse/omg>];
+    skos:definition [rdf:value "Oh my God;Eeuphemistic initialism used to express surprise, alarm, etc."@en; dcterms:source <https://www.dictionary.com/browse/omg>];
+    skos:example [rdf:value "OMG, I left the kitchen on fire!"@en; dcterms:source ud:OMG];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>],
+    [a dbr:Twitter; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>],
+    [a dbr:TikTok; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>].
 
 isv:cmng
     a isv:SlangTerm;
@@ -168,19 +170,19 @@ isv:Tea
 
 isv:Blaccent
     a isv:SlangTerm;
-    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source dic:blaccent];
+    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source ds:blaccent];
     skos:definition [rdf:value "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en; dcterms:source ud:blaccent];
     skos:example [rdf:value "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en; dcterms:source ud:blaccent].
 
 isv:Finsta
     a isv:SlangTerm;
-    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source dic:finsta];
-    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source dic:finsta];
+    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source ds:finsta];
+    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source ds:finsta];
     skos:definition [rdf:value "A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust."@en; dcterms:source ud:finsta];
     skos:example [rdf:value "I need a new username for my finsta."@en; dcterms:source ud:finsta];
     dcterms:medium
-    [a dbr:Instagram; dcterms:source dic:finsta],
-    [a dbr:Twitter; dcterms:source dic:finsta].
+    [a dbr:Instagram; dcterms:source ds:finsta],
+    [a dbr:Twitter; dcterms:source ds:finsta].
 
 isv:Slaycation
     a isv:SlangTerm;
