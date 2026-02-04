@@ -605,10 +605,12 @@ isv:Four_Twenty
 
 isv:Rule_621
     a isv:SlangTerm;
-    foaf:maker dbr:Furry_fandom;
-    dcterms:created "2009"^^xsd:gYear;
-    skos:definition "A convention guideline: 6 hours sleep, 2 meals, 1 shower daily."@en;
-    skos:example """ 1: "Oh man, I'm so tired..." 2: "Well, did you stick to the Rule 621?" """@en.
+    foaf:maker [foaf:person <https://fancyclopedia.org/Bob_Passovoy>; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>];
+    dcterms:created [rdf:value "2007"^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>];
+    skos:definition [rdf:value"(originally furry fandom slang, informal) A guideline for hygienic and healthy conduct while attending a multi-day convention, stipulating at minimum six hours of sleep per night, two meals per day, and one shower every day ."@en; dcterms:source <https://en.wiktionary.org/wiki/6-2-1_rule#English>];
+    skos:example[rdf:value """ 1: "Oh man, I'm so tired..." 2: "Well, did you stick to the Rule 621?" """@en; dcterms:source <https://www.urbandictionary.com/define.php?term=rule%20621>];
+    dcterms:media
+    [foaf:group dbr:Furry_fandom; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>].
 
 isv:Twenty_One
     a isv:SlangTerm;
