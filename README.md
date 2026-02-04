@@ -18,7 +18,7 @@ A real-world usage is to make a web UI layer and plot the results in an appealin
 
 The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux 25.10 and 26.04 (Beta preview)
 
-Tip: Install the "Turtle Power" extension in VSCode from [https://marketplace.visualstudio.com/items?itemName=greburn.turtlesense](https://marketplace.visualstudio.com/items?itemName=greburn.turtlesense) to get the code highlighted and to get the syntax checked!
+Tip: Install the "Turtle Language Server" extension in VSCode from [https://marketplace.visualstudio.com/items?itemName=stardog-union.vscode-langserver-turtle](https://marketplace.visualstudio.com/items?itemName=stardog-union.vscode-langserver-turtle) to get the code highlighted and to get the syntax checked!
 
 # Legal Notice
 
