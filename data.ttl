@@ -518,11 +518,14 @@ isv:Poser
 
 isv:Gatekeeper
     a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2022"^^xsd:gYear;
-    skos:definition "Someone who has the mindset that 'if you're not a fan/part of this (famous figure, a trend), you absolutely cannot join. Someone who always make things more complicated, always adds a controversy or an issue to a certain trend."@en;
-    skos:example "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en;
-    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
+    foaf:maker [dcterms:Service dbr:Urban_Dictionary; dcterms:source kym:gatekeeping-gatekeep];
+    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:gatekeeping-gatekeep];
+    skos:definition [rdf:value "Someone who has the mindset that 'if you're not a fan/part of this (famous figure, a trend), you absolutely cannot join. Someone who always make things more complicated, always adds a controversy or an issue to a certain trend."@en; dcterms:source ud:gatekeeper];
+    skos:example [rdf:value "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=a+gatekeeper>];
+    dcterms:medium 
+    [a dbr:YouTube; dcterms:source riecky:],
+    [a dbr:Reddit; dcterms:source kym:gatekeeping-gatekeep],
+    [a dbr:Instagram; dcterms:source kym:gatekeeping-gatekeep].
 
 isv:Based
     a isv:SlangTerm;
