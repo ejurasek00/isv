@@ -81,12 +81,15 @@ isv:idc
 
 isv:LOL
     a isv:SlangTerm;
-    foaf:maker dbr:Usenet;
-    dcterms:created "1989"^^xsd:gYear;
-    skos:definition "Stands for Laugh Out Loud. Or League of Legends."@en;
-    skos:example """Person A: "I just realized my shirt is on backward."\n Person B: "lol" """@en;
-    dcterms:medium dbr:Online_chat.
-
+    foaf:maker [a foaf:Person; rdf:value "Wanye Pearson"@en; dcterms:source <https://www.cbc.ca/radio/thecurrent/the-current-for-september-4-2019-1.5269696/in-the-80s-this-calgary-man-invented-one-of-the-most-common-words-in-internet-speak-1.5269807>];
+    dcterms:created [rdf:value"1989"^^xsd:gYear; dcterms:source wtnr:LOL];
+    skos:definition [rdf:value "It's original definition was Laughing out loud, also written occasionally as Lots of Laughs, used as a brief acronym to denote great amusement in chat conversations. Now, it is overused to the point where nobody laughs out loud when they say it. In fact, they probably don't even give a damn about what you just wrote. More accurately, the acronym lol should be redefined as Lack of laughter. LOL can stand for League of Legends too."@en; dcterms:source ud:lol];
+    skos:example[rdf:value "A: she thought the yogurt was milk! B: lol, I sometimes do this too"@en; dcterms:source ud:lol];
+    dcterms:medium
+    [a dbr:WhatsApp; dcterms:source <https://www.vedantu.com/english/lol-meaning>],
+    [a dbr:Facebook; dcterms:source <https://www.vedantu.com/english/lol-meaning>], 
+    [a dbr:Instagram; dcterms:source <https://www.vedantu.com/english/lol-meaning>].
+    
 isv:Only_in_Ohio
     a isv:SlangTerm;
     foaf:maker [dcterms:Service dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
