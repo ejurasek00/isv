@@ -241,8 +241,13 @@ isv:DPS
 
 isv:opp
     a isv:SlangTerm;
-    skos:definition "Anyone in competition or against you. Shorter word for an opponent."@en;
-    skos:example "All i see is opps in here"@en.
+    foaf:maker [dcterms:service dbr:YouTube; dcterms:source kym:opp-opps];
+    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:opp-opps];
+    skos:definition [rdf:value "Anyone in competition or against you. Shorter word for an opponent."@en; dctersms:source up:opp];
+    skos:example [rdf:value "All i see is opps in here"@en; dcterms:source ud:opp];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:opp-opps],
+    [a dbr:Twitter; dcterms:source kym:opp-opps].
 
 isv:Karen
     a isv:SlangTerm;
