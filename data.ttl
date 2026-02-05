@@ -315,8 +315,10 @@ isv:ngl
 
 isv:af
     a isv:SlangTerm;
-    skos:definition "Means 'as f—k' and is used to clarify things. You can also use it as the word 'very' or 'really'. Mostly used online or in text messages."@en;
-    skos:example "Wow! That's cool af."@en;
+    foaf:maker [a <https://dbpedia.org/page/Straight_Outta_Compton_(song)>; dcterms:source kym:as-fuck-af];
+    dcterms:created [rdf:value "1988"^^xsd:Gyear; dcterms:source kym:as-fuck-af];
+    skos:definition [rdf:value "Means 'as f—k' and is used to clarify things. You can also use it as the word 'very' or 'really'. Mostly used online or in text messages."@en; dcterms:source ud:af];
+    skos:example [rdf:value "Wow! That's cool af."@en; dcterms:source ud:af];
     dcterms:medium
         [a dbr:Instagram; dcterms:source riecky:],
         [a dbr:Facebook; dcterms:source riecky:],
