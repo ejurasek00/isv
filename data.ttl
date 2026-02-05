@@ -340,9 +340,17 @@ isv:Chill
 
 isv:ts
     a isv:SlangTerm;
-    skos:definition "This s—t"@en;
-    skos:example """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en;
-    dcterms:medium [a dbr:Twitter; dcterms:source riecky:].
+    dcterms:created [rdf:value "2013"; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
+    foaf:maker [a dbr:Memphis; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
+    skos:definition [rdf:value "Ts means This s--t"@en; dcterms:source ud:ts];
+    skos:example [rdf:value """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en; dcterms:source ud:ts];
+    dcterms:medium 
+    [a dbr:Twitter; dcterms:source riecky:],
+    [a dbr:WhatsApp; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>],
+    [a dbr:Snapchat; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>],
+    [a dbr:TikTok; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>].
+
+
 
 isv:ur
     a isv:SlangTerm;
