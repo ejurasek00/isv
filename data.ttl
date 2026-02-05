@@ -204,11 +204,11 @@ isv:Skibidi
 
 isv:AMA
     a isv:SlangTerm;
-    foaf:maker dbr:Reddit;
-    dcterms:created "2009"^^xsd:gYear;
+    foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://www.oreateai.com/blog/understanding-ama-the-reddit-phenomenon-of-ask-me-anything/f0f41572602b3f8d71370b77af9a27ec>];
+    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/R/IAmA>];
     skos:definition "It is an acronym for Ask Me Anything"@en;
     skos:example "Redditor: I work at the Pentagon and I survived 9/11. AMA"@en;
-    dcterms:medium dbr:Reddit.
+    dcterms:medium [a dbr:Reddit; dcterms:source <https://www.yahoo.com/news/how-reddit-s-ask-me-anything-became-part-of-the-mainstream-media-circuit--130755591.html>].
 
 isv:HP
     a isv:SlangTerm;
@@ -343,14 +343,12 @@ isv:ts
     dcterms:created [rdf:value "2013"; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
     foaf:maker [a dbr:Memphis; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
     skos:definition [rdf:value "Ts means This s--t"@en; dcterms:source ud:ts];
-    skos:example [rdf:value """ " aye quan, you do the homework? " " nah mane ts was too hard " """@en; dcterms:source ud:ts];
+    skos:example [rdf:value " aye quan, you do the homework? nah mane ts was too hardh" @en; dcterms:source ud:ts];
     dcterms:medium 
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:WhatsApp; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>],
     [a dbr:Snapchat; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>],
     [a dbr:TikTok; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>].
-
-
 
 isv:ur
     a isv:SlangTerm;
