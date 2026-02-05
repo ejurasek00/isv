@@ -289,9 +289,13 @@ isv:poggers
 
 isv:u
     a isv:SlangTerm;
-    skos:definition "You"@en;
-    skos:example "I love u."@en;
+    foaf:maker [rdf:service dbr:SMS; dcterms:source wtnr:u];
+    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [rdf:value "Abbreviation of you. u (second person, singular or plural, nominative or objective, possessive determiner ur, possessive pronoun urs, singular reflexive urself, plural reflexive urselves)"@en; dcterms:source wtnr:u];
+    skos:example [rdf:value "I love u."@en; dcterms:source ud:u];
+    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters, but replacing words or parts of words with numbers. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
+    [a dbr:SMS; dcterms:source wtnr:2day],
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:YouTube; dcterms:source riecky:],
