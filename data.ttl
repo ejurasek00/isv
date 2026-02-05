@@ -740,11 +740,11 @@ isv:AI_slop
 
 isv:R_Slash
     a isv:SlangTerm;
-    foaf:maker dbr:Reddit;
-    dcterms:created "2005"^^xsd:gYear;
+    foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://en.wikipedia.org/wiki/Timeline_of_Reddit>];
+    dcterms:created [foaf:value "2006^"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Timeline_of_Reddit>];
     skos:prefLabel "r/"@en;
-    skos:definition "The beginning sign of a subreddit name. Annoying when used outside of Reddit."@en;
-    skos:example "I saw a video where a guy made a laptop in a pizza corton box on r/DiWHY"@en;
+    skos:definition [rdf:value "The beginning sign of a subreddit name. Annoying when used outside of Reddit."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=r/>];
+    skos:example [rdf:value "This post is on the front page of r/music."@en; cterms:source <https://www.urbandictionary.com/define.php?term=r/>];
     dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:omegalul
