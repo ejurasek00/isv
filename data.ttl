@@ -175,9 +175,13 @@ isv:Tea
 
 isv:Blaccent
     a isv:SlangTerm;
+    foaf:maker [a dbr:African-American_English; dcterms:source <https://en.wiktionary.org/wiki/blaccent#English>];
     dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source ds:blaccent];
     skos:definition [rdf:value "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en; dcterms:source ud:blaccent];
-    skos:example [rdf:value "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en; dcterms:source ud:blaccent].
+    skos:example [rdf:value "Friend: How do you know he was African American?  Me: He spoke with a blaccent."@en; dcterms:source ud:blaccent];
+    dcterms:medium
+    [a dbr:Usenet; dcterms:source <https://en.wiktionary.org/wiki/blaccent#English>];
+    skos:note[rdf:value "Usenet, a portmanteau of User's Network, is a worldwide distributed discussion system available on computers. It was developed from the general-purpose Unix-to-Unix Copy (UUCP) dial-up network architecture. Tom Truscott and Jim Ellis conceived the idea in 1979, and it was established in 1980"; dcterms:source <https://en.wikipedia.org/wiki/Usenet>].
 
 isv:Finsta
     a isv:SlangTerm;
