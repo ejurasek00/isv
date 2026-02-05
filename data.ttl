@@ -33,10 +33,11 @@ isv:Troll
 
 isv:b4
     a isv:SlangTerm; 
-    foaf:maker dbr:SMS;
-    dcterms:created "1995"^^xsd:gYear;
-    skos:definition "Before"@en;
-    skos:example "U bin there b4, bro?"@en;
+    foaf:maker [rdf:service dbr:SMS; dcterms:source wtnr:B4];
+    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [rdf:value "Abbreviation of before."@en; dcterms:source wtnr:B4];
+    skos:example [rdf:value "U bin there b4, bro?"@en; dcterms:source ud:b4];
+    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters, but replacing words or parts of words with numbers. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium dbr:SMS.
 
 isv:2day
