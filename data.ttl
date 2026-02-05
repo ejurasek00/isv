@@ -378,8 +378,10 @@ isv:rn
 
 isv:fr
     a isv:SlangTerm;
-    skos:definition "For real"@en;
-    skos:example "I am serious fr."@en;
+    foaf:maker [rdf:service dbr:Urban_Dictionary; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
+    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
+    skos:definition [rdf:value "Initialism of for real. "@en; dcterms:source wtnr:fr];
+    skos:example [rdf:value "I am serious fr."@en; dcterms:source ud:fr];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source riecky:],
@@ -390,8 +392,8 @@ isv:fr
 
 isv:tf
     a isv:SlangTerm;
-    dcterms:created [rdf:value "1985"^^xsd:gYear; dcterms:source <https://www.dictionary.com/culture/acronyms/tf>];
     dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+
     skos:definition [rdf:value "Initialism of the f--k."@en; dctrems:source wtnr:tf];
     skos:example [rdf:value "tf is that?"@en; dcterms:source wtnr:tf];
     skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters, but replacing words or parts of words with numbers. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
