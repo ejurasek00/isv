@@ -328,8 +328,10 @@ isv:af
 
 isv:fw
     a isv:SlangTerm;
-    skos:definition "F—k with"@en;
-    skos:example "I don't fw that person anymore."@en;
+    dcterms:created [rdf:value "2010s"; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
+    foaf:maker [rdf:value "Unknown"; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
+    skos:definition[rdf:value "F--k with, meaning associate with or take part in."@en; dcterms:source ud:fw];
+    skos:example [rdf:value "I don't fw that person anymore."@en; dcterms:source ud:fw];
     dcterms:medium [a dbr:Twitter; dcterms:source riecky:].
 
 isv:Chill
