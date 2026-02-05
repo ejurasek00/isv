@@ -74,19 +74,20 @@ isv:OMG
 
 isv:cmng
     a isv:SlangTerm;
-    foaf:maker dbr:SMS;
-    dcterms:created "1998"^^xsd:gYear;
+    
     skos:definition "Coming"@en;
     skos:example "cmng later?"@en;
     dcterms:medium dbr:SMS.
 
 isv:idc
     a isv:SlangTerm;
-    foaf:maker dbr:Instant_messaging;
-    dcterms:created "2000"^^xsd:gYear;
-    skos:definition "Idc means I don't care. It is alike idk but they have two very different meanings. Actually, somebody could say idk and idc which is common also."@en;
-    skos:example "idc for it"@en;
-    dcterms:medium dbr:Text_messaging.
+    foaf:maker [rdf:service dbr:SMS; dcterms:source <https://en.wiktionary.org/wiki/IDC#English>];
+    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [rdf:value "Idc means I don't care. It is alike idk but they have two very different meanings. Actually, somebody could say idk and idc which is common also."@en; dcterms:source ud:idc];
+    skos:example [rdf:value "FRIEND:Ayo buddy, I think Mikey is talking to your girlfriend! THEM: idc"@en; dcterms:source ud:idc];
+    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters, but replacing words or parts of words with numbers. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:medium
+    [a dbr:SMS; dcterms:source <https://en.wiktionary.org/wiki/IDC#English>].
 
 isv:LOL
     a isv:SlangTerm;
