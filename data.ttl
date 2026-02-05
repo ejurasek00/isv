@@ -354,8 +354,11 @@ isv:ts
 
 isv:ur
     a isv:SlangTerm;
-    skos:definition "You are and the illiterate derivative forms from the word you"@en;
-    skos:example "ur an illiterate redneck"@en;
+    foaf:maker [rdf:service dbr:SMS; dcterms:source <https://7esl.com/ur/>];
+    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://7esl.com/ur/>];
+    skos:definition [rdf:value "Abbreviation of you're (you are)"@en; dcterms:source wtnr:ur];
+    skos:example [rdf:value "Person A: ur sleeping? Person B: *SNORES* Person C: ur right, he is sleeping!'"@en; wtnr:ur];
+    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters, but replacing words or parts of words with numbers. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source riecky:],
