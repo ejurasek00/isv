@@ -303,8 +303,10 @@ isv:u
 
 isv:ngl
     a isv:SlangTerm;
-    skos:definition """Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of 'just saying' or 'no offence' in the sense that it makes your statement more valid/less offensive"""@en;
-    skos:example "ngl, I cried during the season finale"@en;
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://www.howtogeek.com/656838/what-does-ngl-mean-and-how-do-you-use-it/>];
+    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source <https://www.howtogeek.com/656838/what-does-ngl-mean-and-how-do-you-use-it/>];
+    skos:definition [rdf:"""Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of 'just saying' or 'no offence' in the sense that it makes your statement more valid/less offensive"""@en; dcterms:source ud:Ngl];
+    skos:example [rdf:value "ngl, I cried during the season finale"@en; dcterms:source ud:ngl];
     dcterms:medium
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source riecky:],
