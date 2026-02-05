@@ -72,13 +72,6 @@ isv:OMG
     [a dbr:Twitter; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>],
     [a dbr:TikTok; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>].
 
-isv:cmng
-    a isv:SlangTerm;
-    
-    skos:definition "Coming"@en;
-    skos:example "cmng later?"@en;
-    dcterms:medium dbr:SMS.
-
 isv:idc
     a isv:SlangTerm;
     foaf:maker [rdf:service dbr:SMS; dcterms:source <https://en.wiktionary.org/wiki/IDC#English>];
