@@ -525,10 +525,10 @@ isv:Vibe
 
 isv:smh
     a isv:SlangTerm;
-    foaf:maker dbr:AOL;
-    dcterms:created "2022"^^xsd:gYear;
-    skos:definition "Shaking my head"@en;
-    skos:example "You don't know what smh means? smh"@en;
+    foaf:maker [rdf:value "Unknown"; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    dcterms:created [rdf:value"2000s"; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    skos:definition[rdf:value "Standing for shaking my head, "@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    skos:example[rdf:value "You don't know what smh means? smh"@en; dcterms:source ud:smh];
     dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:yt
