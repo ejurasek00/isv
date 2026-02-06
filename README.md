@@ -83,6 +83,15 @@ isv:SlangTerm is a subclass of skos:Concept which is a subclass of owl:Thing.
 
 ---
 
+# Related / Interconnected SlangTerms
+
+Some SlangTerms in isv: are related to each other. This is declared by `skos:related`.
+
+Currently implemented: OwO <-> UwU <-> :3 AND Floptropica <-> Flop AND Sus <-> Impostor <-> Amogus.
+
+![related](Related.png)
+
+---
 # Apache Jena Fuseki
 
 For the query part, Apache Jena Fuseki 5.6.0 on Kubuntu Linux 24.04.2 LTS was used.
