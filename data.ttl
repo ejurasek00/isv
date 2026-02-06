@@ -465,8 +465,10 @@ isv:Honse
 
 isv:Car
     a isv:SlangTerm;
-    skos:definition "Mishap when typing cat. They slide and accelerate the same, however."@en;
-    skos:example "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en;
+    foaf:maker [rdf:value "Unknown"; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
+    dcterms:created [rdf:value "Unknown"; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
+    skos:definition [rdf:value "Mishap when typing cat. They slide and accelerate the same, however."@en; dcterms:source <https://www.youtube.com/watch?v=fvqVDT0_kzI>];
+    skos:example [rdf:value "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en; dcterms:source <https://www.youtube.com/watch?v=x0-AxGAcDV0>];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Type_beat
@@ -833,8 +835,8 @@ isv:pls
     a isv:SlangTerm;
     foaf:maker dbr:SMS;
     dcterms:created "2004"^^xsd:gYear;
-    skos:definition "Please"@en;
-    skos:example "Donald Trump is a good president? Oh pls."@en.
+    skos:definition [rdf:value "Abbreviation of please."@en; dcterms:source wtnr:pls];
+    skos:example [rdf:value "Donald Trump is a good president? Oh pls."@en. dcterms:source ud:pls];
 
 isv:Selfie
     a isv:SlangTerm;
