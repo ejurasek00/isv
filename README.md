@@ -1,4 +1,4 @@
-# Eduard Jurášek - Internet slang vocabulary (topic 5)
+# Eduard Jurášek - Internet slang vocabulary (Topic 5)
 
 [https://github.com/ejurasek00/isv](https://github.com/ejurasek00/isv)
 
