@@ -1013,11 +1013,15 @@ isv:Clanker
 isv:W_L
     a isv:SlangTerm;
     skos:prefLabel "W/L"@en;
-    foaf:maker dbr:Twitch;
-    dcterms:created "2017"^^xsd:gYear;
-    skos:definition """Used in sports or games to tally scores, or to ask "Win or Lose? """@en;
-    skos:example """ "Just secured the bag, that's a huge W!" or "They dropped the ball, definitely an L for them" """@en.
-
+    foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    dcterms:created [rdf:value "2018"^^xsd:gYear; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    skos:note [rdf:value "Appeared in 2010s at gaming forums too."; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    skos:definition [rdf:value """W and L as mentioned "W" abbreviated as "Win" and "L" abbreviated as "Lose"; as in "W post" or "W joke" or "L post" or "L joke" or whatever you can add after the letter. """@en; dcterms:source <https://www.urbandictionary.com/define.php?term=w/l>];
+    skos:example [rdf:value "Your presentation today was a W, loved the graphics"@en; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    dcterms:medium
+    [a dbr:TikTok; dcterms:source <https://contentstudio.io/social-media-terms/win>],
+    [a dbr:Instagram; dcterms:source <https://contentstudio.io/social-media-terms/win>],
+    [a dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>].
 isv:FL
     a isv:SlangTerm;
     foaf:maker dbr:Gaming;
