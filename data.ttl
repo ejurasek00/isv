@@ -730,10 +730,10 @@ isv:DYEL
 
 isv:op
     a isv:SlangTerm;
-    foaf:maker dbr:Gamer;
-    dcterms:created "1990"^^xsd:gYear;
-    skos:definition "Op stands for overpowered."@en;
-    skos:example "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en;
+    foaf:maker [dcterms:service dbr:SMS; dcterms:source <https://en.wikipedia.org/wiki/SMS_language>];
+    dcterms:created [rdf:value "1990s"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/SMS_language>];
+    skos:definition [rdf:value "Op stands for overpowered. Something that is considered too powerful."@en; dcterms:source <https://www.uswitch.com/broadband/guides/gaming-terms-glossary/>];
+    skos:example [rdf:value "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en; rdf:value "Own example"];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:4chan; dcterms:source riecky:].
