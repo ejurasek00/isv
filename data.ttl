@@ -488,12 +488,6 @@ isv:Type_beat
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:Instagram; dcterms:source riecky:].
 
-isv:Scrumpt
-    a isv:SlangTerm;
-    skos:definition "another word for scream or screamed"@en;
-    skos:example "my mom scrumpt for help."@en;
-    dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
-
 isv:Offed
     a isv:SlangTerm;
     foaf:maker [rdf:value "Trinarchodia : the several reigns of Richard II, of Henry IV and of Henry V, 1649"; dcterms:soirce <https://greensdictofslang.com/entry/qk33fmi>];
