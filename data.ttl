@@ -1041,13 +1041,6 @@ isv:Mid
     [a dbr:Twitter; dcterms:source kym:mid],
     [a dbr:TikTok; dcterms:source kym:mid].
 
-isv:Peak
-    a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2018"^^xsd:gYear;
-    skos:definition "A word describing something that’s too good. You’d use this word to describe how good something was. At the peak of the moment."@en;
-    skos:example "The Pickle Rick episode of Rick and Morty is peak comedy!"@en.
-
 isv:Flop
     a isv:SlangTerm;
     foaf:maker [a dbr:Unknown; dcterms:source kym:flop-era];
