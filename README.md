@@ -224,6 +224,27 @@ The project was inspired by a masters thesis of a friend of mine. Thank you so m
 Riecky, J. (2025). Internet vernacular - a study of neologisms in online discourse of cybercultures [Masters Thehis, Univerzita sv. Cyrila a Metoda v Trnave FF UCM KAA]. Centrálny register záverečných a kvalifikačných prác OPAC CRZP. [https://opac.crzp.sk/?fn=detailBiblioFormChildM8GSN&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha](https://opac.crzp.sk/?fn=detailBiblioFormChildM8GSN&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha)
 
 ---
+
+# Support the Project
+
+If you found sone of the information in this project helpful, please, consider a donation as a courtesy. 
+
+This project costed me:
+- Lots of time during research 
+- Horse-doses of caffeine
+- Some beers
+- A USB drive purchase (thanks, *Planeo*, for being slow AF and making the staff stare at me in my tracksuit 3 minutes before closure in -3°C!).
+- A full system reinstall (the reason I needed that USB in the first place).
+- A train ticket
+- Sauna sessions* to recover my nerves.
+
+If you find this vocabulary helpful, consider buying me a coffee (or a beer, or a sauna entrance). I’d really appreciate the courtesy!
+
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200">](https://www.buymeacoffee.com/jure01vse)
+
+Thank you! <3
+
+---
 # Remarks
 Having any questions or suggestions on how to make this project better, do not hesitate
 to contact me via E-mail [jure01@vse.cz](mailto:jure01@vse.cz)
