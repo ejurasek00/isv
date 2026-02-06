@@ -535,10 +535,17 @@ isv:ikr
 
 isv:Vibe
     a isv:SlangTerm;
-    foaf:maker dbr:Instagram;
-    dcterms:created "2010"^^xsd:gYear;
-    skos:definition "To chill , be at peace, & let life do it's thing."@en;
-    skos:example "I just vibe on the beat"@en.
+    foaf:maker [a dbr:Jazz; dcterms:source <https://medium.com/grey-swan-guild/the-prefix-of-2025-exploring-the-ascendancy-of-vibe-83b47aef0478>];
+    dcterms:created [rdf:value "1966"^^xsd:gYear; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>];
+    skos:definition [rdf:valu "An atmosphere or aura felt to belong to a person, place or thing."@en; dcterms:source wtnr:vibe];
+    skos:example [rdf:value "I'm not getting good vibes from this cake."@en; dcterms:source ud:vibe];
+    dcterms:medium 
+    [a dbr:LinkedIn; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>],
+    [a dbr:Instagram; dcterms:source <https://www.daytranslations.com/blog/vibe-check/>],
+    [a dbr:TikTok; dcterms:source <https://www.daytranslations.com/blog/vibe-check/>].
+
+
+
 
 isv:smh
     a isv:SlangTerm;
