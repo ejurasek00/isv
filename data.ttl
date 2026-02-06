@@ -227,11 +227,14 @@ isv:gg
 
 isv:glhf
     a isv:SlangTerm;
-    foaf:maker dbr:Online_gaming;
-    dcterms:created "2000"^^xsd:gYear;
-    skos:definition "An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will."@en;
-    skos:example "player: glhf everyone!"@en;
-    dcterms:medium dbr:Multiplayer_video_games.
+    foaf:maker [dctersms:service dbr:Twitch; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>];
+    foaf:maker [dctersms:service dbr:Discord; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>];
+    dcterms:created [rdf:value "2000s"; dcterms:source <https://www.dictionary.com/browse/glhf>];
+    skos:definition [rdf:value "An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will."@en; dcterms:source ud:glhf];
+    skos:example [rdf:value "player: glhf everyone!"@en; dcterms:source ud:glhf];
+    dcterms:medium
+    [a dbr:Twitch; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>],
+    [a dbr:Discord; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>].
 
 isv:DPS
     a isv:SlangTerm;
