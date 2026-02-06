@@ -188,11 +188,12 @@ isv:Finsta
 
 isv:Slaycation
     a isv:SlangTerm;
-    foaf:maker dbr:Twitter;
-    dcterms:created "2016"^^xsd:gYear;
-    skos:definition "Super awesome, fancy vacation."@en;
-    skos:example "The stay at Madeira last year was totally a slaycation!"@en;
-    dcterms:medium dbr:Instagram, dbr:TikTok.
+    foaf:maker [foaf:person dbr:RuPaul; dcterms:source <https://en.wikipedia.org/wiki/Slay_(slang)>];
+    dcterms:created [rdf:value "2009"^^xsd:gYear;  dcterms:source <https://en.wikipedia.org/wiki/Slay_(slang)>];
+    skos:definition [rdf:value "Super awesome, fancy vacation."@en; dcterms:source ud:slaycation];
+    skos:example [rdf:value "The stay at Madeira last year was totally a slaycation!"@en; rdf:value "Own example"];
+    dcterms:medium
+    [a dbr:Instagram; dcterms:source <https://www.instagram.com/reels/DSLVyefkh9q/>].
 
 isv:Skibidi
     a isv:SlangTerm;
