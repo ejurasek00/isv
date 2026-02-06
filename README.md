@@ -227,7 +227,7 @@ Riecky, J. (2025). Internet vernacular - a study of neologisms in online discour
 
 # Support the Project
 
-If you found sone of the information in this project helpful, please, consider a donation as a courtesy. 
+If you find this vocabulary helpful, consider buying me a coffee (or a beer, or a sauna entrance). I’d really appreciate the courtesy!
 
 This project costed me:
 - Lots of time during research 
@@ -237,8 +237,6 @@ This project costed me:
 - A full system reinstall (the reason I needed that USB in the first place).
 - A train ticket
 - Sauna sessions* to recover my nerves.
-
-If you find this vocabulary helpful, consider buying me a coffee (or a beer, or a sauna entrance). I’d really appreciate the courtesy!
 
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200">](https://www.buymeacoffee.com/jure01vse)
 
