@@ -234,9 +234,10 @@ This project costed me:
 - Horse-doses of caffeine
 - Some beers
 - A USB drive purchase (thanks, *Planeo*, for being slow AF and making the staff stare at me in my tracksuit 3 minutes before closure in -3°C!).
-- A full system reinstall (the reason I needed that USB in the first place).
+- A full system reinstall (the reason I needed that USB in the first place)
 - A train ticket
-- Sauna sessions* to recover my nerves.
+- Sauna sessions to recover my nerves
+- Taking care of the cat
 
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200">](https://www.buymeacoffee.com/jure01vse)
 
