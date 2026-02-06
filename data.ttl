@@ -458,8 +458,11 @@ isv:Pookie
 
 isv:Twin
     a isv:SlangTerm;
-    skos:definition "A very good friend with similar interests or characteristics."@en;
-    skos:example "What up twin, you down for tonight?"@en;
+    foaf:maker [dcterms:Service dbr:TikTok; dcterms:source <https://stationerypal.com/blogs/how-to/what-does-twin-mean-in-gen-z-slang-heres-the-tea>];
+    foaf:maker [dcterms:Service dbr:Twitter; dcterms:source <https://stationerypal.com/blogs/how-to/what-does-twin-mean-in-gen-z-slang-heres-the-tea>];
+    dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source ud:twin];
+    skos:definition [rdf:value "A very good friend with similar interests or characteristics."@en; dcterms:source ud:twin];
+    skos:example [rdf:value "What up twin, you down for tonight?"@en; dcterms:source ud:twin];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Honse
