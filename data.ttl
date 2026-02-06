@@ -5,6 +5,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dbr:     <http://dbpedia.org/resource/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:  <https://schema.org/> .
 @prefix kym:     <https://knowyourmeme.com/memes/sites/>.
 @prefix wtnr:    <https://en.wiktionary.org/wiki/>.
 @prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>.
@@ -14,9 +15,9 @@
 isv:Bait   
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Usenet; dcterms:source kym:bait-this-is-bait];
-    dcterms:created [rdf:value "1995"^^xsd:gYear; dcterms:source kym:bait-this-is-bait];
-    skos:definition [rdf:value "Internet talk for lies or insults that are intended to annoy people"@en; dcterms:source ud:bait];
-    skos:example [rdf:value "Great bait, mate"@en; dcterms:source ud:bait];
+    dcterms:created [schema:dateCreated '1995'^^xsd:gYear; dcterms:source kym:bait-this-is-bait];
+    skos:definition [schema:text 'Internet talk for lies or insults that are intended to annoy people'@en; dcterms:source ud:bait];
+    skos:example [schema:text 'Great bait, mate'@en; dcterms:source ud:bait];
     dcterms:medium 
     [a dbr:4chan; dcterms:source kym:bait-this-is-bait],
     [a dbr:DeviantArt; dcterms:source kym:bait-this-is-bait].
@@ -24,9 +25,9 @@ isv:Bait
 isv:Troll
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Usenet; dcterms:source kym:trolling-troll];
-    dcterms:created [rdf:value "1995"^^xsd:gYear; dcterms:source kym:trolling-troll];
-    skos:definition [rdf:value "One who posts a deliberately provocative message to a newsgroup or message board with the intention of causing maximum disruption and argument"@en; dcterms:source ud:troll];
-    skos:example [rdf:value "guy 1: yo did you see that crazy 13andincrediblycut/andy harglesis guy spamming on weight lifting vids again? hes everywhere! guy 2: yeah but hes a sad loser ... a troll ... thats what andy harglesis is"@en; dcterms:source ud:troll];
+    dcterms:created [schema:dateCreated '1995'^^xsd:gYear; dcterms:source kym:trolling-troll];
+    skos:definition [schema:text 'One who posts a deliberately provocative message to a newsgroup or message board with the intention of causing maximum disruption and argument'@en; dcterms:source ud:troll];
+    skos:example [schema:text 'guy 1: yo did you see that crazy 13andincrediblycut/andy harglesis guy spamming on weight lifting vids again? hes everywhere! guy 2: yeah but hes a sad loser ... a troll ... thats what andy harglesis is'@en; dcterms:source ud:troll];
     dcterms:medium
     [a dbr:4chan; dcterms:source kym:trolling-troll],
     [a dbr:DeviantArt; dcterms:source kym:trolling-troll].
@@ -34,29 +35,29 @@ isv:Troll
 isv:b4
     a isv:SlangTerm; 
     foaf:maker [dcterms:service dbr:SMS; dcterms:source wtnr:B4];
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
-    skos:definition [rdf:value "Abbreviation of before."@en; dcterms:source wtnr:B4];
-    skos:example [rdf:value "U bin there b4, bro?"@en; dcterms:source ud:b4];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [schema:text 'Abbreviation of before.'@en; dcterms:source wtnr:B4];
+    skos:example [schema:text 'U bin there b4, bro?'@en; dcterms:source ud:b4];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:SMS; dcterms:source wtnr:B4].
 
 isv:2day
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SMS; dcterms:source wtnr:2day];
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
-    skos:definition [rdf:value "Abbreviation of today."@en; dcterms:source wtnr:2day];
-    skos:example [rdf:value "I need that info 2day, seriously."@en; dcterms:source ud:2day];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [schema:text 'Abbreviation of today.'@en; dcterms:source wtnr:2day];
+    skos:example [schema:text 'I need that info 2day, seriously.'@en; dcterms:source ud:2day];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:SMS; dcterms:source wtnr:2day].
 
 isv:brb
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source kym:brb];
-    dcterms:created [rdf:value "Unknown"; dcterms:source kym:brb];
-    skos:definition [rdf:value "BRB is an initialism for the expression “be right back,” which is typically used in instant messaging to notify others of a brief absence from the conversation in progress."@en; dcterms:source kym:brb];
-    skos:example [rdf:value """Vinny: brb\nRyan: ooooooookee\n-2 Minutes later-\nVinny: back, as you were saying?\nRyan: YAY!"""@en; dcterms:source ud:brb];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source kym:brb];
+    dcterms:created [schema:dateCreated 'Unknown'@en; dcterms:source kym:brb];
+    skos:definition [schema:text 'BRB is an initialism for the expression “be right back,” which is typically used in instant messaging to notify others of a brief absence from the conversation in progress.'@en; dcterms:source kym:brb];
+    skos:example [schema:text 'Vinny: brb\nRyan: ooooooookee\n-2 Minutes later-\nVinny: back, as you were saying?\nRyan: YAY!'@en; dcterms:source ud:brb];
     dcterms:medium
     [a dbr:AOL_Instant_Messenger; dcterms:source kym:brb],
     [a dbr:Facebook; dcterms:source kym:brb].
@@ -64,9 +65,9 @@ isv:brb
 isv:OMG
     a isv:SlangTerm;
     foaf:maker [foaf:person <https://dbpedia.org/page/John_Fisher,_1st_Baron_Fisher>; dcterms:source <https://www.dictionary.com/browse/omg>];
-    dcterms:created [rdf:value "1915"^^xsd:gYear; dcterms:source <https://www.dictionary.com/browse/omg>];
-    skos:definition [rdf:value "Oh my God; euphemistic initialism used to express surprise, alarm, etc."@en; dcterms:source <https://www.dictionary.com/browse/omg>];
-    skos:example [rdf:value "OMG, I left the kitchen on fire!"@en; dcterms:source ud:OMG];
+    dcterms:created [schema:dateCreated '1915'^^xsd:gYear; dcterms:source <https://www.dictionary.com/browse/omg>];
+    skos:definition [schema:text 'Oh my God; euphemistic initialism used to express surprise, alarm, etc.'@en; dcterms:source <https://www.dictionary.com/browse/omg>];
+    skos:example [schema:text 'OMG, I left the kitchen on fire!'@en; dcterms:source ud:OMG];
     dcterms:medium
     [a dbr:Instagram; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>],
     [a dbr:Twitter; dcterms:source <https://thesocialcat.com/glossary/omg-oh-my-god#what-does-omg-mean>],
@@ -75,19 +76,19 @@ isv:OMG
 isv:idc
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SMS; dcterms:source <https://en.wiktionary.org/wiki/IDC#English>];
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
-    skos:definition [rdf:value "Idc means I don't care. It is alike idk but they have two very different meanings. Actually, somebody could say idk and idc which is common also."@en; dcterms:source ud:idc];
-    skos:example [rdf:value "FRIEND: Ayo buddy, I think Mikey is talking to your girlfriend! THEM: idc"@en; dcterms:source ud:idc];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [schema:text 'Idc means I don\'t care. It is like idk but they have two very different meanings. Actually, somebody could say idk and idc which is common also.'@en; dcterms:source ud:idc];
+    skos:example [schema:text 'FRIEND: Ayo buddy, I think Mikey is talking to your girlfriend! THEM: idc'@en; dcterms:source ud:idc];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:SMS; dcterms:source <https://en.wiktionary.org/wiki/IDC#English>].
 
 isv:LOL
     a isv:SlangTerm;
-    foaf:maker [a foaf:Person; rdf:value "Wayne Pearson"@en; dcterms:source <https://www.cbc.ca/radio/thecurrent/the-current-for-september-4-2019-1.5269696/in-the-80s-this-calgary-man-invented-one-of-the-most-common-words-in-internet-speak-1.5269807>];
-    dcterms:created [rdf:value "1989"^^xsd:gYear; dcterms:source wtnr:LOL];
-    skos:definition [rdf:value "Its original definition was Laughing out loud, also written occasionally as Lots of Laughs, used as a brief acronym to denote great amusement in chat conversations. Now, it is overused to the point where nobody laughs out loud when they say it. LOL can stand for League of Legends too."@en; dcterms:source ud:lol];
-    skos:example [rdf:value "A: she thought the yogurt was milk! B: lol, I sometimes do this too"@en; dcterms:source ud:lol];
+    foaf:maker [a foaf:Person; schema:text 'Wayne Pearson'@en; dcterms:source <https://www.cbc.ca/radio/thecurrent/the-current-for-september-4-2019-1.5269696/in-the-80s-this-calgary-man-invented-one-of-the-most-common-words-in-internet-speak-1.5269807>];
+    dcterms:created [schema:dateCreated '1989'^^xsd:gYear; dcterms:source wtnr:LOL];
+    skos:definition [schema:text 'Its original definition was Laughing out loud, also written occasionally as Lots of Laughs, used as a brief acronym to denote great amusement in chat conversations. Now, it is overused to the point where nobody laughs out loud when they say it. LOL can stand for League of Legends too.'@en; dcterms:source ud:lol];
+    skos:example [schema:text 'A: she thought the yogurt was milk! B: lol, I sometimes do this too'@en; dcterms:source ud:lol];
     dcterms:medium
     [a dbr:WhatsApp; dcterms:source <https://www.vedantu.com/english/lol-meaning>],
     [a dbr:Facebook; dcterms:source <https://www.vedantu.com/english/lol-meaning>], 
@@ -96,17 +97,17 @@ isv:LOL
 isv:Only_in_Ohio
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
-    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
-    skos:definition [rdf:value "A TikTok trend where people post weird/absurd things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
-    skos:example [rdf:value "Only in Ohio would there be a cat like that"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
+    dcterms:created [schema:dateCreated '2022'^^xsd:gYear; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
+    skos:definition [schema:text 'A TikTok trend where people post weird/absurd things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
+    skos:example [schema:text 'Only in Ohio would there be a cat like that'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
     dcterms:medium [a dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio].
 
 isv:Floptropica 
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source kym:floptok-floptropica];
-    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:floptok-floptropica];    
-    skos:definition [rdf:value "A fictional island made by TikTok users based on the internet meme Floptok. The Island's appearance is based off Guafo Island. The President of Floptropica is Deborah Ali Williams, whilst the Queen is Jiafei, having come to power after the Badussy War."@en; dcterms:source <https://en.wikipedia.org/wiki/List_of_fictional_islands#F>];
-    skos:example [rdf:value "I can’t wait to go to Floptropica and meet queen Jiafei!"@en; dcterms:source ud:floptropica];
+    dcterms:created [schema:dateCreated '2022'^^xsd:gYear; dcterms:source kym:floptok-floptropica];    
+    skos:definition [schema:text 'A fictional island made by TikTok users based on the internet meme Floptok. The Island\'s appearance is based off Guafo Island. The President of Floptropica is Deborah Ali Williams, whilst the Queen is Jiafei, having come to power after the Badussy War.'@en; dcterms:source <https://en.wikipedia.org/wiki/List_of_fictional_islands#F>];
+    skos:example [schema:text 'I can’t wait to go to Floptropica and meet queen Jiafei!'@en; dcterms:source ud:floptropica];
     dcterms:medium 
     [a dbr:TikTok; dcterms:source kym:floptok-floptropica],
     [a dbr:Instagram; dcterms:source <https://floptropica.com/>].
@@ -114,9 +115,9 @@ isv:Floptropica
 isv:Wakanda
     a isv:SlangTerm;
     foaf:maker [foaf:person dbr:Stan_Lee; dcterms:source wtnr:Wakanda], [foaf:person dbr:Jack_Kirby; dcterms:source wtnr:Wakanda];
-    dcterms:created [rdf:value "1966"^^xsd:gYear; dcterms:source wtnr:Wakanda];
-    skos:definition [rdf:value "A fictional western African country from Marvel's comic books and movies"@en; dcterms:source ud:wakanda];
-    skos:example [rdf:value "Black panther is based on the kingdom of a Wakandan king"@en; dcterms:source ud:wakanda];
+    dcterms:created [schema:dateCreated '1966'^^xsd:gYear; dcterms:source wtnr:Wakanda];
+    skos:definition [schema:text 'A fictional western African country from Marvel\'s comic books and movies'@en; dcterms:source ud:wakanda];
+    skos:example [schema:text 'Black panther is based on the kingdom of a Wakandan king'@en; dcterms:source ud:wakanda];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:wakanda-isnt-real],
     [a dbr:Twitter; dcterms:source kym:wakanda-isnt-real].
@@ -124,33 +125,33 @@ isv:Wakanda
 isv:Covfefe
     a isv:SlangTerm;
     foaf:maker [foaf:person dbr:Donald_Trump; dcterms:source wtnr:Covfefe];
-    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source wtnr:Covfefe];
-    skos:definition [rdf:value "Misspelling of the word coverage mistakenly tweeted by President Donald Trump in late May 2017. The tweet was left up for more than six hours before being deleted, leading to a slew of puns, jokes, and confusion, resulting in #covfefe becoming the #1 trending hashtag in the world and prompting coverage from multiple news outlets"@en; dcterms:source kym:covfefe];
-    skos:example [rdf:value "Despite the constant negative press covfefe - Donald Trump"@en; dcterms:source wtnr:Covfefe];
+    dcterms:created [schema:dateCreated '2017'^^xsd:gYear; dcterms:source wtnr:Covfefe];
+    skos:definition [schema:text 'Misspelling of the word coverage mistakenly tweeted by President Donald Trump in late May 2017. The tweet was left up for more than six hours before being deleted, leading to a slew of puns, jokes, and confusion, resulting in #covfefe becoming the #1 trending hashtag in the world and prompting coverage from multiple news outlets'@en; dcterms:source kym:covfefe];
+    skos:example [schema:text 'Despite the constant negative press covfefe - Donald Trump'@en; dcterms:source wtnr:Covfefe];
     dcterms:medium [a dbr:Twitter ; dcterms:source wtnr:Covfefe].
 
 isv:Rizz
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:rizz-unspoken-rizz];
-    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source kym:rizz-unspoken-rizz];
-    skos:definition [rdf:value "The act of having rizz is to have lots of charisma."@en; dcterms:source ud:rizz];
-    skos:example [rdf:value "That boy Cornelius Fingerdoodle has some rizz."@en; dcterms:source ud:rizz];
+    dcterms:created [schema:dateCreated '2023'^^xsd:gYear; dcterms:source kym:rizz-unspoken-rizz];
+    skos:definition [schema:text 'The act of having rizz is to have lots of charisma.'@en; dcterms:source ud:rizz];
+    skos:example [schema:text 'That boy Cornelius Fingerdoodle has some rizz.'@en; dcterms:source ud:rizz];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Bussin
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:bussin];
-    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:bussin];
-    skos:definition [rdf:value "what you would say if something was really good."@en; dcterms:source ud:bussin];
-    skos:example [rdf:value "tay- i didnt know yo mama could cook this good! jj- yea her food be bussin"@en; dcterms:source ud:bussin];
+    dcterms:created [schema:dateCreated '2017'^^xsd:gYear; dcterms:source kym:bussin];
+    skos:definition [schema:text 'what you would say if something was really good.'@en; dcterms:source ud:bussin];
+    skos:example [schema:text 'tay- i didnt know yo mama could cook this good! jj- yea her food be bussin'@en; dcterms:source ud:bussin];
     dcterms:medium [a dbr:TikTok; dcterms:source kym:bussin].
 
 isv:Cheugy
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:cheugy];
-    dcterms:created [rdf:value "2018"^^xsd:gYear; dcterms:source kym:cheugy];
-    skos:definition [rdf:value "A catch-all word to describe anything that is basic, uncool or untrendy. According to The New York Times, cheugy (pronounced chew-gee) can be used, broadly, to describe someone who is out of date or trying too hard."@en; dcterms:source ud:Cheugy];
-    skos:example [rdf:value "I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, a jacket, sunglasses, and a floppy hat. She's so cheugy"@en; dcterms:source ud:Cheugy];
+    dcterms:created [schema:dateCreated '2018'^^xsd:gYear; dcterms:source kym:cheugy];
+    skos:definition [schema:text 'A catch-all word to describe anything that is basic, uncool or untrendy. According to The New York Times, cheugy (pronounced chew-gee) can be used, broadly, to describe someone who is out of date or trying too hard.'@en; dcterms:source ud:Cheugy];
+    skos:example [schema:text 'I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, a jacket, sunglasses, and a floppy hat. She\'s so cheugy'@en; dcterms:source ud:Cheugy];
     dcterms:medium
     [a dbr:Instagram; dcterms:source kym:cheugy],
     [a dbr:TikTok; dcterms:source kym:cheugy],
@@ -158,10 +159,10 @@ isv:Cheugy
 
 isv:Tea
     a isv:SlangTerm;
-    foaf:maker [rdf:value "William G. Hawkeswood"; dcterms:source kym:tea];
-    dcterms:created [rdf:value "1991"^^xsd:gYear; dcterms:source kym:tea];
-    skos:definition [rdf:value "The best kind of gossip, typically shared between friends. It’s a bonding tool for people of all ages. tea is usually about someone you know, but can also extend to celebrities random internet scandals, etc."@en; dcterms:source ud:tea];
-    skos:example [rdf:value "I heard some tea about Saturday night!"@en; dcterms:source ud:tea];
+    foaf:maker [schema:text 'William G. Hawkeswood'@en; dcterms:source kym:tea];
+    dcterms:created [schema:dateCreated '1991'^^xsd:gYear; dcterms:source kym:tea];
+    skos:definition [schema:text 'The best kind of gossip, typically shared between friends. It’s a bonding tool for people of all ages. tea is usually about someone you know, but can also extend to celebrities random internet scandals, etc.'@en; dcterms:source ud:tea];
+    skos:example [schema:text 'I heard some tea about Saturday night!'@en; dcterms:source ud:tea];
     dcterms:medium
     [a dbr:TikTok; dcterms:source <https://neonmusic.co.uk/decoding-spill-the-tea-the-evolution-usage-and-impact-of-a-popular-slang>],
     [a dbr:YouTube; dcterms:source <https://neonmusic.co.uk/decoding-spill-the-tea-the-evolution-usage-and-impact-of-a-popular-slang>].
@@ -169,54 +170,54 @@ isv:Tea
 isv:Blaccent
     a isv:SlangTerm;
     foaf:maker [a dbr:African-American_English; dcterms:source <https://en.wiktionary.org/wiki/blaccent#English>];
-    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source ds:blaccent];
-    skos:definition [rdf:value "A distinctive manner of speech, pitch or tone particular to African American urban inner city youth."@en; dcterms:source ud:blaccent];
-    skos:example [rdf:value "Friend: How do you know he was African American? Me: He spoke with a blaccent."@en; dcterms:source ud:blaccent];
+    dcterms:created [schema:dateCreated '2003'^^xsd:gYear; dcterms:source ds:blaccent];
+    skos:definition [schema:text 'A distinctive manner of speech, pitch or tone particular to African American urban inner city youth.'@en; dcterms:source ud:blaccent];
+    skos:example [schema:text 'Friend: How do you know he was African American? Me: He spoke with a blaccent.'@en; dcterms:source ud:blaccent];
     dcterms:medium
     [a dbr:Usenet; dcterms:source <https://en.wiktionary.org/wiki/blaccent#English>];
-    skos:note [rdf:value "Usenet, a portmanteau of User's Network, is a worldwide distributed discussion system available on computers. Tom Truscott and Jim Ellis conceived the idea in 1979, and it was established in 1980"; dcterms:source <https://en.wikipedia.org/wiki/Usenet>].
+    skos:note [schema:text 'Usenet, a portmanteau of User\'s Network, is a worldwide distributed discussion system available on computers. Tom Truscott and Jim Ellis conceived the idea in 1979, and it was established in 1980'@en; dcterms:source <https://en.wikipedia.org/wiki/Usenet>].
 
 isv:Finsta
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source ds:finsta];
-    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source ds:finsta];
-    skos:definition [rdf:value "A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust."@en; dcterms:source ud:finsta];
-    skos:example [rdf:value "I need a new username for my finsta."@en; dcterms:source ud:finsta];
+    dcterms:created [schema:dateCreated '2011'^^xsd:gYear; dcterms:source ds:finsta];
+    skos:definition [schema:text 'A fake Instagram account allowing you to post anything you would like without criticism anonymously to everyone except for people you talk to and trust.'@en; dcterms:source ud:finsta];
+    skos:example [schema:text 'I need a new username for my finsta.'@en; dcterms:source ud:finsta];
     dcterms:medium
     [a dbr:Instagram; dcterms:source ds:finsta],
     [a dbr:Twitter; dcterms:source ds:finsta].
 
 isv:Slaycation
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:RuPaul; dcterms:source <https://en.wikipedia.org/wiki/Slay_(slang)>];
-    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Slay_(slang)>];
-    skos:definition [rdf:value "Super awesome, fancy vacation."@en; dcterms:source ud:slaycation];
-    skos:example [rdf:value "The stay at Madeira last year was totally a slaycation!"@en; rdf:value "Own example"];
+    foaf:person dbr:RuPaul; 
+    dcterms:created [schema:dateCreated '2009'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Slay_(slang)>];
+    skos:definition [schema:text 'Super awesome, fancy vacation.'@en; dcterms:source ud:slaycation];
+    skos:example [schema:text 'The stay at Madeira last year was totally a slaycation!'@en; schema:text 'Own example'@en];
     dcterms:medium
     [a dbr:Instagram; dcterms:source <https://www.instagram.com/reels/DSLVyefkh9q/>].
 
 isv:Skibidi
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:YouTube; dcterms:source wtnr:skibidi];
-    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source wtnr:skibidi];
-    skos:definition [rdf:value "From skibidi, a nonlexical vocable used in scat singing. The jocular nonsense word is derived from the YouTube web series Skibidi Toilet (2023–present), which took the vocable from the song “Dom Dom Yes Yes” (2022) by Bulgarian singer Biser King."@en; dcterms:source wtnr:skibidi];
-    skos:example [rdf:value "Skibidi dop dop dop yes yes!"@en; dcterms:source ud:skibidi];
+    dcterms:created [schema:dateCreated '2023'^^xsd:gYear; dcterms:source wtnr:skibidi];
+    skos:definition [schema:text 'From skibidi, a nonlexical vocable used in scat singing. The jocular nonsense word is derived from the YouTube web series Skibidi Toilet (2023–present), which took the vocable from the song “Dom Dom Yes Yes” (2022) by Bulgarian singer Biser King.'@en; dcterms:source wtnr:skibidi];
+    skos:example [schema:text 'Skibidi dop dop dop yes yes!'@en; dcterms:source ud:skibidi];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:AMA
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://www.oreateai.com/blog/understanding-ama-the-reddit-phenomenon-of-ask-me-anything/f0f41572602b3f8d71370b77af9a27ec>];
-    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/R/IAmA>];
-    skos:definition  [rdf:value "It is an acronym for Ask Me Anything"@en; dcterms:source ud:AMA];
-    skos:example [rdf:value "Redditor: I work at the Pentagon and I survived 9/11. AMA"@en; dcterms:source ud:AMA];
+    dcterms:created [schema:dateCreated '2009'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/R/IAmA>];
+    skos:definition  [schema:text 'It is an acronym for Ask Me Anything'@en; dcterms:source ud:AMA];
+    skos:example [schema:text 'Redditor: I work at the Pentagon and I survived 9/11. AMA'@en; dcterms:source ud:AMA];
     dcterms:medium [a dbr:Reddit; dcterms:source <https://www.yahoo.com/news/how-reddit-s-ask-me-anything-became-part-of-the-mainstream-media-circuit--130755591.html>].
 
 isv:gg
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source kym:gg];
-    dcterms:created [rdf:value "Unknown"; dcterms:source kym:gg];
-    skos:definition [rdf:value "Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship."@en; dcterms:source ud:gg];
-    skos:example [rdf:value "Red Team: GG, blue team"@en; dcterms:source ud:gg];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source kym:gg];
+    dcterms:created [schema:dateCreated 'Unknown'@en; dcterms:source kym:gg];
+    skos:definition [schema:text 'Standing for Good Game, it is usually said after a round or match of a game as a show of good sportsmanship.'@en; dcterms:source ud:gg];
+    skos:example [schema:text 'Red Team: GG, blue team'@en; dcterms:source ud:gg];
     dcterms:medium
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:Discord; dcterms:source riecky:].
@@ -225,9 +226,9 @@ isv:glhf
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>];
     foaf:maker [dcterms:service dbr:Discord; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>];
-    dcterms:created [rdf:value "2000s"; dcterms:source <https://www.dictionary.com/browse/glhf>];
-    skos:definition [rdf:value "An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will."@en; dcterms:source ud:glhf];
-    skos:example [rdf:value "player: glhf everyone!"@en; dcterms:source ud:glhf];
+    dcterms:created [schema:dateCreated '2000s'@en; dcterms:source <https://www.dictionary.com/browse/glhf>];
+    skos:definition [schema:text 'An acronym, which stands for Good luck, have fun. Meant as a salutation at the beginning of a game, usually a sign of good will.'@en; dcterms:source ud:glhf];
+    skos:example [schema:text 'player: glhf everyone!'@en; dcterms:source ud:glhf];
     dcterms:medium
     [a dbr:Twitch; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>],
     [a dbr:Discord; dcterms:source <https://www.oreateai.com/blog/understanding-glhf-the-gamers-salutation/8ea4f1f286be845f0d579f390a631887>].
@@ -235,28 +236,28 @@ isv:glhf
 isv:DPS
     a isv:SlangTerm;
     foaf:maker [a dbr:RPG; dcterms:source <https://gametree.me/gaming-terms/dps/>];
-    dcterms:created [rdf:value "1990s"; dcterms:source <https://gametree.me/gaming-terms/dps/>];
-    skos:definition [rdf:value "Acronym meaning Damage Per Second. Often used in role playing games such as World of Warcraft, Defense of the Ancients, and Diablo. Used to measure how much damage per second a player is inflicting."@en; dcterms:source ud:DPS];
-    skos:example [rdf:value "Hero 1 hits once per second and deals 100 damage. His DPS is 100"@en; dcterms:source ud:DPS];
+    dcterms:created [schema:dateCreated '1990s'@en; dcterms:source <https://gametree.me/gaming-terms/dps/>];
+    skos:definition [schema:text 'Acronym meaning Damage Per Second. Often used in role playing games such as World of Warcraft, Defense of the Ancients, and Diablo. Used to measure how much damage per second a player is inflicting.'@en; dcterms:source ud:DPS];
+    skos:example [schema:text 'Hero 1 hits once per second and deals 100 damage. His DPS is 100'@en; dcterms:source ud:DPS];
     dcterms:medium
     [a dbr:World_of_Warcraft; dcterms:source <https://gametree.me/gaming-terms/dps/>].
 
 isv:opp
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:YouTube; dcterms:source kym:opp-opps];
-    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:opp-opps];
-    skos:definition [rdf:value "Anyone in competition or against you. Shorter word for an opponent."@en; dcterms:source ud:opp];
-    skos:example [rdf:value "All i see is opps in here"@en; dcterms:source ud:opp];
+    dcterms:created [schema:dateCreated '2011'^^xsd:gYear; dcterms:source kym:opp-opps];
+    skos:definition [schema:text 'Anyone in competition or against you. Shorter word for an opponent.'@en; dcterms:source ud:opp];
+    skos:example [schema:text 'All i see is opps in here'@en; dcterms:source ud:opp];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:opp-opps],
     [a dbr:Twitter; dcterms:source kym:opp-opps].
 
 isv:Karen
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source kym:karen];
-    dcterms:created [rdf:value "2019"^^xsd:gYear; dcterms:source kym:karen];
-    skos:definition [rdf:value "Middle aged woman, typically blonde, makes solutions to others' problems an inconvenience to her although she isn't even remotely affected."@en; dcterms:source ud:karen];
-    skos:example [rdf:value "Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it."@en; dcterms:source ud:karenize];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source kym:karen];
+    dcterms:created [schema:dateCreated '2019'^^xsd:gYear; dcterms:source kym:karen];
+    skos:definition [schema:text 'Middle aged woman, typically blonde, makes solutions to others\' problems an inconvenience to her although she isn\'t even remotely affected.'@en; dcterms:source ud:karen];
+    skos:example [schema:text 'Karen complains that her favorite parking spot was replaced by a ramp for wheel chairs. She parks her car in the old spot anyway and shoots a vlog about it.'@en; dcterms:source ud:karenize];
     dcterms:medium
     [a dbr:Nintendo; dcterms:source kym:karen],
     [a dbr:Tumblr; dcterms:source kym:karen],
@@ -266,9 +267,9 @@ isv:Karen
 isv:NPC
     a isv:SlangTerm;
     foaf:maker [foaf:community <https://en.wikipedia.org/wiki/Dungeons_%26_Dragons>; dcterms:source kym:npc-non-playable-character];
-    dcterms:created [rdf:value "1996"^^xsd:gYear; dcterms:source kym:npc-non-playable-character];
-    skos:definition [rdf:value "A play on video games non-player character mixed with a play on The Simulation Hypothesis."@en; dcterms:source ud:NPC];
-    skos:example [rdf:value "Bro you are such an npc"@en; dcterms:source ud:Npc];
+    dcterms:created [schema:dateCreated '1996'^^xsd:gYear; dcterms:source kym:npc-non-playable-character];
+    skos:definition [schema:text 'A play on video games non-player character mixed with a play on The Simulation Hypothesis.'@en; dcterms:source ud:NPC];
+    skos:example [schema:text 'Bro you are such an npc'@en; dcterms:source ud:Npc];
     dcterms:medium 
     [a dbr:YouTube; dcterms:source riecky:], 
     [a dbr:Twitter; dcterms:source kym:npc-non-playable-character].
@@ -276,9 +277,9 @@ isv:NPC
 isv:poggers
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:poggers];
-    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:poggers];
-    skos:definition [rdf:value "A twitch emote typically used to express enthusiasm, enthrallment or other sophisticated emotions of happiness and dopamine."@en; dcterms:source ud:poggers];
-    skos:example [rdf:value "it’s pretty poggers."@en; dcterms:source ud:poggers];
+    dcterms:created [schema:dateCreated '2017'^^xsd:gYear; dcterms:source kym:poggers];
+    skos:definition [schema:text 'A twitch emote typically used to express enthusiasm, enthrallment or other sophisticated emotions of happiness and dopamine.'@en; dcterms:source ud:poggers];
+    skos:example [schema:text 'it’s pretty poggers.'@en; dcterms:source ud:poggers];
     dcterms:medium
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source kym:poggers],
@@ -287,10 +288,10 @@ isv:poggers
 isv:u
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SMS; dcterms:source wtnr:u];
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
-    skos:definition [rdf:value "Abbreviation of you. u (second person, singular or plural, nominative or objective, possessive determiner ur, possessive pronoun urs, singular reflexive urself, plural reflexive urselves)"@en; dcterms:source wtnr:u];
-    skos:example [rdf:value "I love u."@en; dcterms:source ud:u];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [schema:text 'Abbreviation of you. u (second person, singular or plural, nominative or objective, possessive determiner ur, possessive pronoun urs, singular reflexive urself, plural reflexive urselves)'@en; dcterms:source wtnr:u];
+    skos:example [schema:text 'I love u.'@en; dcterms:source ud:u];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:SMS; dcterms:source wtnr:2day],
     [a dbr:Instagram; dcterms:source riecky:],
@@ -304,9 +305,9 @@ isv:u
 isv:ngl
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://www.howtogeek.com/656838/what-does-ngl-mean-and-how-do-you-use-it/>];
-    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source <https://www.howtogeek.com/656838/what-does-ngl-mean-and-how-do-you-use-it/>];
-    skos:definition [rdf:value "Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of 'just saying' or 'no offence' in the sense that it makes your statement more valid/less offensive"@en; dcterms:source ud:Ngl];
-    skos:example [rdf:value "ngl, I cried during the season finale"@en; dcterms:source ud:ngl];
+    dcterms:created [schema:dateCreated '2009'^^xsd:gYear; dcterms:source <https://www.howtogeek.com/656838/what-does-ngl-mean-and-how-do-you-use-it/>];
+    skos:definition [schema:text 'Not Gonna Lie Indicating you are admitting something that may be considered strange Could be deemed the equivalent of \'just saying\' or \'no offence\' in the sense that it makes your statement more valid/less offensive'@en; dcterms:source ud:Ngl];
+    skos:example [schema:text 'ngl, I cried during the season finale'@en; dcterms:source ud:ngl];
     dcterms:medium
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source riecky:],
@@ -315,9 +316,9 @@ isv:ngl
 isv:af
     a isv:SlangTerm;
     foaf:maker [a <https://dbpedia.org/page/Straight_Outta_Compton_(song)>; dcterms:source kym:as-fuck-af];
-    dcterms:created [rdf:value "1988"^^xsd:gYear; dcterms:source kym:as-fuck-af];
-    skos:definition [rdf:value "Means 'as f—k' and is used to clarify things. You can also use it as the word 'very' or 'really'. Mostly used online or in text messages."@en; dcterms:source ud:af];
-    skos:example [rdf:value "Wow! That's cool af."@en; dcterms:source ud:af];
+    dcterms:created [schema:dateCreated '1988'^^xsd:gYear; dcterms:source kym:as-fuck-af];
+    skos:definition [schema:text 'Means \'as f—k\' and is used to clarify things. You can also use it as the word \'very\' or \'really\'. Mostly used online or in text messages.'@en; dcterms:source ud:af];
+    skos:example [schema:text 'Wow! That\'s cool af.'@en; dcterms:source ud:af];
     dcterms:medium
         [a dbr:Instagram; dcterms:source riecky:],
         [a dbr:Facebook; dcterms:source riecky:],
@@ -327,23 +328,23 @@ isv:af
 
 isv:fw
     a isv:SlangTerm;
-    dcterms:created [rdf:value "2010s"; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
-    foaf:maker [rdf:value "Unknown"; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
-    skos:definition [rdf:value "F--k with, meaning associate with or take part in."@en; dcterms:source ud:fw];
-    skos:example [rdf:value "I don't fw that person anymore."@en; dcterms:source ud:fw];
+    dcterms:created [schema:dateCreated '2010s'@en; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source <https://www.dictionary.com/culture/acronyms/fw>];
+    skos:definition [schema:text 'F--k with, meaning associate with or take part in.'@en; dcterms:source ud:fw];
+    skos:example [schema:text 'I don\'t fw that person anymore.'@en; dcterms:source ud:fw];
     dcterms:medium [a dbr:Twitter; dcterms:source riecky:].
 
 isv:Chill
     a isv:SlangTerm;
-    skos:definition "Relax, hang out"@en;
-    skos:example "Wow that dude is pretty chill"@en.
+    skos:definition 'Relax, hang out'@en;
+    skos:example 'Wow that dude is pretty chill'@en.
 
 isv:ts
     a isv:SlangTerm;
-    dcterms:created [rdf:value "2013"; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
+    dcterms:created [schema:dateCreated '2013'@en; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
     foaf:maker [a dbr:Memphis; dcterms:source <https://englishinprogress.net/gen-z-slang/type-shit-explained/>];
-    skos:definition [rdf:value "Ts means This s--t"@en; dcterms:source ud:ts];
-    skos:example [rdf:value "aye quan, you do the homework? nah mane ts was too hard"@en; dcterms:source ud:ts];
+    skos:definition [schema:text 'Ts means This s--t'@en; dcterms:source ud:ts];
+    skos:example [schema:text 'aye quan, you do the homework? nah mane ts was too hard'@en; dcterms:source ud:ts];
     dcterms:medium 
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:WhatsApp; dcterms:source <https://www.smslocal.com/blog/what-does-ts-mean-in-text/>],
@@ -353,10 +354,10 @@ isv:ts
 isv:ur
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SMS; dcterms:source <https://7esl.com/ur/>];
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://7esl.com/ur/>];
-    skos:definition [rdf:value "Abbreviation of you're (you are)"@en; dcterms:source wtnr:ur];
-    skos:example [rdf:value "Person A: ur sleeping? Person B: *SNORES* Person C: ur right, he is sleeping!"@en; dcterms:source wtnr:ur];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://7esl.com/ur/>];
+    skos:definition [schema:text 'Abbreviation of you\'re (you are)'@en; dcterms:source wtnr:ur];
+    skos:example [schema:text 'Person A: ur sleeping? Person B: *SNORES* Person C: ur right, he is sleeping!'@en; dcterms:source wtnr:ur];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source riecky:],
@@ -368,9 +369,9 @@ isv:ur
 isv:fr
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
-    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
-    skos:definition [rdf:value "Initialism of for real."@en; dcterms:source wtnr:fr];
-    skos:example [rdf:value "I am serious fr."@en; dcterms:source ud:fr];
+    dcterms:created [schema:dateCreated '2003'^^xsd:gYear; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
+    skos:definition [schema:text 'Initialism of for real.'@en; dcterms:source wtnr:fr];
+    skos:example [schema:text 'I am serious fr.'@en; dcterms:source ud:fr];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source riecky:],
@@ -381,10 +382,10 @@ isv:fr
 
 isv:tf
     a isv:SlangTerm;
-    dcterms:created [rdf:value "Mid 1990s"; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
-    skos:definition [rdf:value "Initialism of the f--k."@en; dcterms:source wtnr:tf];
-    skos:example [rdf:value "tf is that?"@en; dcterms:source wtnr:tf];
-    skos:note [rdf:value "Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones."@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
+    dcterms:created [schema:dateCreated 'Mid 1990s'@en; dcterms:source <https://en.wikipedia.org/wiki/SMS>];
+    skos:definition [schema:text 'Initialism of the f--k.'@en; dcterms:source wtnr:tf];
+    skos:example [schema:text 'tf is that?'@en; dcterms:source wtnr:tf];
+    skos:note [schema:text 'Replacing word parts with numbers had a good reason historically when an SMS had a maximum length of 150 characters. However, replacing words or parts of words with numbers was around long before mobile phones.'@en; dcterms:source <https://www.quora.com/Why-do-people-type-2day-instead-of-today>];
     dcterms:medium
     [a dbr:Twitter; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source riecky:],
@@ -394,9 +395,9 @@ isv:tf
 isv:Cooked
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:cooked-getting-cooked];
-    dcterms:created [rdf:value "2009"^^xsd:gYear; dcterms:source kym:cooked-getting-cooked];
-    skos:definition [rdf:value "Something that is cooked may be very good, very bad, or somewhere in between. The adjective may readily carry further nuances, depending on the context."@en; dcterms:source ud:cooked];
-    skos:example [rdf:value "Oh man, that class was so cooked."@en; dcterms:source ud:cooked];
+    dcterms:created [schema:dateCreated '2009'^^xsd:gYear; dcterms:source kym:cooked-getting-cooked];
+    skos:definition [schema:text 'Something that is cooked may be very good, very bad, or somewhere in between. The adjective may readily carry further nuances, depending on the context.'@en; dcterms:source ud:cooked];
+    skos:example [schema:text 'Oh man, that class was so cooked.'@en; dcterms:source ud:cooked];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Discord; dcterms:source riecky:],
@@ -406,9 +407,9 @@ isv:Cooked
 isv:Zaddy
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:zaddy];
-    dcterms:created [rdf:value "2008"^^xsd:gYear; dcterms:source kym:zaddy];
-    skos:definition [rdf:value "The slang term for a really 'handsome' guy who is very appealing and looks really fashionable."@en; dcterms:source ud:zaddy];
-    skos:example [rdf:value "Daaaaaamn! Did you see that dude? He was a ZADDY!!!"@en; dcterms:source ud:zaddy];
+    dcterms:created [schema:dateCreated '2008'^^xsd:gYear; dcterms:source kym:zaddy];
+    skos:definition [schema:text 'The slang term for a really \'handsome\' guy who is very appealing and looks really fashionable.'@en; dcterms:source ud:zaddy];
+    skos:example [schema:text 'Daaaaaamn! Did you see that dude? He was a ZADDY!!!'@en; dcterms:source ud:zaddy];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source kym:zaddy],
@@ -416,18 +417,18 @@ isv:Zaddy
 
 isv:Goated
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Muhammad_Ali; dcterms:source <https://en.wikipedia.org/wiki/GOAT_(sports_culture)>];
-    dcterms:created [rdf:value "1960s"; dcterms:source <https://en.wikipedia.org/wiki/GOAT_(sports_culture)>];
-    skos:definition [rdf:value "GOAT stands for Greatest Of All Time. Referring to something or someone as the GOAT can indicate support or appreciation while not necessarily being literal"@en; dcterms:source wtnr:GOAT];
-    skos:example [rdf:value "Monkae you are so fun, you're literally goated."@en; dcterms:source ud:goated];
+    foaf:person dbr:Muhammad_Ali; 
+    dcterms:created [schema:dateCreated '1960s'@en; dcterms:source <https://en.wikipedia.org/wiki/GOAT_(sports_culture)>];
+    skos:definition [schema:text 'GOAT stands for Greatest Of All Time. Referring to something or someone as the GOAT can indicate support or appreciation while not necessarily being literal'@en; dcterms:source wtnr:GOAT];
+    skos:example [schema:text 'Monkae you are so fun, you\'re literally goated.'@en; dcterms:source ud:goated];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Pookie
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Germany; dcterms:source <https://www.queensjournal.ca/what-does-pookie-even-mean/>];
-    dcterms:created [rdf:value "1900"^^xsd:gYear; dcterms:source kym:pookie];
-    skos:definition [rdf:value "A term used for someone you go/date with or are married to. Basically a sweetheart"@en; dcterms:source ud:pookie];
-    skos:example [rdf:value "See you later, Pookie!"@en; dcterms:source ud:pookie];
+    dcterms:created [schema:dateCreated '1900'^^xsd:gYear; dcterms:source kym:pookie];
+    skos:definition [schema:text 'A term used for someone you go/date with or are married to. Basically a sweetheart'@en; dcterms:source ud:pookie];
+    skos:example [schema:text 'See you later, Pookie!'@en; dcterms:source ud:pookie];
     dcterms:medium
     [a dbr:Instagram; dcterms:source riecky:],
     [a dbr:Discord; dcterms:source riecky:].
@@ -436,59 +437,59 @@ isv:Twin
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source <https://stationerypal.com/blogs/how-to/what-does-twin-mean-in-gen-z-slang-heres-the-tea>];
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://stationerypal.com/blogs/how-to/what-does-twin-mean-in-gen-z-slang-heres-the-tea>];
-    dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source ud:twin];
-    skos:definition [rdf:value "A very good friend with similar interests or characteristics."@en; dcterms:source ud:twin];
-    skos:example [rdf:value "What up twin, you down for tonight?"@en; dcterms:source ud:twin];
+    dcterms:created [schema:dateCreated '2006'^^xsd:gYear; dcterms:source ud:twin];
+    skos:definition [schema:text 'A very good friend with similar interests or characteristics.'@en; dcterms:source ud:twin];
+    skos:example [schema:text 'What up twin, you down for tonight?'@en; dcterms:source ud:twin];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Honse
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Tumblr; dcterms:source kym:honse];
-    dcterms:created [rdf:value "2019"^^xsd:gYear; dcterms:source kym:honse];
-    skos:definition [rdf:value "Big chonky fat horse"@en; dcterms:source ud:honse];
-    skos:example [rdf:value """ "hey mum, do you see that honse!?" """@en; dcterms:source ud:honse];
+    dcterms:created [schema:dateCreated '2019'^^xsd:gYear; dcterms:source kym:honse];
+    skos:definition [schema:text 'Big chonky fat horse'@en; dcterms:source ud:honse];
+    skos:example [schema:text 'hey mum, do you see that honse!?'@en; dcterms:source ud:honse];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Car
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
-    dcterms:created [rdf:value "Unknown"; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
-    skos:definition [rdf:value "Mishap when typing cat. They slide and accelerate the same, however."@en; dcterms:source <https://www.youtube.com/watch?v=fvqVDT0_kzI>];
-    skos:example [rdf:value "Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!"@en; dcterms:source <https://www.youtube.com/watch?v=x0-AxGAcDV0>];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
+    dcterms:created [schema:dateCreated 'Unknown'@en; dcterms:source <https://walkingdogsinwebercounty4.wordpress.com/2024/11/10/the-quirky-trend-of-referring-to-cats-as-cars-on-social-media/>];
+    skos:definition [schema:text 'Mishap when typing cat. They slide and accelerate the same, however.'@en; dcterms:source <https://www.youtube.com/watch?v=fvqVDT0_kzI>];
+    skos:example [schema:text 'Hey we got the new car with the doors and the engine and the windshield wipers...No, that’s clearly a cat! Sir, this is 100% car right here!'@en; dcterms:source <https://www.youtube.com/watch?v=x0-AxGAcDV0>];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Type_beat
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SoundClick; dcterms:source <https://www.vice.com/en/article/type-beat-producers-interview-menace/>];
-    dcterms:created [rdf:value "2010s"; dcterms:source <https://www.soundverse.ai/blog/article/what-is-a-type-beat-1101>];
-    skos:definition [rdf:value "Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
-    skos:example [rdf:value "Hey Aaron, you're on a James type Beat"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
+    dcterms:created [schema:dateCreated '2010s'@en; dcterms:source <https://www.soundverse.ai/blog/article/what-is-a-type-beat-1101>];
+    skos:definition [schema:text 'Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
+    skos:example [schema:text 'Hey Aaron, you\'re on a James type Beat'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Offed
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Trinarchodia : the several reigns of Richard II, of Henry IV and of Henry V, 1649"; dcterms:source <https://greensdictofslang.com/entry/qk33fmi>];
-    dcterms:created [rdf:value "1649"^^xsd:gYear; dcterms:source <https://greensdictofslang.com/entry/qk33fmi>];
-    skos:definition [rdf:value "To offed someone is to have killed him."@en; dcterms:source ud:offed];
-    skos:example [rdf:value "Yo, Dre offed Craig last week."@en; dcterms:source ud:offed];
+    foaf:maker [schema:text 'Trinarchodia : the several reigns of Richard II, of Henry IV and of Henry V, 1649'@en; dcterms:source <https://greensdictofslang.com/entry/qk33fmi>];
+    dcterms:created [schema:dateCreated '1649'^^xsd:gYear; dcterms:source <https://greensdictofslang.com/entry/qk33fmi>];
+    skos:definition [schema:text 'To off someone is to have killed them.'@en; dcterms:source ud:offed];
+    skos:example [schema:text 'Yo, Dre offed Craig last week.'@en; dcterms:source ud:offed];
     dcterms:medium 
     [a dbr:Facebook; dcterms:source <https://www.facebook.com/baileysarian1/videos/he-offed-56-people-fifty-six-/3966764260002742>],
     [a dbr:Reddit; dcterms:source <https://www.reddit.com/r/Millennials/comments/1m9o0qh/can_we_stop_the_censor_culture/>].
 
 isv:tbr
     a isv:SlangTerm;
-    skos:definition "to be real"@en;
-    skos:example "TBR- You're very annoying!"@en;
+    skos:definition 'to be real'@en;
+    skos:example 'TBR- You\'re very annoying!'@en;
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:GTA
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Rockstar_Games; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
-    dcterms:created [rdf:value "1997"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
-    skos:definition [rdf:value "Grand Theft Auto video games series. We Got *fill in whatever here* Before. The GTA 6 defines a generation of waiting."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=We%20got%20X%20before%20GTA%20VI>];
-    skos:example [rdf:value "Crazy, we got Squid Game before GTA 6."@en; dcterms:source kym:we-got-x-before-gta-6];
+    dcterms:created [schema:dateCreated '1997'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
+    skos:definition [schema:text 'Grand Theft Auto video games series. We Got *fill in whatever here* Before. The GTA 6 defines a generation of waiting.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=We%20got%20X%20before%20GTA%20VI>];
+    skos:example [schema:text 'Crazy, we got Squid Game before GTA 6.'@en; dcterms:source kym:we-got-x-before-gta-6];
     dcterms:medium
     [a dbr:Facebook; dcterms:source riecky:],
     [a <https://dbpedia.org/page/Steam_(service)>; dcterms:source riecky:],
@@ -499,17 +500,17 @@ isv:GTA
 isv:ikr
     a isv:SlangTerm;
     foaf:maker [a dbr:California; dcterms:source <https://infinitylearn.com/surge/english/grammar/ikr-meaning/>];
-    dcterms:created [rdf:value "1990s"; dcterms:source <https://www.grammarly.com/blog/acronyms-abbreviations/ikr-meaning/>];
-    skos:definition [rdf:value "Initialism of I know, right?:"@en; dcterms:source wtnr:IKR];
-    skos:example [rdf:value "Girl: Wow thats such a cool design Guy: ikr I did it"@en; dcterms:source ud:ikr];
+    dcterms:created [schema:dateCreated '1990s'@en; dcterms:source <https://www.grammarly.com/blog/acronyms-abbreviations/ikr-meaning/>];
+    skos:definition [schema:text 'Initialism of I know, right?:'@en; dcterms:source wtnr:IKR];
+    skos:example [schema:text 'Girl: Wow thats such a cool design Guy: ikr I did it'@en; dcterms:source ud:ikr];
     dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:Vibe
     a isv:SlangTerm;
     foaf:maker [a dbr:Jazz; dcterms:source <https://medium.com/grey-swan-guild/the-prefix-of-2025-exploring-the-ascendancy-of-vibe-83b47aef0478>];
-    dcterms:created [rdf:value "1966"^^xsd:gYear; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>];
-    skos:definition [rdf:value "An atmosphere or aura felt to belong to a person, place or thing."@en; dcterms:source wtnr:vibe];
-    skos:example [rdf:value "I'm not getting good vibes from this cake."@en; dcterms:source ud:vibe];
+    dcterms:created [schema:dateCreated '1966'^^xsd:gYear; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>];
+    skos:definition [schema:text 'An atmosphere or aura felt to belong to a person, place or thing.'@en; dcterms:source wtnr:vibe];
+    skos:example [schema:text 'I\'m not getting good vibes from this cake.'@en; dcterms:source ud:vibe];
     dcterms:medium 
     [a dbr:LinkedIn; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>],
     [a dbr:Instagram; dcterms:source <https://www.daytranslations.com/blog/vibe-check/>],
@@ -517,27 +518,27 @@ isv:Vibe
 
 isv:smh
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
-    dcterms:created [rdf:value "2000s"; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
-    skos:definition [rdf:value "Standing for shaking my head,"@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
-    skos:example [rdf:value "You don't know what smh means? smh"@en; dcterms:source ud:smh];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    dcterms:created [schema:dateCreated '2000s'@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    skos:definition [schema:text 'Standing for shaking my head,'@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
+    skos:example [schema:text 'You don\'t know what smh means? smh'@en; dcterms:source ud:smh];
     dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:Poser
     a isv:SlangTerm;
     foaf:maker [a dbr:Punk_rock; dcterms:source <https://en.wikipedia.org/wiki/Poseur>];
-    dcterms:created [rdf:value "1881"^^xsd:gYear; dcterms:source <https://www.etymonline.com/word/poser>];
-    skos:definition [rdf:value "To pose: To pretend, to be somebody you're not, to be part of a culture or genre just to fit in."@en; dcterms:source ud:poser];
-    skos:example [rdf:value "Oh my God, you conform to everything you're being told to do when you don't think that's what you do! What a poser!"@en; dcterms:source ud:poser];
-    skos:note [rdf:value "The Online Etymology Dictionary suggests that poseur is in fact the English word poser dressed in French garb, and thus could itself be considered an affectation."@en; dcterms:source <https://en.wikipedia.org/wiki/Poseur>];
+    dcterms:created [schema:dateCreated '1881'^^xsd:gYear; dcterms:source <https://www.etymonline.com/word/poser>];
+    skos:definition [schema:text 'To pose: To pretend, to be somebody you\'re not, to be part of a culture or genre just to fit in.'@en; dcterms:source ud:poser];
+    skos:example [schema:text 'Oh my God, you conform to everything you\'re being told to do when you don\'t think that\'s what you do! What a poser!'@en; dcterms:source ud:poser];
+    skos:note [schema:text 'The Online Etymology Dictionary suggests that poseur is in fact the English word poser dressed in French garb, and thus could itself be considered an affectation.'@en; dcterms:source <https://en.wikipedia.org/wiki/Poseur>];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Gatekeeper
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:gatekeeping-gatekeep];
-    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:gatekeeping-gatekeep];
-    skos:definition [rdf:value "Someone who has the mindset that 'if you're not a fan/part of this (famous figure, a trend), you absolutely cannot join. Someone who always makes things more complicated."@en; dcterms:source ud:gatekeeper];
-    skos:example [rdf:value "we need to take care— gatekeepers are on their way to make a meme out of this trend."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=a+gatekeeper>];
+    dcterms:created [schema:dateCreated '2012'^^xsd:gYear; dcterms:source kym:gatekeeping-gatekeep];
+    skos:definition [schema:text 'Someone who has the mindset that "if you\'re not a fan/part of this (famous figure, a trend), you absolutely cannot join." Someone who always makes things more complicated.'@en; dcterms:source ud:gatekeeper];
+    skos:example [schema:text 'we need to take care— gatekeepers are on their way to make a meme out of this trend.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=a+gatekeeper>];
     dcterms:medium 
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:Reddit; dcterms:source kym:gatekeeping-gatekeep],
@@ -545,10 +546,10 @@ isv:Gatekeeper
 
 isv:Based
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Lil_B; dcterms:source kym:based];
-    dcterms:created [rdf:value "2010"^^xsd:gYear; dcterms:source kym:based];
-    skos:definition [rdf:value "A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think."@en; dcterms:source ud:based];
-    skos:example [rdf:value "the 8 ball jacket slap is still the most based thing on the internet"@en; dcterms:source ud:based];
+    foaf:person dbr:Lil_B;
+    dcterms:created [schema:dateCreated '2010'^^xsd:gYear; dcterms:source kym:based];
+    skos:definition [schema:text 'A word used when you agree with something; or when you want to recognize someone for being themselves, i.e. courageous and unique or not caring what others think.'@en; dcterms:source ud:based];
+    skos:example [schema:text 'the 8 ball jacket slap is still the most based thing on the internet'@en; dcterms:source ud:based];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:4chan; dcterms:source riecky:],
@@ -558,67 +559,67 @@ isv:Based
 
 isv:mb
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Questionable"; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
-    dcterms:created [rdf:value "1970s"; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
-    skos:definition [rdf:value "Initialism of my bad."@en; dcterms:source <https://en.wiktionary.org/wiki/MB#English>];
-    skos:example [rdf:value "Oh sorry, mb"@en; dcterms:source ud:mb];
+    foaf:maker [schema:text 'Questionable'@en; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
+    dcterms:created [schema:dateCreated '1970s'@en; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
+    skos:definition [schema:text 'Initialism of my bad.'@en; dcterms:source <https://en.wiktionary.org/wiki/MB#English>];
+    skos:example [schema:text 'Oh sorry, mb'@en; dcterms:source ud:mb];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Rule_34
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:4chan; dcterms:source wtnr:Rule_34];
-    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source wtnr:Rule_34];
-    skos:definition [rdf:value "If it exists, there is p**n of it. If there isn't, there will be."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>];
-    skos:example [rdf:value "Why don't you Google rule 34?"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>].
+    dcterms:created [schema:dateCreated '2003'^^xsd:gYear; dcterms:source wtnr:Rule_34];
+    skos:definition [schema:text 'If it exists, there is p**n of it. If there isn\'t, there will be.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>];
+    skos:example [schema:text 'Why don\'t you Google rule 34?'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Rule%2034>].
 
 isv:Ragebait
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:YTMND; dcterms:source kym:rage-bait-ragebait];
-    dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source kym:rage-bait-ragebait];
-    skos:definition [rdf:value "Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements."@en; dcterms:source ud:ragebait];
-    skos:example [rdf:value "Don’t feed the ragebait in the comments; they just want you to get angry."@en; dcterms:source ud:ragebait];
+    dcterms:created [schema:dateCreated '2006'^^xsd:gYear; dcterms:source kym:rage-bait-ragebait];
+    skos:definition [schema:text 'Content deliberately created to provoke anger or frustration online. Similar to trolling or baiting, ragebait uses inflammatory or controversial statements.'@en; dcterms:source ud:ragebait];
+    skos:example [schema:text 'Don’t feed the ragebait in the comments; they just want you to get angry.'@en; dcterms:source ud:ragebait];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
     
 isv:Six_Seven
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source <https://en.wikipedia.org/wiki/6-7_meme>];
-    dcterms:created [rdf:value "2025"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/6-7_meme>];
-    skos:prefLabel "6-7"@en;
-    skos:definition [rdf:value "Teens and adults alike have tried to explain it. Some say it means “so-so,” especially since kids often pair the phrase with an up-and-down hand motion."@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>];
-    skos:example [rdf:value "I didn’t understand it either i told my friend to meet me at 6 or 7 and he yelled as he was biking away SIX SEVEN and i was confused"@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>].
+    dcterms:created [schema:dateCreated '2025'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/6-7_meme>];
+    skos:prefLabel '6-7'@en;
+    skos:definition [schema:text 'Teens and adults alike have tried to explain it. Some say it means “so-so,” especially since kids often pair the phrase with an up-and-down hand motion.'@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>];
+    skos:example [schema:text 'I didn’t understand it either i told my friend to meet me at 6 or 7 and he yelled as he was biking away SIX SEVEN and i was confused'@en; dcterms:source <https://www.merriam-webster.com/slang/six-seven>].
 
 isv:Sixty_Nine
     a isv:SlangTerm;
-    foaf:maker [dcterms:location dbr:France; dcterms:source kym:69-sixty-nine];
-    dcterms:created [rdf:value "1790"^^xsd:gYear; dcterms:source kym:69-sixty-nine];
-    skos:prefLabel "69"@en;
-    skos:definition "The number that falls between 68 and 70. Often used in internet humor to denote a recursive or symmetrical relationship."@en;
-    skos:example [rdf:value "69% of people find something dirty in every sentence."@en; dcterms:source ud:69].
+    dcterms:location dbr:France; 
+    dcterms:created [schema:dateCreated '1790'^^xsd:gYear; dcterms:source kym:69-sixty-nine];
+    skos:prefLabel '69'@en;
+    skos:definition 'The number that falls between 68 and 70. Often used in internet humor to denote a recursive or symmetrical relationship.'@en;
+    skos:example [schema:text '69% of people find something dirty in every sentence.'@en; dcterms:source ud:69].
 
 isv:Four_Twenty
     a isv:SlangTerm;
-    foaf:maker [dcterms:location <http://dbpedia.org/resource/San_Rafael,_California>; dcterms:source kym:420];
-    dcterms:created [rdf:value "1971"^^xsd:gYear; dcterms:source kym:420];
-    skos:prefLabel "420"@en;
-    skos:definition "420, 4:20 or 4/20 is cannabis culture slang for cannabis consumption, especially smoking around the time 4:20 p.m. (16:20)."@en;
-    skos:example "Let's go out on 420 at 420 for some 420ing!!!"@en.
+    dcterms:location <http://dbpedia.org/resource/San_Rafael,_California>; 
+    dcterms:created [schema:dateCreated '1971'^^xsd:gYear; dcterms:source kym:420];
+    skos:prefLabel '420'@en;
+    skos:definition '420, 4:20 or 4/20 is cannabis culture slang for cannabis consumption, especially smoking around the time 4:20 p.m. (16:20).'@en;
+    skos:example 'Let\'s go out on 420 at 420 for some 420ing!!!'@en.
 
 isv:Rule_621
     a isv:SlangTerm;
-    foaf:maker [foaf:person <https://fancyclopedia.org/Bob_Passovoy>; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>];
-    dcterms:created [rdf:value "2007"^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>];
-    skos:definition [rdf:value "(originally furry fandom slang, informal) A guideline for hygienic and healthy conduct while attending a multi-day convention, stipulating at minimum six hours of sleep per night, two meals per day, and one shower every day."@en; dcterms:source <https://en.wiktionary.org/wiki/6-2-1_rule#English>];
-    skos:example [rdf:value """ 1: "Oh man, I'm so tired..." 2: "Well, did you stick to the Rule 621?" """@en; dcterms:source <https://www.urbandictionary.com/define.php?term=rule%20621>];
+    foaf:person <https://fancyclopedia.org/Bob_Passovoy>; 
+    dcterms:created [schema:dateCreated '2007'^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>];
+    skos:definition [schema:text '(originally furry fandom slang, informal) A guideline for hygienic and healthy conduct while attending a multi-day convention, stipulating at minimum six hours of sleep per night, two meals per day, and one shower every day.'@en; dcterms:source <https://en.wiktionary.org/wiki/6-2-1_rule#English>];
+    skos:example [schema:text '1: "Oh man, I\'m so tired..." 2: "Well, did you stick to the Rule 621?"'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=rule%20621>];
     dcterms:medium
     [foaf:group dbr:Furry_fandom; dcterms:source <https://en.wikifur.com/wiki/6-2-1_rule>].
 
 isv:Twenty_One
     a isv:SlangTerm;
     foaf:maker [dcterms:service <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:9-10-21];
-    dcterms:created [rdf:value "2013"^^xsd:gYear; dcterms:source kym:9-10-21];
-    skos:prefLabel "21"@en;
-    skos:definition [rdf:value """9+10=21 is an incorrect answer to a math problem, which was first spoken online in a Vine video. Also known as "What's Nine Plus Ten"."""@en; dcterms:source kym:9-10-21];
-    skos:example [rdf:value """ "You stupid!" "No I not!" "What's 9+10?" "21" "You stupid!" """@en; dcterms:source ud:21];
+    dcterms:created [schema:dateCreated '2013'^^xsd:gYear; dcterms:source kym:9-10-21];
+    skos:prefLabel '21'@en;
+    skos:definition [schema:text '9+10=21 is an incorrect answer to a math problem, which was first spoken online in a Vine video. Also known as "What\'s Nine Plus Ten".'@en; dcterms:source kym:9-10-21];
+    skos:example [schema:text '"You stupid!" "No I not!" "What\'s 9+10?" "21" "You stupid!"'@en; dcterms:source ud:21];
     dcterms:medium
     [a <http://dbpedia.org/resource/Vine_(service)>; dcterms:source kym:9-10-21],
     [a dbr:Instagram; dcterms:source kym:9-10-21],
@@ -629,20 +630,20 @@ isv:Twenty_One
 
 isv:Nine_One_One
     a isv:SlangTerm;
-    skos:prefLabel "911"@en;
-    foaf:maker [dcterms:location dbr:United_States; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
-    dcterms:created [rdf:value "1968"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
-    skos:definition [rdf:value "911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America."@en; dcterms:source ud:911];
-    skos:example [rdf:value "911, what's your emergency?"@en; dcterms:source <https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/emergency-preparedness-services-new/resources---activities/interactive-activities/what-to-say-to-911>];
+    skos:prefLabel '911'@en;
+    dcterms:location dbr:United_States; 
+    dcterms:created [schema:dateCreated '1968'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
+    skos:definition [schema:text '911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America.'@en; dcterms:source ud:911];
+    skos:example [schema:text '911, what\'s your emergency?'@en; dcterms:source <https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/emergency-preparedness-services-new/resources---activities/interactive-activities/what-to-say-to-911>];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:911-emergency-calls].
 
 isv:Cap
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Willie_D; dcterms:source kym:no-cap-cap-capping];
-    dcterms:created [rdf:value "1989"^^xsd:gYear; dcterms:source kym:no-cap-cap-capping];
-    skos:definition [rdf:value "The word lying but built different"@en; dcterms:source ud:cap];
-    skos:example [rdf:value "Yo that’s cap i didn’t do it!"@en; dcterms:source ud:cap];
+    foaf:person dbr:Willie_D;
+    dcterms:created [schema:dateCreated '1989'^^xsd:gYear; dcterms:source kym:no-cap-cap-capping];
+    skos:definition [schema:text 'The word lying but built different'@en; dcterms:source ud:cap];
+    skos:example [schema:text 'Yo that’s cap i didn’t do it!'@en; dcterms:source ud:cap];
     dcterms:medium
     [a dbr:TikTok; dcterms:source kym:no-cap-cap-capping],
     [a dbr:4chan; dcterms:source kym:no-cap-cap-capping],
@@ -651,18 +652,18 @@ isv:Cap
 isv:Slash_S
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
-    dcterms:created [rdf:value "2010s"; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
-    skos:prefLabel "/s"@en;
-    skos:definition [rdf:value "Denotes that the preceding statement is sarcastic. Originally written as </sarcasm>."@en; dcterms:source wtnr:s];
-    skos:example [rdf:value "My favorite thing about cats is how they step on my keyboard while I'm trying to write an essay. /s"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=S-A&page=7>];
+    dcterms:created [schema:dateCreated '2010s'@en; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
+    skos:prefLabel '/s'@en;
+    skos:definition [schema:text 'Denotes that the preceding statement is sarcastic. Originally written as </sarcasm>.'@en; dcterms:source wtnr:s];
+    skos:example [schema:text 'My favorite thing about cats is how they step on my keyboard while I\'m trying to write an essay. /s'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=S-A&page=7>];
     dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:DYEL
     a isv:SlangTerm; 
     foaf:maker [dcterms:service <http://www.bodybuilding.com>; dcterms:source kym:do-you-even-lift];
-    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:do-you-even-lift];
-    skos:definition [rdf:value "DYEL stands for Do You Even Lift. It's for someone that at first sight doesn't look like the type of person that goes to the gym."@en; dcterms:source ud:DYEL];
-    skos:example [rdf:value "Even after 2 years at the gym, I still have DYEL"@en; dcterms:source ud:DYEL];
+    dcterms:created [schema:dateCreated '2011'^^xsd:gYear; dcterms:source kym:do-you-even-lift];
+    skos:definition [schema:text 'DYEL stands for Do You Even Lift. It\'s for someone that at first sight doesn\'t look like the type of person that goes to the gym.'@en; dcterms:source ud:DYEL];
+    skos:example [schema:text 'Even after 2 years at the gym, I still have DYEL'@en; dcterms:source ud:DYEL];
     dcterms:medium [a dbr:4chan; dcterms:source riecky:],
     [a dbr:Facebook; dcterms:source kym:do-you-even-lift],
     [a dbr:YouTube; dcterms:source kym:do-you-even-lift],
@@ -671,9 +672,9 @@ isv:DYEL
 isv:op
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:SMS; dcterms:source <https://en.wikipedia.org/wiki/SMS_language>];
-    dcterms:created [rdf:value "1990s"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/SMS_language>];
-    skos:definition [rdf:value "Op stands for overpowered. Something that is considered too powerful."@en; dcterms:source <https://www.uswitch.com/broadband/guides/gaming-terms-glossary/>];
-    skos:example [rdf:value "Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous"@en; rdf:value "Own example"];
+    dcterms:created [schema:dateCreated '1990s'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/SMS_language>];
+    skos:definition [schema:text 'Op stands for overpowered. Something that is considered too powerful.'@en; dcterms:source <https://www.uswitch.com/broadband/guides/gaming-terms-glossary/>];
+    skos:example [schema:text 'Her new gaming PC has Intel Core Ultra 9 and Nvidia RTX 5070, so op I am jealous'@en; schema:text 'Own example'@en];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:4chan; dcterms:source riecky:].
@@ -681,17 +682,17 @@ isv:op
 isv:Frogposter
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:pepe-the-frog];
-    dcterms:created [rdf:value "2008"^^xsd:gYear; dcterms:source kym:pepe-the-frog];
-    skos:definition [rdf:value "The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit."@en; dcterms:source ud:frogposting];
-    skos:example [rdf:value "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en; rdf:value "Own example"];
+    dcterms:created [schema:dateCreated '2008'^^xsd:gYear; dcterms:source kym:pepe-the-frog];
+    skos:definition [schema:text 'The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit.'@en; dcterms:source ud:frogposting];
+    skos:example [schema:text 'Manuel spammed Pepe the Frog in a chat again, such a frogposter!'@en; schema:text 'Own example'@en];
     dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:AI_slop
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Facebook; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop];
-    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop];
-    skos:definition [rdf:value "Low-quality randomly generated AI content that has been flooding social media sites."@en; dcterms:source ud:ai%20slop];
-    skos:example [rdf:value "Mark: Why don't you use Facebook anymore ? Herbert: My Facebook timeline is full of AI slop now, it's completely unusable."@en; dcterms:source ud:ai%20slop];
+    dcterms:created [schema:dateCreated '2023'^^xsd:gYear; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop];
+    skos:definition [schema:text 'Low-quality randomly generated AI content that has been flooding social media sites.'@en; dcterms:source ud:ai%20slop];
+    skos:example [schema:text 'Mark: Why don\'t you use Facebook anymore ? Herbert: My Facebook timeline is full of AI slop now, it\'s completely unusable.'@en; dcterms:source ud:ai%20slop];
     dcterms:medium
     [a dbr:Facebook; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop],
     [a dbr:TikTok; dcterms:source kym:facebook-ai-posts-epidemic-facebook-ai-slop],
@@ -700,27 +701,27 @@ isv:AI_slop
 isv:R_Slash
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://en.wikipedia.org/wiki/Timeline_of_Reddit>];
-    dcterms:created [rdf:value "2006"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Timeline_of_Reddit>];
-    skos:prefLabel "r/"@en;
-    skos:definition [rdf:value "The beginning sign of a subreddit name. Annoying when used outside of Reddit."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=r/>];
-    skos:example [rdf:value "This post is on the front page of r/music."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=r/>];
+    dcterms:created [schema:dateCreated '2006'^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/Timeline_of_Reddit>];
+    skos:prefLabel 'r/'@en;
+    skos:definition [schema:text 'The beginning sign of a subreddit name. Annoying when used outside of Reddit.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=r/>];
+    skos:example [schema:text 'This post is on the front page of r/music.'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=r/>];
     dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:omegalul
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:lul];
-    dcterms:created [rdf:value "2016"^^xsd:gYear; dcterms:source kym:lul];
-    skos:definition [rdf:value "A word that you say on text or online when something is so funny you cant just say lol."@en; dcterms:source ud:lul];
-    skos:example [rdf:value """something funny happens: "That's a #omegalul right there" """@en; dcterms:source ud:lul];
+    dcterms:created [schema:dateCreated '2016'^^xsd:gYear; dcterms:source kym:lul];
+    skos:definition [schema:text 'A word that you say on text or online when something is so funny you cant just say lol.'@en; dcterms:source ud:lul];
+    skos:example [schema:text 'something funny happens: "That\'s a #omegalul right there"'@en; dcterms:source ud:lul];
     dcterms:medium
     [a dbr:Twitch; dcterms:source riecky:].
 
 isv:monkaS
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:monkas];
-    dcterms:created [rdf:value "2011"^^xsd:gYear; dcterms:source kym:monkas];
-    skos:definition [rdf:value "A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation."@en; dcterms:source ud:monkas];
-    skos:example [rdf:value "OMG what a play, that was some MonkaS stuff right there"@en; dcterms:source ud:monkas];
+    dcterms:created [schema:dateCreated '2011'^^xsd:gYear; dcterms:source kym:monkas];
+    skos:definition [schema:text 'A visual expression of the feeling you experience when you have a sense of impending doom in a tense situation.'@en; dcterms:source ud:monkas];
+    skos:example [schema:text 'OMG what a play, that was some MonkaS stuff right there'@en; dcterms:source ud:monkas];
     dcterms:medium 
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:4chan; dcterms:source kym:monkas],
@@ -729,9 +730,9 @@ isv:monkaS
 isv:Sadge
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:sadge];
-    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:sadge];
-    skos:definition [rdf:value "A Twitch emote that means sadness or depression"@en; dcterms:source ud:sadge];
-    skos:example [rdf:value "I've been on a losing streak all day, sadge…"@en; dcterms:source ud:sadge];
+    dcterms:created [schema:dateCreated '2020'^^xsd:gYear; dcterms:source kym:sadge];
+    skos:definition [schema:text 'A Twitch emote that means sadness or depression'@en; dcterms:source ud:sadge];
+    skos:example [schema:text 'I\'ve been on a losing streak all day, sadge…'@en; dcterms:source ud:sadge];
     dcterms:medium 
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:Reddit; dcterms:source kym:sadge],
@@ -741,9 +742,9 @@ isv:Sadge
 isv:Sus
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Among_Us; dcterms:source kym:sus];
-    dcterms:created [rdf:value "2019"^^xsd:gYear; dcterms:source kym:sus];
-    skos:definition [rdf:value """A shorter version of the word "suspect". Usually used to define someone that looks suspicious."""@en; dcterms:source ud:sus];
-    skos:example [rdf:value "that's kinda sus bro"@en; dcterms:source ud:sus];
+    dcterms:created [schema:dateCreated '2019'^^xsd:gYear; dcterms:source kym:sus];
+    skos:definition [schema:text 'A shorter version of the word "suspect". Usually used to define someone that looks suspicious.'@en; dcterms:source ud:sus];
+    skos:example [schema:text 'that\'s kinda sus bro'@en; dcterms:source ud:sus];
     dcterms:medium 
     [a dbr:Twitch; dcterms:source riecky:],
     [a dbr:Reddit; dcterms:source kym:sus],
@@ -754,9 +755,9 @@ isv:Sus
 isv:Amogus
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source kym:amogus];
-    dcterms:created [rdf:value "2021"^^xsd:gYear; dcterms:source kym:amogus];
-    skos:definition [rdf:value """A disease spread by the video game "Among Us" it causes sufferers to see Among Us characters everywhere."""@en; dcterms:source kym:amogus];
-    skos:example [rdf:value "That weirdly shaped red stain on the floor looks like an amogus, very sus"@en; dcterms:source kym:amogus];
+    dcterms:created [schema:dateCreated '2021'^^xsd:gYear; dcterms:source kym:amogus];
+    skos:definition [schema:text 'A disease spread by the video game "Among Us" it causes sufferers to see Among Us characters everywhere.'@en; dcterms:source kym:amogus];
+    skos:example [schema:text 'That weirdly shaped red stain on the floor looks like an amogus, very sus'@en; dcterms:source kym:amogus];
     dcterms:medium
     [a dbr:Reddit; dcterms:source kym:amogus],
     [a dbr:iFunny; dcterms:source kym:amogus],
@@ -766,9 +767,9 @@ isv:Amogus
 isv:Impostor
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:there-is-1-impostor-among-us--2];
-    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:there-is-1-impostor-among-us--2];
-    skos:definition [rdf:value "Someone who pretends to be someone else, usually in a serious setting."@en; dcterms:source ud:impostor];
-    skos:example [rdf:value "That surgeon who did Jane's tonsillectomy? Turns out, he was an impostor."@en; dcterms:source ud:the%20Impostor];
+    dcterms:created [schema:dateCreated '2020'^^xsd:gYear; dcterms:source kym:there-is-1-impostor-among-us--2];
+    skos:definition [schema:text 'Someone who pretends to be someone else, usually in a serious setting.'@en; dcterms:source ud:impostor];
+    skos:example [schema:text 'That surgeon who did Jane\'s tonsillectomy? Turns out, he was an impostor.'@en; dcterms:source ud:the%20Impostor];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:there-is-1-impostor-among-us--2],
     [a dbr:Reddit; dcterms:source kym:there-is-1-impostor-among-us--2],
@@ -776,10 +777,10 @@ isv:Impostor
 
 isv:Copium
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Keak_da_Sneak; dcterms:source kym:copium];
-    dcterms:created [rdf:value "2003"^^xsd:gYear; dcterms:source kym:copium];
-    skos:definition [rdf:value "Lying to yourself in order to cope with something"@en; dcterms:source ud:copium];
-    skos:example [rdf:value "I felt better after I saw the failing grade on my chemistry final. Must've been a rush of copium"@en; dcterms:source ud:copium];
+    foaf:person dbr:Keak_da_Sneak; 
+    dcterms:created [schema:dateCreated '2003'^^xsd:gYear; dcterms:source kym:copium];
+    skos:definition [schema:text 'Lying to yourself in order to cope with something'@en; dcterms:source ud:copium];
+    skos:example [schema:text 'I felt better after I saw the failing grade on my chemistry final. Must\'ve been a rush of copium'@en; dcterms:source ud:copium];
     dcterms:medium
     [a dbr:4chan; dcterms:source kym:copium],
     [a dbr:9GAG; dcterms:source kym:copium],
@@ -789,11 +790,11 @@ isv:Copium
 
 isv:Selfie
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Karl_Kruszelnicki; dcterms:source <https://en.wikipedia.org/wiki/Selfie>];
-    dcterms:created [rdf:value "2002"^^xsd:gYear; dcterms:source wtnr:selfie];
-    skos:definition [rdf:value "A photograph that you take of yourself, usually with a mobile phone."@en; dcterms:source <https://dictionary.cambridge.org/dictionary/english/selfie>];
-    skos:note [rdf:value "Also a popular song by The Chainsmokers"; dcterms:source <https://en.wikipedia.org/wiki/Selfie_(song)>];
-    skos:example [rdf:value "But first, let me take a selfie"@en; dcterms:source ud:selfie];
+    foaf:person dbr:Karl_Kruszelnicki; 
+    dcterms:created [schema:dateCreated '2002'^^xsd:gYear; dcterms:source wtnr:selfie];
+    skos:definition [schema:text 'A photograph that you take of yourself, usually with a mobile phone.'@en; dcterms:source <https://dictionary.cambridge.org/dictionary/english/selfie>];
+    skos:note [schema:text 'Also a popular song by The Chainsmokers'@en; dcterms:source <https://en.wikipedia.org/wiki/Selfie_(song)>];
+    skos:example [schema:text 'But first, let me take a selfie'@en; dcterms:source ud:selfie];
     dcterms:medium
     [a dbr:Flickr; dcterms:source kym:selfie],
     [a dbr:Myspace; dcterms:source kym:selfie],
@@ -805,9 +806,9 @@ isv:Selfie
 isv:Gigachad
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:gigachad];
-    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:gigachad];
-    skos:definition [rdf:value "The man himself. The alpha male that dominates all weaklings."@en; dcterms:source ud:gigachad];
-    skos:example [rdf:value "Man, that guy Allen is such a gigachad. He has the money, the fame and everything."@en; dcterms:source ud:gigachad];
+    dcterms:created [schema:dateCreated '2017'^^xsd:gYear; dcterms:source kym:gigachad];
+    skos:definition [schema:text 'The man himself. The alpha male that dominates all weaklings.'@en; dcterms:source ud:gigachad];
+    skos:example [schema:text 'Man, that guy Allen is such a gigachad. He has the money, the fame and everything.'@en; dcterms:source ud:gigachad];
     dcterms:medium
     [a dbr:4chan; dcterms:source kym:gigachad],
     [a dbr:Reddit; dcterms:source kym:gigachad],
@@ -817,10 +818,10 @@ isv:Gigachad
 
 isv:Sigma
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Vox_Day; dcterms:source kym:sigma];
-    dcterms:created [rdf:value "2010"^^xsd:gYear; dcterms:source kym:sigma];
-    skos:definition [rdf:value "Sigma refers to a man whose self-assured individualism is considered a model of success."@en; dcterms:source <https://www.merriam-webster.com/slang/sigma>];
-    skos:example [rdf:value "He's such a sigma, always doing his own thing but still killing it in his career"@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/sigma-meaning>];
+    foaf:person dbr:Vox_Day; 
+    dcterms:created [schema:dateCreated '2010'^^xsd:gYear; dcterms:source kym:sigma];
+    skos:definition [schema:text 'Sigma refers to a man whose self-assured individualism is considered a model of success.'@en; dcterms:source <https://www.merriam-webster.com/slang/sigma>];
+    skos:example [schema:text 'He\'s such a sigma, always doing his own thing but still killing it in his career'@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/sigma-meaning>];
     dcterms:medium
     [a dbr:Reddit; dcterms:source kym:sigma],
     [a dbr:Twitter; dcterms:source kym:sigma],
@@ -828,10 +829,10 @@ isv:Sigma
 
 isv:UwU
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source kym:uwu];
-    dcterms:created [rdf:value "2004"^^xsd:gYear; dcterms:source kym:uwu];
-    skos:definition [rdf:value "UwU or uwu is another way of typing the smiley face :3. It means happy."@en; dcterms:source ud:uwu];
-    skos:example [rdf:value "Thank you for the lovely gift! UwU"@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/uwu-meaning>];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source kym:uwu];
+    dcterms:created [schema:dateCreated '2004'^^xsd:gYear; dcterms:source kym:uwu];
+    skos:definition [schema:text 'UwU or uwu is another way of typing the smiley face :3. It means happy.'@en; dcterms:source ud:uwu];
+    skos:example [schema:text 'Thank you for the lovely gift! UwU'@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/uwu-meaning>];
     dcterms:medium
     [a dbr:Tumblr; dcterms:source kym:uwu],
     [a dbr:DeviantArt; dcterms:source kym:uwu].
@@ -839,20 +840,20 @@ isv:UwU
 isv:OwO
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>], [foaf:group dbr:Furry_fandom; dcterms:source <https://en.wikifur.com/wiki/OwO>];
-    dcterms:created [rdf:value "2013"^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/OwO>];
-    skos:definition [rdf:value "A face furries use, or a way to make a face like a cat."@en; dcterms:source ud:OwO];
-    skos:example [rdf:value "OwO, what's this?"@en; dcterms:source ud:OwO];
+    dcterms:created [schema:dateCreated '2013'^^xsd:gYear; dcterms:source <https://en.wikifur.com/wiki/OwO>];
+    skos:definition [schema:text 'A face furries use, or a way to make a face like a cat.'@en; dcterms:source ud:OwO];
+    skos:example [schema:text 'OwO, what\'s this?'@en; dcterms:source ud:OwO];
     dcterms:medium 
     [a dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>],
     [a <https://www.furaffinity.net/>; dcterms:source <https://en.wikifur.com/wiki/OwO>].
 
 isv:Colon_Three
     a isv:SlangTerm;
-    skos:prefLabel ":3"@en;
+    skos:prefLabel ':3'@en;
     foaf:maker [dcterms:service dbr:2channel; dcterms:source kym:3-cat-face];
-    dcterms:created [rdf:value "Unknown"; dcterms:source kym:3-cat-face]; 
-    skos:definition [rdf:value """A texting face typically used in conjunction with something cute. Known as the "Cat face"."""@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
-    skos:example [rdf:value "Your kitten is soo cute! :3"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
+    dcterms:created [schema:dateCreated 'Unknown'@en; dcterms:source kym:3-cat-face]; 
+    skos:definition [schema:text 'A texting face typically used in conjunction with something cute. Known as the "Cat face".'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
+    skos:example [schema:text 'Your kitten is soo cute! :3'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=%3A3>];
     dcterms:medium
     [a dbr:2channel; dcterms:source kym:3-cat-face],
     [a dbr:YouTube; dcterms:source kym:3-cat-face],
@@ -861,9 +862,9 @@ isv:Colon_Three
 isv:Bnuy
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source kym:bnuuy];
-    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:bnuuy];
-    skos:definition [rdf:value "Bnuy is a playful, cute alternative way of saying bunny."@en; dcterms:source ud:bnuy];
-    skos:example [rdf:value "I saw a bnuy outside in my garden yesterday and it was so cute!"@en; dcterms:source ud:bnuy];
+    dcterms:created [schema:dateCreated '2020'^^xsd:gYear; dcterms:source kym:bnuuy];
+    skos:definition [schema:text 'Bnuy is a playful, cute alternative way of saying bunny.'@en; dcterms:source ud:bnuy];
+    skos:example [schema:text 'I saw a bnuy outside in my garden yesterday and it was so cute!'@en; dcterms:source ud:bnuy];
     dcterms:medium
     [a dbr:Reddit; dcterms:source kym:bnuuy],
     [a dbr:Twitter; dcterms:source kym:bnuuy].
@@ -871,10 +872,10 @@ isv:Bnuy
 isv:Birb
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:birb];
-    skos:note [rdf:value "The earliest known use of the word birb in this context was on November 17th, 2012."; dcterms:source kym:birb];
-    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:birb];
-    skos:definition [rdf:value "a cute, tiny, fluffy bird"@en; dcterms:source ud:birb];
-    skos:example [rdf:value "Henlo Birb, you want some seed?"@en; dcterms:source ud:birb];
+    skos:note [schema:text 'The earliest known use of the word birb in this context was on November 17th, 2012.'@en; dcterms:source kym:birb];
+    dcterms:created [schema:dateCreated '2012'^^xsd:gYear; dcterms:source kym:birb];
+    skos:definition [schema:text 'a cute, tiny, fluffy bird'@en; dcterms:source ud:birb];
+    skos:example [schema:text 'Henlo Birb, you want some seed?'@en; dcterms:source ud:birb];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:birb],
     [a dbr:Reddit; dcterms:source kym:birb],
@@ -885,9 +886,9 @@ isv:Birb
 isv:Yeet
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Vine; dcterms:source kym:yeet], [dcterms:service dbr:YouTube; dcterms:source kym:yeet];
-    dcterms:created [rdf:value "2014"^^xsd:gYear; dcterms:source kym:yeet];
-    skos:definition [rdf:value "A word one may scream while propelling an object through the air at alarming speeds."@en; dcterms:source ud:yeet];
-    skos:example [rdf:value "Just yeet it in the trash, silly!"@en; dcterms:source ud:yeet];
+    dcterms:created [schema:dateCreated '2014'^^xsd:gYear; dcterms:source kym:yeet];
+    skos:definition [schema:text 'A word one may scream while propelling an object through the air at alarming speeds.'@en; dcterms:source ud:yeet];
+    skos:example [schema:text 'Just yeet it in the trash, silly!'@en; dcterms:source ud:yeet];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:yeet],
     [a dbr:Vine; dcterms:source kym:yeet],
@@ -897,9 +898,9 @@ isv:Yeet
 isv:Jet2Holiday
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source kym:nothing-beats-a-jet2-holiday];
-    dcterms:created [rdf:value "2024"^^xsd:gYear; dcterms:source kym:nothing-beats-a-jet2-holiday];
-    skos:definition [rdf:value "A catchphrase featured in a YouTube advertisement for Jet2. Gained sarcastic meme usage on TikTok in 2025."@en; dcterms:source kym:nothing-beats-a-jet2-holiday];
-    skos:example [rdf:value "Nothing beats a Jet2holiday! and right now you can save £50 per person."@en; dcterms:source ud:nothing-beats-a-jet2-holiday];
+    dcterms:created [schema:dateCreated '2024'^^xsd:gYear; dcterms:source kym:nothing-beats-a-jet2-holiday];
+    skos:definition [schema:text 'A catchphrase featured in a YouTube advertisement for Jet2. Gained sarcastic meme usage on TikTok in 2025.'@en; dcterms:source kym:nothing-beats-a-jet2-holiday];
+    skos:example [schema:text 'Nothing beats a Jet2holiday! and right now you can save £50 per person.'@en; dcterms:source ud:nothing-beats-a-jet2-holiday];
     dcterms:medium
     [a dbr:TikTok; dcterms:source kym:nothing-beats-a-jet2-holiday],
     [a dbr:YouTube; dcterms:source kym:nothing-beats-a-jet2-holiday].
@@ -907,9 +908,9 @@ isv:Jet2Holiday
 isv:Grubhub
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Grubhub; dcterms:source kym:grubhub-delivery-dance-ad];
-    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source kym:grubhub-delivery-dance-ad];
-    skos:definition [rdf:value "Symbol of laziness. A food delivery service with an obnoxious advertisement."@en; dcterms:source ud:grubhub];
-    skos:example [rdf:value """Me: I'm hungry but lazy Friend: Order food from the place across the street on GrubHub"""@en; dcterms:source ud:grubhub];
+    dcterms:created [schema:dateCreated '2020'^^xsd:gYear; dcterms:source kym:grubhub-delivery-dance-ad];
+    skos:definition [schema:text 'Symbol of laziness. A food delivery service with an obnoxious advertisement.'@en; dcterms:source ud:grubhub];
+    skos:example [schema:text 'Me: I\'m hungry but lazy Friend: Order food from the place across the street on GrubHub'@en; dcterms:source ud:grubhub];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:grubhub-delivery-dance-ad],
     [a dbr:Reddit; dcterms:source kym:grubhub-delivery-dance-ad],
@@ -917,10 +918,10 @@ isv:Grubhub
 
 isv:Bing_chilling
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:John_Cena; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling];
-    dcterms:created [rdf:value "2021"^^xsd:gYear; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling];
-    skos:definition [rdf:value """Chinese word for "ice cream". Popularized when John Cena spoke Chinese to promote his movie."""@en; dcterms:source ud:bing%20chilling];
-    skos:example [rdf:value "Xiànzài wǒ yǒu bīngqílín (bing chilling)."@en; dcterms:source ud:bing%20chilling];
+    foaf:person dbr:John_Cena; 
+    dcterms:created [schema:dateCreated '2021'^^xsd:gYear; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling];
+    skos:definition [schema:text 'Chinese word for "ice cream". Popularized when John Cena spoke Chinese to promote his movie.'@en; dcterms:source ud:bing%20chilling];
+    skos:example [schema:text 'Xiànzài wǒ yǒu bīngqílín (bing chilling).'@en; dcterms:source ud:bing%20chilling];
     dcterms:medium
     [a dbr:Weibo; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling],
     [a dbr:YouTube; dcterms:source kym:john-cena-speaking-chinese-and-eating-ice-cream-bing-chilling],
@@ -928,10 +929,10 @@ isv:Bing_chilling
 
 isv:Clanker
     a isv:SlangTerm;
-    foaf:maker [a dbr:Star_Wars; dcterms:source kym:clanker];
-    dcterms:created [rdf:value "2013"^^xsd:gYear; dcterms:source kym:clanker];
-    skos:definition "A slur for robotic individuals. Also used to insult AI Agents."@en;
-    skos:example "That clanker right there is so annoying."@en;
+    foaf:person dbr:Star_Wars; 
+    dcterms:created [schema:dateCreated '2013'^^xsd:gYear; dcterms:source kym:clanker];
+    skos:definition 'A slur for robotic individuals. Also used to insult AI Agents.'@en;
+    skos:example 'That clanker right there is so annoying.'@en;
     dcterms:medium
     [a dbr:TikTok; dcterms:source kym:clanker],
     [a dbr:Reddit; dcterms:source kym:clanker],
@@ -940,11 +941,11 @@ isv:Clanker
 
 isv:W_L
     a isv:SlangTerm;
-    skos:prefLabel "W/L"@en;
+    skos:prefLabel 'W/L'@en;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>];
-    dcterms:created [rdf:value "2018"^^xsd:gYear; dcterms:source <https://contentstudio.io/social-media-terms/win>];
-    skos:definition [rdf:value """W abbreviated as "Win" and L abbreviated as "Lose"."""@en; dcterms:source ud:w/l];
-    skos:example [rdf:value "Your presentation today was a W, loved the graphics"@en; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    dcterms:created [schema:dateCreated '2018'^^xsd:gYear; dcterms:source <https://contentstudio.io/social-media-terms/win>];
+    skos:definition [schema:text 'W abbreviated as "Win" and L abbreviated as "Lose".'@en; dcterms:source ud:w/l];
+    skos:example [schema:text 'Your presentation today was a W, loved the graphics'@en; dcterms:source <https://contentstudio.io/social-media-terms/win>];
     dcterms:medium
     [a dbr:TikTok; dcterms:source <https://contentstudio.io/social-media-terms/win>],
     [a dbr:Instagram; dcterms:source <https://contentstudio.io/social-media-terms/win>],
@@ -953,19 +954,19 @@ isv:W_L
 isv:Mid
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:mid];
-    dcterms:created [rdf:value "2004"^^xsd:gYear; dcterms:source kym:mid];
-    skos:definition [rdf:value """Short for middle, Mid is generally a synonymous term with mediocre."""@en; dcterms:source ud:mid];
-    skos:example [rdf:value "We waited on that album for 6 months but it was mid!"@en; dcterms:source ud:mid];
+    dcterms:created [schema:dateCreated '2004'^^xsd:gYear; dcterms:source kym:mid];
+    skos:definition [schema:text 'Short for middle, Mid is generally a synonymous term with mediocre.'@en; dcterms:source ud:mid];
+    skos:example [schema:text 'We waited on that album for 6 months but it was mid!'@en; dcterms:source ud:mid];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:mid],
     [a dbr:TikTok; dcterms:source kym:mid].
 
 isv:Flop
     a isv:SlangTerm;
-    foaf:maker [rdf:value "Unknown"; dcterms:source kym:flop-era];
-    dcterms:created [rdf:value "2008"^^xsd:gYear; dcterms:source kym:flop-era];
-    skos:definition [rdf:value "Something that fails miserably"@en; dcterms:source ud:flop];
-    skos:example [rdf:value "The latest album flopped and so the studio canceled her contract."@en; dcterms:source wtnr:flop];
+    foaf:maker [schema:text 'Unknown'@en; dcterms:source kym:flop-era];
+    dcterms:created [schema:dateCreated '2008'^^xsd:gYear; dcterms:source kym:flop-era];
+    skos:definition [schema:text 'Something that fails miserably'@en; dcterms:source ud:flop];
+    skos:example [schema:text 'The latest album flopped and so the studio canceled her contract.'@en; dcterms:source wtnr:flop];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:flop-era],
     [a dbr:TikTok; dcterms:source kym:flop-era].
@@ -973,9 +974,9 @@ isv:Flop
 isv:Mog
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:4chan; dcterms:source kym:mog];
-    dcterms:created [rdf:value "2016"^^xsd:gYear; dcterms:source kym:mog];
-    skos:definition [rdf:value "To be significantly more attractive than (someone or something)."@en; dcterms:source wtnr:mog];
-    skos:example [rdf:value "His face mogs mine to hell and back."@en; dcterms:source wtnr:mog];
+    dcterms:created [schema:dateCreated '2016'^^xsd:gYear; dcterms:source kym:mog];
+    skos:definition [schema:text 'To be significantly more attractive than (someone or something).'@en; dcterms:source wtnr:mog];
+    skos:example [schema:text 'His face mogs mine to hell and back.'@en; dcterms:source wtnr:mog];
     dcterms:medium
     [a dbr:4chan; dcterms:source kym:mog],
     [a dbr:Twitter; dcterms:source kym:mog],
@@ -988,9 +989,9 @@ isv:Mog
 isv:Soft_launch
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Instagram; dcterms:source kym:relationship-soft-launch];
-    dcterms:created [rdf:value "2016"^^xsd:gYear; dcterms:source kym:relationship-soft-launch];
-    skos:definition [rdf:value "A photo preview of a talking stage before it becomes an official relationship."@en; dcterms:source ud:soft%20launch];
-    skos:example [rdf:value "Hannah: No, we're doing a soft launch of our relationship in case it doesn't work out."@en; dcterms:source ud:soft%20launch];
+    dcterms:created [schema:dateCreated '2016'^^xsd:gYear; dcterms:source kym:relationship-soft-launch];
+    skos:definition [schema:text 'A photo preview of a talking stage before it becomes an official relationship.'@en; dcterms:source ud:soft%20launch];
+    skos:example [schema:text 'Hannah: No, we\'re doing a soft launch of our relationship in case it doesn\'t work out.'@en; dcterms:source ud:soft%20launch];
     dcterms:medium
     [a dbr:Instagram; dcterms:source kym:relationship-soft-launch],
     [a dbr:TikTok; dcterms:source kym:relationship-soft-launch],
@@ -999,19 +1000,19 @@ isv:Soft_launch
 
 isv:Stand
     a isv:SlangTerm;
-    foaf:maker [foaf:person dbr:Hirohiko_Araki; dcterms:source kym:kymking-crimson-jojo-stand];
-    dcterms:created [rdf:value "1997"^^xsd:gYear; dcterms:source kym:kymking-crimson-jojo-stand];
-    skos:definition [rdf:value "A visual manifestation of life energy."@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
-    skos:example [rdf:value "And since it stands next to you, it is called... a Stand!"@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
+    foaf:person dbr:Hirohiko_Araki; 
+    dcterms:created [schema:dateCreated '1997'^^xsd:gYear; dcterms:source kym:kymking-crimson-jojo-stand];
+    skos:definition [schema:text 'A visual manifestation of life energy.'@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
+    skos:example [schema:text 'And since it stands next to you, it is called... a Stand!'@en; dcterms:source <https://jojo.fandom.com/wiki/Stand>];
     dcterms:medium
     [a dbr:Tumblr; dcterms:source kym:kymking-crimson-jojo-stand].
 
 isv:Simp
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Urban_Dictionary; dcterms:source kym:simp];
-    dcterms:created [rdf:value "2005"^^xsd:gYear; dcterms:source kym:simp];
-    skos:definition [rdf:value "A word used to call out usually a male for simping on a woman."@en; dcterms:source ud:simp];
-    skos:example [rdf:value "i’m so lonely, i really want someone to simp"@en; dcterms:source ud:simp];
+    dcterms:created [schema:dateCreated '2005'^^xsd:gYear; dcterms:source kym:simp];
+    skos:definition [schema:text 'A word used to call out usually a male for simping on a woman.'@en; dcterms:source ud:simp];
+    skos:example [schema:text 'i’m so lonely, i really want someone to simp'@en; dcterms:source ud:simp];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:simp],
     [a dbr:Reddit; dcterms:source kym:simp],
@@ -1020,10 +1021,10 @@ isv:Simp
 
 isv:Delulu
     a isv:SlangTerm;
-    foaf:maker [rdf:value "OneHallyu"; dcterms:source kym:delulu];
-    dcterms:created [rdf:value "2014"^^xsd:gYear; dcterms:source kym:delulu];
-    skos:definition [rdf:value "Delulu is short for delusional"@en; dcterms:source ud:delulu];
-    skos:example [rdf:value "I can't believe fandom X thinks their ship is canon, they're so delulu LOL"@en; dcterms:source ud:delulu];
+    foaf:maker [schema:text 'OneHallyu'@en; dcterms:source kym:delulu];
+    dcterms:created [schema:dateCreated '2014'^^xsd:gYear; dcterms:source kym:delulu];
+    skos:definition [schema:text 'Delulu is short for delusional'@en; dcterms:source ud:delulu];
+    skos:example [schema:text 'I can\'t believe fandom X thinks their ship is canon, they\'re so delulu LOL'@en; dcterms:source ud:delulu];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:delulu],
     [a dbr:TikTok; dcterms:source kym:delulu],
@@ -1032,9 +1033,9 @@ isv:Delulu
 isv:Ratio
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:ratio];
-    dcterms:created [rdf:value "2017"^^xsd:gYear; dcterms:source kym:ratio];
-    skos:definition [rdf:value "When someone replies to someone and gets more likes on the reply than the original post."@en; dcterms:source ud:ratio];
-    skos:example [rdf:value "Damn... you just got ratiod…"@en; dcterms:source ud:ratio];
+    dcterms:created [schema:dateCreated '2017'^^xsd:gYear; dcterms:source kym:ratio];
+    skos:definition [schema:text 'When someone replies to someone and gets more likes on the reply than the original post.'@en; dcterms:source ud:ratio];
+    skos:example [schema:text 'Damn... you just got ratiod…'@en; dcterms:source ud:ratio];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:ratio],
     [a dbr:TikTok; dcterms:source <https://linktr.ee/blog/what-does-ratio-mean-on-tiktok>].
@@ -1042,18 +1043,18 @@ isv:Ratio
 isv:Main_Character_Energy
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:TikTok; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>];
-    dcterms:created [rdf:value "2020"^^xsd:gYear; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>];
-    skos:definition [rdf:value "A person that unintentionally lives and is like the protagonist in a story."@en; dcterms:source ud:MainCharacterEnergy];
-    skos:example [rdf:value "wow, that's some main character energy!"@en; dcterms:source ud:MainCharacterEnergy];
+    dcterms:created [schema:dateCreated '2020'^^xsd:gYear; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>];
+    skos:definition [schema:text 'A person that unintentionally lives and is like the protagonist in a story.'@en; dcterms:source ud:MainCharacterEnergy];
+    skos:example [schema:text 'wow, that\'s some main character energy!'@en; dcterms:source ud:MainCharacterEnergy];
     dcterms:medium
     [a dbr:TikTok; dcterms:source <https://www.merriam-webster.com/slang/main-character-energy>].
     
 isv:Fanum_Tax
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitch; dcterms:source kym:fanum-tax];
-    dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:fanum-tax];
-    skos:definition [rdf:value "A tax system created by a streamer called 'Fanum' who collects food tax."@en; dcterms:source ud:fanum-tax];
-    skos:example [rdf:value "Lets eat out cause the Fanum Tax is crazy"@en; dcterms:source ud:fanum-tax];
+    dcterms:created [schema:dateCreated '2022'^^xsd:gYear; dcterms:source kym:fanum-tax];
+    skos:definition [schema:text 'A tax system created by a streamer called \'Fanum\' who collects food tax.'@en; dcterms:source ud:fanum-tax];
+    skos:example [schema:text 'Lets eat out cause the Fanum Tax is crazy'@en; dcterms:source ud:fanum-tax];
     dcterms:medium
     [a dbr:Twitch; dcterms:source kym:fanum-tax],
     [a dbr:YouTube; dcterms:source kym:fanum-tax].
@@ -1061,9 +1062,9 @@ isv:Fanum_Tax
 isv:Gyatt
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:gyatt];
-    dcterms:created [rdf:value "2023"^^xsd:gYear; dcterms:source kym:gyatt];
-    skos:definition [rdf:value """A synonym for the word god. It is an interjection for "god damn"."""@en; dcterms:source ud:gyatt];
-    skos:example [rdf:value "She walked in wearing that dress, and I thought, 'Gyatt!'"@en; dcterms:source ud:gyatt];
+    dcterms:created [schema:dateCreated '2023'^^xsd:gYear; dcterms:source kym:gyatt];
+    skos:definition [schema:text 'A synonym for the word god. It is an interjection for "god damn".'@en; dcterms:source ud:gyatt];
+    skos:example [schema:text 'She walked in wearing that dress, and I thought, \'Gyatt!\''@en; dcterms:source ud:gyatt];
     dcterms:medium
     [a dbr:Instagram; dcterms:source kym:gyatt],
     [a dbr:Twitter; dcterms:source kym:gyatt],
@@ -1074,9 +1075,9 @@ isv:Gyatt
 isv:Mewing
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:YouTube; dcterms:source kym:mewing];
-    dcterms:created [rdf:value "2012"^^xsd:gYear; dcterms:source kym:mewing];
-    skos:definition [rdf:value "A technique that involves putting pressure on the roof of your mouth with your tongue."@en; dcterms:source ud:mewing];
-    skos:example [rdf:value "Chad has some nice jaw now. He's been mewing for 6 months."@en; dcterms:source ud:mewing];
+    dcterms:created [schema:dateCreated '2012'^^xsd:gYear; dcterms:source kym:mewing];
+    skos:definition [schema:text 'A technique that involves putting pressure on the roof of your mouth with your tongue.'@en; dcterms:source ud:mewing];
+    skos:example [schema:text 'Chad has some nice jaw now. He\'s been mewing for 6 months.'@en; dcterms:source ud:mewing];
     dcterms:medium
     [a dbr:YouTube; dcterms:source kym:mewing],
     [a dbr:Instagram; dcterms:source kym:mewing].
@@ -1084,9 +1085,9 @@ isv:Mewing
 isv:Brainrot
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source kym:brain-rot-brainrot];
-    dcterms:created [rdf:value "2007"^^xsd:gYear; dcterms:source kym:brain-rot-brainrot];
-    skos:definition [rdf:value "Brainrot refers to constantly thinking about a topic. It's a spoof word close to hyperfixation."@en; dcterms:source ud:brainrot];
-    skos:example [rdf:value """Guy 1: GRRWOOF BARKBARK Guy 2: whoa, it seems like he's brainrotting."""@en; dcterms:source ud:brainrot];
+    dcterms:created [schema:dateCreated '2007'^^xsd:gYear; dcterms:source kym:brain-rot-brainrot];
+    skos:definition [schema:text 'Brainrot refers to constantly thinking about a topic. It\'s a spoof word close to hyperfixation.'@en; dcterms:source ud:brainrot];
+    skos:example [schema:text 'Guy 1: GRRWOOF BARKBARK Guy 2: whoa, it seems like he\'s brainrotting.'@en; dcterms:source ud:brainrot];
     dcterms:medium
     [a dbr:iFunny; dcterms:source kym:brain-rot-brainrot],
     [a dbr:Instagram; dcterms:source kym:brain-rot-brainrot],
