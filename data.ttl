@@ -235,11 +235,12 @@ isv:glhf
 
 isv:DPS
     a isv:SlangTerm;
-    foaf:maker dbr:Online_gaming;
-    dcterms:created "2004"^^xsd:gYear;
-    skos:definition "Acronym meaning Damage Per Second. Often used in role playing games such as World of Warcraft, Defense of the Ancients, and Diablo. Used to measure how much damage per second a player is inflicting."@en;
-    skos:example "Hero 1 hits once per second and deals 100 damage. His DPS is 100"@en;
-    dcterms:medium dbr:Multiplayer_video_games.
+    foaf:maker [a dbr:RPG; dcterms:source <https://gametree.me/gaming-terms/dps/>];
+    dcterms:created [rdf:value "1990s"; dcterms:source <https://gametree.me/gaming-terms/dps/>];
+    skos:definition [rdf:value "Acronym meaning Damage Per Second. Often used in role playing games such as World of Warcraft, Defense of the Ancients, and Diablo. Used to measure how much damage per second a player is inflicting."@en; dcterms:source ud:gg];
+    skos:example [rdf:value "Hero 1 hits once per second and deals 100 damage. His DPS is 100"@en; dcterms:source ud:DPS];
+    dcterms:medium
+    [a dbr:World_of_Warcraft; dcterms:source <https://gametree.me/gaming-terms/dps/>].
 
 isv:opp
     a isv:SlangTerm;
