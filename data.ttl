@@ -493,8 +493,13 @@ isv:Scrumpt
 
 isv:Offed
     a isv:SlangTerm;
-    skos:definition "to offed someone is to have killed him."@en;
-    skos:example "Yo, Dre offed Craig last week."@en.
+    foaf:maker [rdf:value "Trinarchodia : the several reigns of Richard II, of Henry IV and of Henry V, 1649"; dcterms:soirce <https://greensdictofslang.com/entry/qk33fmi>];
+    dcterms:created [rdf:value "1649"^^xsd:gYear;; dcterms:source <https://greensdictofslang.com/entry/qk33fmi>];
+    skos:definition [rdf:value "To offed someone is to have killed him."@en; dcterms:source ud:offed];
+    skos:example [rdf:value "Yo, Dre offed Craig last week."@en; cterms:source ud:offed];
+    dcterms:medium 
+    [a dbr:Facebook; dcterms:source <https://www.facebook.com/baileysarian1/videos/he-offed-56-people-fifty-six-/3966764260002742>],
+    [a dbr:Reddit; dcterms:source <https://www.reddit.com/r/Millennials/comments/1m9o0qh/can_we_stop_the_censor_culture/>].
 
 isv:tbr
     a isv:SlangTerm;
@@ -543,9 +548,6 @@ isv:Vibe
     [a dbr:LinkedIn; dcterms:source <https://www.psychologytoday.com/us/blog/small-talk-and-big-questions/202512/the-rise-of-the-vibe>],
     [a dbr:Instagram; dcterms:source <https://www.daytranslations.com/blog/vibe-check/>],
     [a dbr:TikTok; dcterms:source <https://www.daytranslations.com/blog/vibe-check/>].
-
-
-
 
 isv:smh
     a isv:SlangTerm;
