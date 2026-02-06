@@ -136,22 +136,36 @@ In the second one one, I was interested in how many SlangTerms each maker has. A
 The query is listed below:
 
 ```
-PREFIX isv: <https://github.com/ejurasek00/isv/#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX dcterms: <http://purl.org/dc/terms/>
+prefix isv:     <https://github.com/ejurasek00/isv/#> 
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
+prefix foaf:    <http://xmlns.com/foaf/0.1/> 
+prefix dcterms: <http://purl.org/dc/terms/> 
+prefix dbr:     <http://dbpedia.org/resource/> 
+prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
+prefix schema:  <https://schema.org/> 
+prefix kym:     <https://knowyourmeme.com/memes/sites/>
+prefix wtnr:    <https://en.wiktionary.org/wiki/>
+prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>
+prefix ud:      <https://www.urbandictionary.com/define.php?term=>
+prefix ds:      <https://www.dictionary.com/culture/slang/>
 
-SELECT ?maker (COUNT(?SlangTerm) AS ?amount)
+
+SELECT ?ServiceOrAuthor (COUNT(?SlangTerm) AS ?Count)
 WHERE {
   ?SlangTerm a isv:SlangTerm ;
-         foaf:maker ?maker .
+             foaf:maker ?Node .
+  
+  ?Node ?Property ?ServiceOrAuthor .
+  
+  FILTER(!isURI(?ServiceOrAuthor) || CONTAINS(STR(?ServiceOrAuthor), "dbpedia.org/resource/"))
 }
-GROUP BY ?maker
-ORDER BY DESC(?amount)
+GROUP BY ?ServiceOrAuthor
+ORDER BY DESC(?Count)
 ```
-This query found 33 entries in 0.046 seconds.
+This query found 39 results in 0.041 seconds
 
-The biggest SlangTerm maker is Twitter (11x), followed by TikTok (9x), Twitch (7x), SMS (7x), 4chan (5x) and the remaining ones.
+The biggest SlangTerm maker is Twitter (11x), followed by Unknown (8x), TikTok (6x), SMS (6x), UD (6x), 4cahn (5x), Reddit (5x), YouTube (4x), Usenet (2x) and the remaining ones.
 ![fuseki_q2](Fuseki_Q2.png)
 
 ---
