@@ -20,6 +20,8 @@ The development was made in a VSCode, Protege and Fuseki on a Kubuntu Linux 25.1
 
 Tip: Install the "Turtle Language Server" extension in VSCode from [https://marketplace.visualstudio.com/items?itemName=stardog-union.vscode-langserver-turtle](https://marketplace.visualstudio.com/items?itemName=stardog-union.vscode-langserver-turtle) to get the code highlighted and to get the syntax checked!
 
+Important: Fuseki requires Java to be installed!
+
 # Legal Notice
 
 Some terms and definitions used in the ontology are obtained from external sources for **scientific and educational purposes** within the meaning of Sections 31 and 34 of Copyright Act No. 121/2000 Coll. (Czech Republic). When further distributing or commercially using this ontology, please note that these specific text segments (primarily from Urban Dictionary, Know Your Meme, and similar commercial websites) may be subject to the copyright of the original sources.
