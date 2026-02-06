@@ -92,6 +92,14 @@ Currently implemented: OwO <-> UwU <-> :3 AND Floptropica <-> Flop AND Sus <-> I
 ![related](Related.png)
 
 ---
+# dcterms:medium and foaf:maker. What is the difference here?
+
+`foaf:maker` is the website, location, person,... that brought this SlangTerm to life. Long story short, whom can we say thank you for making this word exist.
+
+`dcterms:medium` represents the medium or group/community where can we come across this SlangTerm. In another words, who USES this SlangTerm in their lingo.
+
+---
+
 # Apache Jena Fuseki
 
 For the query part, Apache Jena Fuseki 5.6.0 on Kubuntu Linux 24.04.2 LTS was used.
