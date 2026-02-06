@@ -192,6 +192,23 @@ The biggest SlangTerm maker is Twitter (11x), followed by Unknown (8x), TikTok (
 
 ---
 
+# Methodology
+
+The selection of the SlangTerms was heavily inspired by the Internet vernacular - a study of neologisms in online discourse of cybercultures (Riecky, 2025). 
+Additionally, I added some new SlangTerms and my personal favourites to make their count above 100.
+
+The Definitions and Examples were primarily derived from UrbanDictionary.
+Origin and Creator was derived primarily from Know Your Meme.
+
+However, not all words are covered by these "major" websites. Some of them are new, have unknown origin or are so niche that are difficult to find.
+
+So, searching looked like "which social media use "offed" as slang" or "ikr acronym origin"
+
+When no relevant results could be found, I used Perplexity, Gemini Pro and ChatGPT in a Deep research mode to find out the etymology and origin.
+
+---
+
+
 # Related Wors
 
 The project was inspired by a masters thesis of a friend of mine. Thank you so much, Jakub!
