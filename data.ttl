@@ -211,11 +211,6 @@ isv:AMA
     skos:example [rdf:value "Redditor: I work at the Pentagon and I survived 9/11. AMA"@en; dcterms:source ud:AMA];
     dcterms:medium [a dbr:Reddit; dcterms:source <https://www.yahoo.com/news/how-reddit-s-ask-me-anything-became-part-of-the-mainstream-media-circuit--130755591.html>].
 
-isv:HP
-    a isv:SlangTerm;
-    skos:definition "House Party"@en;
-    skos:example "We're having a hp tnt, do you wanna join us?"@en.
-
 isv:gg
     a isv:SlangTerm;
     foaf:maker [rdf:value "Unknown"; dcterms:source kym:gg];
@@ -370,15 +365,6 @@ isv:ur
     [a dbr:4chan; dcterms:source riecky:],
     [a dbr:Discord; dcterms:source riecky:].
 
-isv:rn
-    a isv:SlangTerm;
-    skos:definition "Right now"@en;
-    skos:example "Engineer: we are gonna have the generator fixed RN"@en;
-    dcterms:medium
-    [a dbr:Twitter; dcterms:source riecky:],
-    [a dbr:Reddit; dcterms:source riecky:],
-    [a dbr:Twitch; dcterms:source riecky:].
-
 isv:fr
     a isv:SlangTerm;
     foaf:maker [rdf:service dbr:Urban_Dictionary; dcterms:source <https://www.brandwatch.com/social-media-glossary/fr-for-real/>];
@@ -416,16 +402,6 @@ isv:Cooked
     [a dbr:Discord; dcterms:source riecky:],
     [a dbr:Twitter; dcterms:source kym:cooked-getting-cooked],
     [a dbr:YouTube; dcterms:source kym:cooked-getting-cooked].
-
-
-isv:pfp
-    a isv:SlangTerm;
-    skos:definition "Profile Picture"@en;
-    skos:example "Oh woah there, nice pfp"@en;
-    dcterms:medium
-    [a dbr:Instagram; dcterms:source riecky:],
-    [a dbr:YouTube; dcterms:source riecky:],
-    [a dbr:Reddit; dcterms:source riecky:].
 
 isv:Zaddy
     a isv:SlangTerm;
@@ -507,11 +483,6 @@ isv:tbr
     skos:example "TBR- You're very annoying!"@en;
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
-isv:atp
-    a isv:SlangTerm;
-    skos:definition "At this point"@en;
-    skos:example "I might as well find something better atp."@en.
-
 isv:GTA
     a isv:SlangTerm;
     foaf:maker [dcterms:Service dbr:Rockstar_Games; dcterms:source <https://en.wikipedia.org/wiki/Grand_Theft_Auto>];
@@ -524,11 +495,6 @@ isv:GTA
     [a dbr:Twitter; dcterms:source kym:we-got-x-before-gta-6],
     [a dbr:Reddit; dcterms:source kym:we-got-x-before-gta-6],
     [a dbr:Facebook; dcterms:source kym:we-got-x-before-gta-6].
-
-isv:gd
-    a isv:SlangTerm;
-    skos:definition "gd shortened way of saying good or god damn"@en;
-    skos:example "jonny:hey gorl how r u? michelle:kinda gd and ya? jonny:im gd"@en.
 
 isv:ikr
     a isv:SlangTerm;
@@ -556,16 +522,6 @@ isv:smh
     skos:definition[rdf:value "Standing for shaking my head, "@en; dcterms:source <https://www.dictionary.com/culture/acronyms/smh>];
     skos:example[rdf:value "You don't know what smh means? smh"@en; dcterms:source ud:smh];
     dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
-
-isv:yt
-    a isv:SlangTerm;
-    foaf:maker dbr:YouTube;
-    dcterms:created "2005"^^xsd:gYear;
-    skos:definition "YouTube"@en;
-    skos:example "Im watching yt right now."@en;
-    dcterms:medium
-    [a dbr:YouTube; dcterms:source riecky:],
-    [a dbr:Discord; dcterms:source riecky:].
 
 isv:Poser
     a isv:SlangTerm;
@@ -692,14 +648,6 @@ isv:Cap
     [a dbr:4chan; dcterms:source kym:no-cap-cap-capping],
     [a dbr:Instagram; dcterms:source kym:no-cap-cap-capping].
 
-isv:rly
-    a isv:SlangTerm;
-    foaf:maker dbr:SMS;
-    dcterms:created "2004"^^xsd:gYear;
-    skos:definition "(adjective) really, extremely, very"@en;
-    skos:example "I am rly bored."@en;
-    dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
-
 isv:Slash_S
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
@@ -708,14 +656,6 @@ isv:Slash_S
     skos:definition [rdf:value "Denotes that the preceding statement is sarcastic. Originally written as </sarcasm> (to mark the end of a sarcastic message) with the block of text enclosed."@en; dcterms:source wtnr:s];
     skos:example [rdf:value "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=S-A&page=7>];
     dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
-
-isv:Gymmaxing
-    a isv:SlangTerm;
-    foaf:maker dbr:TikTok;
-    dcterms:created "2020"^^xsd:gYear;
-    skos:definition "A state when someone goes to gym way to often."@en;
-    skos:example "Hey, William, why are gymmaxing? For a condition or do you want to date someone?"@en;
-    dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:DYEL
     a isv:SlangTerm; 
@@ -847,13 +787,6 @@ isv:Copium
     [a dbr:Reddit; dcterms:source kym:copium],
     [a dbr:YouTube; dcterms:source kym:copium],
     [a dbr:Twitter; dcterms:source kym:copium].
-
-isv:pls
-    a isv:SlangTerm;
-    foaf:maker dbr:SMS;
-    dcterms:created "2004"^^xsd:gYear;
-    skos:definition [rdf:value "Abbreviation of please."@en; dcterms:source wtnr:pls];
-    skos:example [rdf:value "Donald Trump is a good president? Oh pls."@en; dcterms:source ud:pls].
 
 isv:Selfie
     a isv:SlangTerm;
@@ -1022,13 +955,6 @@ isv:W_L
     [a dbr:TikTok; dcterms:source <https://contentstudio.io/social-media-terms/win>],
     [a dbr:Instagram; dcterms:source <https://contentstudio.io/social-media-terms/win>],
     [a dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>].
-
-isv:FL
-    a isv:SlangTerm;
-    foaf:maker dbr:Gaming;
-    dcterms:created "1995"^^xsd:gYear;
-    skos:definition "Flaming (in games); toxic behavior; being mean in chat"@en;
-    skos:example "That player got so mad they started FL-ing everyone in the lobby"@en.
 
 isv:Mid
     a isv:SlangTerm;
