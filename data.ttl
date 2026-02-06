@@ -691,11 +691,11 @@ isv:rly
 
 isv:Slash_S
     a isv:SlangTerm;
-    foaf:maker dbr:Reddit;
-    dcterms:created "2015"^^xsd:gYear;
+    foaf:maker [dcterms:service dbr:Reddit; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
+    dcterms:created [rdf:value "2010s"; dcterms:source <https://www.reddit.com/r/ayudamexico/comments/1j0ar8d/por_qu%C3%A9_se_empez%C3%B3_a_usar_s_como_indicativo_de/?tl=en>];
     skos:prefLabel "/s"@en;
-    skos:definition "Sarcasm."@en;
-    skos:example "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en;
+    skos:definition [rdf:value "Denotes that the preceding statement is sarcastic. Originally written as </sarcasm> (to mark the end of a sarcastic message) with the block of text enclosed."@en; dcterms:source wtnr:s];
+    skos:example [rdf:value "My favorite thing about cats is how they step on my keyboard while I'm trying to right an essay. /s"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=S-A&page=7>];
     dcterms:medium [a dbr:Reddit; dcterms:source riecky:].
 
 isv:Gymmaxing
