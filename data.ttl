@@ -836,7 +836,7 @@ isv:pls
     foaf:maker dbr:SMS;
     dcterms:created "2004"^^xsd:gYear;
     skos:definition [rdf:value "Abbreviation of please."@en; dcterms:source wtnr:pls];
-    skos:example [rdf:value "Donald Trump is a good president? Oh pls."@en. dcterms:source ud:pls];
+    skos:example [rdf:value "Donald Trump is a good president? Oh pls."@en; dcterms:source ud:pls].
 
 isv:Selfie
     a isv:SlangTerm;
