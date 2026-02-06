@@ -742,10 +742,10 @@ isv:op
 
 isv:Frogposter
     a isv:SlangTerm;
-    foaf:maker dbr:4chan;
-    dcterms:created "2015"^^xsd:gYear;
-    skos:definition "The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit."@en;
-    skos:example "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en;
+    foaf:maker [foaf:service dbr:4chan; dcterms: kym:pepe-the-frog];
+    dcterms:created [rdf:value "2008"^^xsd:gYear; dcterms: kym:pepe-the-frog];
+    skos:definition [rdf:value "The act of posting images of Pepe the Frog on sites like 4chan, 8chan, and Reddit."@en; dcterms:source ud:frogposting];
+    skos:example [rdf:value "Manuel spammed Pepe the Frog in a chat again, such a frogposter!"@en; rdf:value "Own example"];
     dcterms:medium [a dbr:4chan; dcterms:source riecky:].
 
 isv:AI_slop
