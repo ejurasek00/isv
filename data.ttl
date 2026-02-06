@@ -667,8 +667,10 @@ isv:Nine_One_One
     foaf:maker [dcterms:location dbr:United_States; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
     dcterms:created [rdf:value "1968"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
     skos:definition [rdf:value "Good Lord. Lets finalize this. 911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America."@en; dcterms:source ud:911];
-    skos:example [rdf:value "911, what's your emergency?"@en; dcterms:source <https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/emergency-preparedness-services-new/resources---activities/interactive-activities/what-to-say-to-911>].
-
+    skos:example [rdf:value "911, what's your emergency?"@en; dcterms:source <https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/emergency-preparedness-services-new/resources---activities/interactive-activities/what-to-say-to-911>];
+    dcterms:medium
+    [a dbr:YouTube; dcterms:source kym:911-emergency-calls].
+    
 isv:Cap
     a isv:SlangTerm;
     foaf:maker [foaf:person dbr:Willie_D; dcterms:source kym:no-cap-cap-capping];
