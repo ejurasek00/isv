@@ -208,6 +208,14 @@ When no relevant results could be found, I used Perplexity, Gemini Pro and ChatG
 
 ---
 
+# Notice
+
+In some cases, the definition may not help to understand the meaning of the SlangWord. This may be caused by various factors, such as absurdity in usage or that the SlangTerm is used in a specific circumstances by specific groups.
+
+In abbreviations, sometimes example can be more helpful to comprehend the meaning; however all of them are written as their long forms too and were explained what they mean.
+
+---
+
 
 # Related Wors
 
