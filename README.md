@@ -35,19 +35,19 @@ The Definition and the Example in Sentence were used from https://www.urbandicti
 ---
 # Using already existing ontologies
 
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . Used for `is a shomething`, eg. `Bait a isv:SlangTerm`.
+`@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .` Used for `is a shomething`, eg. `Bait a isv:SlangTerm`.
 
-@prefix skos:   <http://www.w3.org/2004/02/skos/core#> . This is a backbone of the project and helps to describe the concept, definition and example of usage for each SlangTerm. 
+`@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .` This is a backbone of the project and helps to describe the concept, definition and example of usage for each SlangTerm. 
 
-@prefix foaf:   <http://xmlns.com/foaf/0.1/> . foaf:maker declares who is responsible for the origin of the SlangTerm.
+`@prefix foaf:   <http://xmlns.com/foaf/0.1/> .` `foaf:maker` declares who is responsible for the origin of the SlangTerm.
 
-@prefix dcterms:<http://purl.org/dc/terms/> . dcterms:created is used to state when was the SlangTermrd created. dcterms:medium states which communities or sicial media use this SlangTerm.
+`@prefix dcterms:<http://purl.org/dc/terms/> .` `dcterms:created` is used to state when was the SlangTermrd created. dcterms:medium states which communities or sicial media use this SlangTerm.
 
-@prefix dbr:    <http://dbpedia.org/resource/> . dbr:something connects the SlangTerm to a link on DBPedia where more information about the topic can be found if someone is not familiar in the field.
+`@prefix dbr:    <http://dbpedia.org/resource/> .` `dbr:something` connects the SlangTerm to a link on DBPedia where more information about the topic can be found if someone is not familiar in the field.
 
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> . dcterms:created "YEAR"^^xsd:gYear;  assign year or creation of the SlangTerm as a date format.
+`@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .` `dcterms:created "YEAR"^^xsd:gYear`;  assign year or creation of the SlangTerm as a date format.
 
-@prefix schema:  <https://schema.org/> . Used to delcare first occurance of the SlangTerm using `schema:dateCreated`, definition and example of the SlangTerm using `schema:text`.
+`@prefix schema:  <https://schema.org/> .` Used to delcare first occurance of the SlangTerm using `schema:dateCreated`, definition and example of the SlangTerm using `schema:text`.
 
 
 ![isv_data](isv_data.png)
@@ -58,22 +58,22 @@ The Definition and the Example in Sentence were used from https://www.urbandicti
 
 These websites or documents were used as a source of information for this very project, alongside with other sources stated for each SlangTerm separately. In some cases, however, full IRIs had to be used because of special characters in the adress.
 
-@prefix kym:     <https://knowyourmeme.com/memes/sites/>. Know your meme.
+`@prefix kym:     <https://knowyourmeme.com/memes/sites/>. `Know your meme.
 
-@prefix wtnr:    <https://en.wiktionary.org/wiki/>. Urban dictionary. 
+`@prefix wtnr:    <https://en.wiktionary.org/wiki/>.` Urban dictionary. 
 
-@prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>. Master Thesis of Mgr. Jakub Riecky.
+`@prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>.` Master Thesis of Mgr. Jakub Riecky.
 
-@prefix ud:      <https://www.urbandictionary.com/define.php?term=>. Urban Dictionary.
+`@prefix ud:      <https://www.urbandictionary.com/define.php?term=>.` Urban Dictionary.
 
-@prefix ds:      <https://www.dictionary.com/culture/slang/>. Dictionary.com
+`@prefix ds:      <https://www.dictionary.com/culture/slang/>.` Dictionary.com
 
 ---
 # Using own ontology
 
 I named this ontology as ISV - Internet Slang Vocabulary.
 
-@prefix isv:    <https://github.com/ejurasek00/isv/#> . (Custom) – This ontology defines the specific class isv:SlangTerm and project metadata. 
+`@prefix isv:    <https://github.com/ejurasek00/isv/#> .` (Custom) – This ontology defines the specific class isv:SlangTerm and project metadata. 
 
 isv:SlangTerm is a subclass of skos:Concept which is a subclass of owl:Thing.
 
