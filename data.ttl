@@ -527,10 +527,10 @@ isv:gd
 
 isv:ikr
     a isv:SlangTerm;
-    foaf:maker dbr:SMS;
-    dcterms:created "2004"^^xsd:gYear;
-    skos:definition """another term for: "I know, right?" """@en;
-    skos:example "omg ikr!"@en;
+    foaf:maker [a dbr:California; dcterms:source <https://infinitylearn.com/surge/english/grammar/ikr-meaning/>];
+    dcterms:created [rdf:value "1990s"; dcterms:source <https://www.grammarly.com/blog/acronyms-abbreviations/ikr-meaning/>];
+    skos:definition [rdf:value "Initialism of I know, right?:"@en; dcterms:source wtnr:IKR];
+    skos:example [rdf:value "Girl: Wow thats such a cool design Guy: ikr I did it"@en; dcterms:source ud:ikr];
     dcterms:medium [a dbr:Facebook; dcterms:source riecky:].
 
 isv:Vibe
