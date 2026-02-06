@@ -110,7 +110,8 @@ isv:Floptropica
     skos:example [schema:text 'I can’t wait to go to Floptropica and meet queen Jiafei!'@en; dcterms:source ud:floptropica];
     dcterms:medium 
     [a dbr:TikTok; dcterms:source kym:floptok-floptropica],
-    [a dbr:Instagram; dcterms:source <https://floptropica.com/>].
+    [a dbr:Instagram; dcterms:source <https://floptropica.com/>];
+    skos:related isv:Flop.
 
 isv:Wakanda
     a isv:SlangTerm;
@@ -750,7 +751,8 @@ isv:Sus
     [a dbr:Reddit; dcterms:source kym:sus],
     [a dbr:Instagram; dcterms:source kym:sus],
     [a dbr:Twitter; dcterms:source kym:sus],
-    [a dbr:Facebook; dcterms:source kym:sus].
+    [a dbr:Facebook; dcterms:source kym:sus];
+    skos:related isv:Amogus, isv:Impostor.
 
 isv:Amogus
     a isv:SlangTerm;
@@ -762,7 +764,8 @@ isv:Amogus
     [a dbr:Reddit; dcterms:source kym:amogus],
     [a dbr:iFunny; dcterms:source kym:amogus],
     [a dbr:YouTube; dcterms:source kym:amogus],
-    [a dbr:Facebook; dcterms:source kym:amogus].
+    [a dbr:Facebook; dcterms:source kym:amogus];
+    skos:related isv:Sus, isv:Impostor.
 
 isv:Impostor
     a isv:SlangTerm;
@@ -773,7 +776,8 @@ isv:Impostor
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:there-is-1-impostor-among-us--2],
     [a dbr:Reddit; dcterms:source kym:there-is-1-impostor-among-us--2],
-    [a dbr:Facebook; dcterms:source kym:there-is-1-impostor-among-us--2].
+    [a dbr:Facebook; dcterms:source kym:there-is-1-impostor-among-us--2];
+    skos:related isv:Amogus, isv:Sus.
 
 isv:Copium
     a isv:SlangTerm;
@@ -835,7 +839,8 @@ isv:UwU
     skos:example [schema:text 'Thank you for the lovely gift! UwU'@en; dcterms:source <https://www.familyeducation.com/gen-z-slang/uwu-meaning>];
     dcterms:medium
     [a dbr:Tumblr; dcterms:source kym:uwu],
-    [a dbr:DeviantArt; dcterms:source kym:uwu].
+    [a dbr:DeviantArt; dcterms:source kym:uwu];
+    skos:related isv:OwO, isv:Colon_Three.
 
 isv:OwO
     a isv:SlangTerm;
@@ -845,7 +850,8 @@ isv:OwO
     skos:example [schema:text 'OwO, what\'s this?'@en; dcterms:source ud:OwO];
     dcterms:medium 
     [a dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>],
-    [a <https://www.furaffinity.net>; dcterms:source <https://en.wikifur.com/wiki/OwO>].
+    [a <https://www.furaffinity.net>; dcterms:source <https://en.wikifur.com/wiki/OwO>];
+    skos:related isv:UwU, isv:Colon_Three.
 
 isv:Colon_Three
     a isv:SlangTerm;
@@ -857,7 +863,8 @@ isv:Colon_Three
     dcterms:medium
     [a dbr:2channel; dcterms:source kym:3-cat-face],
     [a dbr:YouTube; dcterms:source kym:3-cat-face],
-    [a dbr:Tumblr; dcterms:source kym:3-cat-face].
+    [a dbr:Tumblr; dcterms:source kym:3-cat-face];
+    skos:related isv:OwO, isv:UwU.
 
 isv:Bnuy
     a isv:SlangTerm;
@@ -969,7 +976,8 @@ isv:Flop
     skos:example [schema:text 'The latest album flopped and so the studio canceled her contract.'@en; dcterms:source wtnr:flop];
     dcterms:medium
     [a dbr:Twitter; dcterms:source kym:flop-era],
-    [a dbr:TikTok; dcterms:source kym:flop-era].
+    [a dbr:TikTok; dcterms:source kym:flop-era];
+    skos:related isv:Floptropica.
 
 isv:Mog
     a isv:SlangTerm;
