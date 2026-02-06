@@ -82,24 +82,50 @@ In the first one, I was interested which of the Concepts were created during the
 The query is listed below:
 
 ```
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix isv:     <https://github.com/ejurasek00/isv/#> 
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
+prefix foaf:    <http://xmlns.com/foaf/0.1/> 
+prefix dcterms: <http://purl.org/dc/terms/> 
+prefix dbr:     <http://dbpedia.org/resource/> 
+prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
+prefix schema:  <https://schema.org/> 
+prefix kym:     <https://knowyourmeme.com/memes/sites/>
+prefix wtnr:    <https://en.wiktionary.org/wiki/>
+prefix riecky:  <https://opac.crzp.sk/?fn=detailBiblioFormChildO6MT4T&sid=6F9F3F51667F0CBC3D41BFEE069E&seo=CRZP-detail-kniha>
+prefix ud:      <https://www.urbandictionary.com/define.php?term=>
+prefix ds:      <https://www.dictionary.com/culture/slang/>
 
-SELECT ?Concept ?created
 
+SELECT ?SlangWord ?Created
 WHERE {
-?Concept dcterms:created ?created .
+  ?SlangWord dcterms:created ?Node .
   
-FILTER (?created > "2018"^^xsd:gYear)
-FILTER (?created < "2023"^^xsd:gYear)
+  ?Node schema:dateCreated ?Created .
+
+  FILTER (?Created > "2018"^^xsd:gYear)
+  FILTER (?Created < "2023"^^xsd:gYear)
 }
 ```
-This query found 23 entries in 0.056 seconds.
-
+13 results in 0.044 seconds
 The entries were:
 
-Simp, Sadge, Flop, Copium, Grubhub, bnuy, Mid, Sus, Gymmaxing, Impostor, Soft launch, Ratio, Bussin, Main Character Energy, Cheugy, Rizz, Bing chilling, Amogus, Gatekeeper, Fanum tax, Gyat, Only in Ohio and smh.
+|SlangWord|Created|
+| :-| :- 
+|Only_in_Ohio|2022|
+|Floptropica|2022|
+|Karen|2019|
+|Honse|2019|
+|Sadge|2020|
+|Sus|2019|
+|Amogus|2021|
+|Impostor|2020|
+|Bnuy|2020|
+|Grubhub|2020|
+|Bing_chilling|2021|
+|Main_Character_Energy|2020|
+|Fanum_Tax|2022|
+
 ![fuseki_q1](Fuseki_Q1.png)
 
 ---
