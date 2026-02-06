@@ -590,7 +590,6 @@ isv:Based
     [a dbr:Twitter; dcterms:source kym:based],
     [a dbr:Instagram; dcterms:source kym:based].
 
-
 isv:mb
     a isv:SlangTerm;
     foaf:maker [rdf:value "Questionable"; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
@@ -665,10 +664,10 @@ isv:Twenty_One
 isv:Nine_One_One
     a isv:SlangTerm;
     skos:prefLabel "911"@en;
-    foaf:maker dbr:United_States;
-    dcterms:created "1968"^^xsd:gYear;
-    skos:definition "Good Lord. Lets finalize this. 911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America."@en;
-    skos:example "911, what's your emergency?"@en.
+    foaf:maker [dcterms:location dbr:United_States; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
+    dcterms:created [rdf:value "1968"^^xsd:gYear; dcterms:source <https://en.wikipedia.org/wiki/911_(emergency_telephone_number)>];
+    skos:definition [rdf:value "Good Lord. Lets finalize this. 911 - Sports car. 9-1-1 - Emergency Number. September 11 - the day terrorists attacked America."@en; dcterms:source ud:911];
+    skos:example [rdf:value "911, what's your emergency?"@en; dcterms:source <https://www.ucdenver.edu/center-for-innovative-design-and-engineering/community-engagement/emergency-preparedness-services-new/resources---activities/interactive-activities/what-to-say-to-911>].
 
 isv:Cap
     a isv:SlangTerm;
