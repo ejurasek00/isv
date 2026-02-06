@@ -107,7 +107,7 @@ I used the Web UI in Firefox using the port 3030. http://localhost:3030/
 
 While adding data to the dataset, both data.ttl and isv.ttl are needed to be uploaded.
 
-2123 tripples were uploaded in data.ttl and 7 triples in isv.ttl
+2137 tripples were uploaded in data.ttl and 7 triples in isv.ttl
 
 ![fuseki_upload](Fuseki_upload.png)
 
