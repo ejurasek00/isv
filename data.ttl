@@ -97,7 +97,7 @@ isv:Only_in_Ohio
     a isv:SlangTerm;
     foaf:maker [dcterms:Service dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
     dcterms:created [rdf:value "2022"^^xsd:gYear; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio];
-    skos:definition [rdf:value "A tiktok trend were people post weird things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
+    skos:definition [rdf:value "A tiktok trend were people post weird/absurde things like a car crashing a building, or a wheel falls off a train in the sky, etc. And most people comment “Only in Ohio”. This is similar to the Miller Grove trend that happened in 2019."@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
     skos:example [rdf:value "Only in Ohio would there be a cat like that"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=only%20in%20ohio>];
     dcterms:medium [a dbr:TikTok; dcterms:source kym:cant-even-x-in-ohio-only-in-ohio].
 
@@ -464,7 +464,7 @@ isv:Twin
 isv:Honse
     a isv:SlangTerm;
     foaf:maker [dcterms:service dbr:Tumbrl; dcterms:source kym:honse];
-    dcterms:created [rdf:value "2019";  dcterms:source kym:honse];
+    dcterms:created [rdf:value "2019"^^xsd:gYear;  dcterms:source kym:honse];
     skos:definition [rdf:value"Big chonky fat horse"@en; dcterms:source ud:honse];
     skos:example [rdf:value """ "hey mum, do you see that honse!?" """@en; dcterms:source ud:honse];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
@@ -479,8 +479,10 @@ isv:Car
 
 isv:Type_beat
     a isv:SlangTerm;
-    skos:definition "Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)"@en;
-    skos:example "Hey Aaron, you're on a James type Beat"@en;
+    foaf:maker [dcterms:service dbr:SoundClick; dcterms:source <https://www.vice.com/en/article/type-beat-producers-interview-menace/>];
+    dcterms:created [rdf:value "2010s";  dcterms:source <https://www.soundverse.ai/blog/article/what-is-a-type-beat-1101>];
+    skos:definition [rdf:value "Type Beat -in music terms- is a beat that replicates a featured artist (Ariana Grande Type Beat)"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
+    skos:example [rdf:value "Hey Aaron, you're on a James type Beat"@en; dcterms:source <https://www.urbandictionary.com/define.php?term=Type%20Beat>];
     dcterms:medium
     [a dbr:YouTube; dcterms:source riecky:],
     [a dbr:Instagram; dcterms:source riecky:].
@@ -1022,6 +1024,7 @@ isv:W_L
     [a dbr:TikTok; dcterms:source <https://contentstudio.io/social-media-terms/win>],
     [a dbr:Instagram; dcterms:source <https://contentstudio.io/social-media-terms/win>],
     [a dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>].
+
 isv:FL
     a isv:SlangTerm;
     foaf:maker dbr:Gaming;
