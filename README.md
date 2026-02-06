@@ -107,25 +107,7 @@ WHERE {
   FILTER (?Created < "2023"^^xsd:gYear)
 }
 ```
-13 results in 0.044 seconds
-The entries were:
-
-|SlangWord|Created|
-| :-| :- 
-|Only_in_Ohio|2022|
-|Floptropica|2022|
-|Karen|2019|
-|Honse|2019|
-|Sadge|2020|
-|Sus|2019|
-|Amogus|2021|
-|Impostor|2020|
-|Bnuy|2020|
-|Grubhub|2020|
-|Bing_chilling|2021|
-|Main_Character_Energy|2020|
-|Fanum_Tax|2022|
-
+26 results in 0.037 seconds
 ![fuseki_q1](Fuseki_Q1.png)
 
 ---
