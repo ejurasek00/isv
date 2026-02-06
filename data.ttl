@@ -944,7 +944,7 @@ isv:W_L
     skos:prefLabel 'W/L'@en;
     foaf:maker [dcterms:service dbr:Twitter; dcterms:source <https://contentstudio.io/social-media-terms/win>];
     dcterms:created [schema:dateCreated '2018'^^xsd:gYear; dcterms:source <https://contentstudio.io/social-media-terms/win>];
-    skos:definition [schema:text 'W abbreviated as "Win" and L abbreviated as "Lose".'@en; dcterms:source ud:w/l];
+    skos:definition [schema:text 'W abbreviated as "Win" and L abbreviated as "Lose".'@en; dcterms:source <https://www.urbandictionary.com/define.php?term=w/l>];
     skos:example [schema:text 'Your presentation today was a W, loved the graphics'@en; dcterms:source <https://contentstudio.io/social-media-terms/win>];
     dcterms:medium
     [a dbr:TikTok; dcterms:source <https://contentstudio.io/social-media-terms/win>],
