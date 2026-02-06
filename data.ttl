@@ -459,8 +459,10 @@ isv:Twin
 
 isv:Honse
     a isv:SlangTerm;
-    skos:definition "Big chonky fat horse"@en;
-    skos:example """ "hey mum, do you see that honse!?" """@en;
+    foaf:maker [dcterms:service dbr:Tumbrl; dcterms:source kym:honse];
+    dcterms:created [rdf:value "2019";  dcterms:source kym:honse];
+    skos:definition [rdf:value"Big chonky fat horse"@en; dcterms:source ud:honse];
+    skos:example [rdf:value """ "hey mum, do you see that honse!?" """@en; dcterms:source ud:honse];
     dcterms:medium [a dbr:Instagram; dcterms:source riecky:].
 
 isv:Car
