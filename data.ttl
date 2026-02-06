@@ -593,10 +593,10 @@ isv:Based
 
 isv:mb
     a isv:SlangTerm;
-    foaf:maker dbr:SMS;
-    dcterms:created "1992"^^xsd:gYear;
-    skos:definition "My bad"@en;
-    skos:example "Oh ok mb"@en;
+    foaf:maker [rdf:value "Questionable"; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
+    dcterms:created [rdf:value "1970s"; dcterms:source <https://www.oreateai.com/blog/decoding-mb-the-texting-acronym-you-need-to-know/b5f884096407b1d676a63442326fa598>];
+    skos:definition [rdf:value "Initialism of my bad."@en; dcterms:source <https://en.wiktionary.org/wiki/MB#English>];
+    skos:example [rdf:value "Oh sorry, mb"@en; dcterms:source ud:mb];
     dcterms:medium [a dbr:YouTube; dcterms:source riecky:].
 
 isv:Rule_34
