@@ -845,7 +845,7 @@ isv:OwO
     skos:example [schema:text 'OwO, what\'s this?'@en; dcterms:source ud:OwO];
     dcterms:medium 
     [a dbr:DeviantArt; dcterms:source <https://en.wikifur.com/wiki/OwO>],
-    [a <https://www.furaffinity.net/>; dcterms:source <https://en.wikifur.com/wiki/OwO>].
+    [schema:url <https://www.furaffinity.net/>; dcterms:source <https://en.wikifur.com/wiki/OwO>].
 
 isv:Colon_Three
     a isv:SlangTerm;
